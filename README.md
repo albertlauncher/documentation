@@ -1,2 +1,1 @@
-# documentation
-Albert launcher documentation
+# Jekyll-based Albert documentation website
