@@ -26,6 +26,19 @@ sudo apt-get update
 sudo apt-get install albert
 ```
 
+###### Debian 8 Jessie ([AdminLounge](https://software.adminlounge.org/))
+```bash
+wget -qO - https://repo.adminlounge.org/archive.key | sudo apt-key add -
+
+# Either
+sudo echo "deb http://repo.adminlounge.org/ jessie main" >> /etc/apt/sources.list
+# Or
+sudo echo "deb http://repo.adminlounge.org/ jessie main" > /etc/apt/sources.list.d/adminlounge.list
+
+sudo apt-get update
+sudo apt-get install albert
+```
+
 ## Building from sources
 
 Building from sources is the least convenient, but most flexible way. The build process is trivial, but you have to manage the dependencies on your own. Before you can start building Albert you need some libraries.
