@@ -19,14 +19,14 @@ dnf copr enable rabiny/albert
 dnf install albert
 ```
 
-###### Ubuntu - PPA ([Andrew](https://github.com/hotice)/[webupd8](http://www.webupd8.org/))
+###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[webupd8](http://www.webupd8.org/))
 ```bash
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install albert
 ```
 
-###### Debian 8 Jessie ([AdminLounge](https://software.adminlounge.org/))
+###### Debian 8 Jessie ([idkcpp](https://github.com/idkcpp)/[AdminLounge](https://software.adminlounge.org/))
 ```bash
 wget -qO - https://repo.adminlounge.org/archive.key | sudo apt-key add -
 
@@ -75,7 +75,7 @@ sudo apt-get install g++ cmake qtbase5-dev libmuparser-dev \
 
 To configure, build and install run the following commands:
 ```bash
-git clone https://github.com/ManuelSchneid3r/albert.git
+git clone https://github.com/albertlauncher/albert.git
 mkdir albert-build-release
 cd albert-build-release
 cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
@@ -85,6 +85,6 @@ sudo make install
 
 Lets go through them and clarify what they do. The first command clones the Albert git repository to the local file system. Since no destination directory is specified a directory with the name of the repository is created. The next step is to create the out-of-source-build directory. A self-explanatory name is always a good one.
 
-After changing the working directory to the just created build directory the `cmake` command configures the build environment and creates the makefiles. The first positional parameter is the path to the source directory which contains a file called `CMakeLists.txt`. The `-D` parameter sets CMake variables. `CMAKE_BUILD_TYPE` specifies the build type to use. If you want to report bugs it makes sense to build a debug build, since the applications contains debug symbols and its output is more verbose.
+After changing the working directory to the just created build directory the `cmake` command configures the build environment and creates the makefiles. The first positional parameter is the path to the source directory which contains a file called `CMakeLists.txt`. The `-D` parameter sets CMake variables. `CMAKE_BUILD_TYPE` specifies the build type to use. If you want to report bugs it makes sense to build a debug build, since the applications contains debug symbols and its output is more verbose. `CMAKE_INSTALL_PREFIX` defines the prefix for the installation directory. This value usually defaults to `/usr/local`. When setting this value keep in mind that the resulting directories should match the XDG base dir specs since several files are looked up there. `/usr`, `/usr/local` or `~/.local` should be safe prefixes.
 
 Finally `make` builds the application and `sudo make install` installs the application on your system. Albert is not a portable application so the install step is mandatory.
