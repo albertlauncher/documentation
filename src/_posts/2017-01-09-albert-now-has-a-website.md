@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Albert finally has a website"
+date: 2017-01-09 18:17 +0100
 ---
 
 Until recently the information relevant to the user was cluttered over several places. For a motivation there was a small landing page on github-pages, the github repository had a README.md, which basically served the same purpose, to get help the user had to go to the wiki and for news… well there was nothing. Finally there is now a place where everything gets merged to a single website: The project website *[albertlauncher.github.io](http://albertlauncher.github.io).*

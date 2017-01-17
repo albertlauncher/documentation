@@ -18,5 +18,5 @@ collections:
   docs:
     output: true
 
-gems:
-- jemoji
+#gems:
+#- jemoji
