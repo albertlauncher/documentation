@@ -7,10 +7,10 @@
 #   - theming
     - faq
 
-#- title: Dev guide
-#  docs:
-#    - extending/native
-#    - extending/external
+- title: Dev guide
+  docs:
+    - extending/native
+    - extending/external
 #    - extending/python
 #    - extending/javascript
 #    - extending/lua

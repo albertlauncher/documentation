@@ -3,54 +3,94 @@ layout: docs
 title: External plugins
 permalink: /docs/extending/external/
 ---
+> Currently the term extension and plugin is used interchangeably
 
-Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called *external extensions*.
+Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called _external plugins_.
 
-An external plugin basically acts as a listener. The plugin listens on the `stdin` data stream for requests and responds using the `stdout` channel. Generally such requests consist of a mandatory command and optional parameters. The set of commands, the expected responses and their format are defined in the section *Communication protocol*.
+An external plugin (hereafter plugin) is basically an executable which has a particular interface. Imagine the plugin as a set of functions that can be dynamically invoked. Which function is invoked, is defined by the environment variable `$ALBERT_OP`. The plugin should read this environment variable and react accordingly. Additionally to the mandatory environment variable `$ALBERT_OP` there may be some other variables defined. Imagine those as the parameters to the dynamic function. The return value of this function is returned to the application through the standard output stream (stdout). Depending on the ALBERT_OP the expected data may differ, but all responses have to be a JSON object containing properties. The set of possible `$ALBERT_OP`s and the expected properties and their structures are defined in the section *Communication protocol*.
 
-The great flexibility of the external plugins comes at a price: Since an external plugin is a separate process it has no access to the core components and helper classes. This holds the other way around as well,which means actions of the results passed to the core application are restricted to the execution of programs with parameters. Further the time to respond to the requests is limited.
+To save state between the executions the plugin can return a JSON object called "variables". The properties of the object "variables" will be set as environment variables in the next execution. Note that this properties have to be strings otherwise they will not be set in the environment.
 
-#### Communication protocol
+## Communication protocol (v2)
 
-`INITIALIZE` is sent when the plugin has been loaded. Upon receiving this message the plugin shall initialize itself and check for dependencies. If no errors occurred in the initialization the plugin has to send `ACK`. If the response does not contain `ACK` the return message will be interpreted as an error string and the plugin will be unloaded. The process has 10 seconds to initialize itself. If the timeout is exceeded the plugin will be killed/unloaded forcefully.
+`METADATA`
+The application wants to get the metadata of the extenion. It should have the
+following keys:
 
-`FINALIZE` is sent when the plugin is about to be unloaded. The plugin is assumed to finalize itself and quit the process. The process has 10 seconds to finalize itself. If the timeout is exceeded the plugin will be killed/unloaded forcefully.
+* `iid` (string, mandatory)
+* `version` (string, defaults to 'N/A')
+* `name` (string, defaults to $id)
+* `trigger` (string, defaults to 'empty')
+* `author` (string, defaults to 'N/A')
+* `dependencies` (array of strings, defaults to 'empty')
 
-`SETUPSESSION`/`TEARDOWNSESSION` are sent when the user started/ended a session. This is intended to trigger preparation/cleanup of a incoming/past queries. This operation has no timeout and no response is expected. However be aware that since this operation is not synchronized another message, which has a timeout, could have been sent while processing this message.
+The interface id `iid` (currently `org.albert.extension.external/v2.0`) tells the application the type and version of the communication protocol . If the `iid` is incompatible this plugin will not show up in the plugins list. The remaining keys should be self-explanatory. Errors in this step are fatal: loading will not be continued.
 
-`QUERY` is the request to handle a query. The rest of the line after the command is the query as the user typed it, i.e. it contains the complete query including spaces and potential triggers. The results of the query have to be returned as a JSON array containing JSON objects representing the results. The plugin has 10 ms to respond to the query. If the timeout is exceeded the plugin will be killed/unloaded forcefully.
+`INITIALIZE`
+The request to initialize the plugin. The plugin should check if all
+requirements are met and set the exit code accordingly. (Everything but  zero
+is an error).
+Errors in this step are fatal: loading will not be continued.
 
-A result object has to contain the following values: `id`, `name`, `description`, `icon` and `actions`.
+`FINALIZE`
+The request to finalize the plugin.
+
+`SETUPSESSION`
+The request to setup for a session, meaning prepare for user queries.
+
+`TEARDOWNSESSION`
+The request to teardown a session.
+
+`QUERY`
+The request to handle a query. The environment variable `ALBERT_QUERY` contains
+the _complete_ query as the user entered it into the input box, i.e. including
+potential triggers.
+
+Return the results by an array "items" containing JSON objects representing the results. A result object has to contain the following entries: `id`, `name`, `description`, `icon` and `actions`.
 
   - `id` is the plugin wide unique id of the result
   - `name` is the name of the result
   - `description` is the description of the result
-  - `icon` is the icon of the result
-  - `actions` is a JSON array of JSON objects representing the actions for the item.
+  - `icon` is the icon of the result (name or path)
+  - `actions` is a array of objects representing the actions for the item.
 
-A JSON object representing an action has to contain the following values: `name`, `command` and `arguments`.
+An object representing an action has to contain the following values: `name`, `command` and `arguments`.
 
 - `name` is the actions name
 - `command` is the program to be execute
 - `arguments` is an array of parameters for `command`
 
-An example query response could look like this:
-
-
+An example:
 ```json
-[{
-  "id":"plugin.wide.unique.id",
-  "name":"An Item",
-  "description":"Nice description.",
-  "icon":"/path/to/icon",
-  "actions":[{
-    "name":"Action name",
-    "command":"program",
-    "arguments":["-a"]
-  },{
-    "name":"Another action name",
-    "command":"another_program",
-    "arguments":["--name", "value"]
-  }]
-}]
+{
+ "items": [{
+   "id":"extension.wide.unique.id",
+   "name":"An Item",
+   "description":"Nice description.",
+   "icon":"/path/to/icon",
+   "actions":[{
+     "name":"Action name 1",
+     "command":"program",
+     "arguments":["-a", "-b"]
+   },{
+     "name":"Action name 2",
+     "command":"program2",
+     "arguments":["-C", "-D"]
+   }]
+ }],
+ "variables": {
+   "some_var":"variable",
+   "some_other_var":"cool state"
+ }
+}
 ```
+
+## Deployment
+
+Albert looks in the [DataLocation](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum) directories of the application for the directory `external`. For the details check the Qt link. As an example on Linux Albert would search the following paths in this order:
+
+* ~/.local/share/albert/external
+* /usr/local/share/albert/external
+* /usr/share/albert/external
+
+Ids are guaranteed to be unique. This means that if several of those path contain a plugins with identical ids, only the first found plugin will be used.

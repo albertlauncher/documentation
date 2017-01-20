@@ -4,7 +4,7 @@ title: Native plugins
 permalink: /docs/extending/native/
 ---
 
->TODO: Finish this article
+>NOTE: Incomplete. Come back later.
 
 
 1. Copy the template extension using the script in the [plugins folder](https://github.com/ManuelSchneid3r/albert/tree/master/src/plugins).
@@ -44,28 +44,4 @@ A plugin specification could look like the following:
     "authors" :         ["Manuel Schneider"],
     "dependencies" :    []
 }
-```
-
-
-
-## Plugin deployment
-
-Plugin lookup is done in several places depending on the platform. Check the documentation for QStandardPaths for [AppLocalDataDirs](http://doc.qt.io/qt-5/qstandardpaths.html) to see which directories are looked up exactly. In each of this directories Albert looks for a directory named `plugins`. This directory may contain direct named by the type of plugins they contain (Currently supported plugin types are `native` and `executable`, more coming soon™). These directories contain the plugin directories named by their id. The plugin directory has to contain the plugin specification and the plugin itself. As an example the directory layout could look like this:
-```
-$AppLocalDataDirs
-└── plugins
-    ├── native
-    │   ├── plugin1
-    │   │   ├── metadata.json
-    │   │   └── libplugin1.so
-    │   ...
-    ├── executable
-    │   ├── plugin2
-    │   │   ├── metadata.json
-    │   │   └── randomExecutable.sh
-    │   ...
-    ├── python
-    │   ...
-    └── js
-        ...
 ```
