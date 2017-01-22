@@ -33,3 +33,7 @@ Make sure you have libqt5-svg (May be slightly different on some distributions) 
 ##### Why are some applications not shown?
 
 The [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/) defines which applications shall be shown. If the desktop entry contains the key value pair `NoDisplay=true`, the application will not be shown. Further the keys `OnlyShowIn` and `NotShowIn` define which desktop environments should (not) show the desktop entry. The values are compared to the environment variable `$XDG_CURRENT_DESKTOP`.
+
+##### .\* Wayland .\* ?
+
+Sorry, I cant help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problems.
