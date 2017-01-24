@@ -14,7 +14,7 @@ To save state between the executions the plugin can return a JSON object called 
 ## Communication protocol (v2)
 
 `METADATA`
-The application wants to get the metadata of the extenion. It should have the
+The application wants to get the metadata of the extension. It should have the
 following keys:
 
 * `iid` (string, mandatory)
@@ -28,7 +28,7 @@ The interface id `iid` (currently `org.albert.extension.external/v2.0`) tells th
 
 `INITIALIZE`
 The request to initialize the plugin. The plugin should check if all
-requirements are met and set the exit code accordingly. (Everything but  zero
+requirements are met and set the exit code accordingly. (Everything but zero
 is an error).
 Errors in this step are fatal: loading will not be continued.
 
