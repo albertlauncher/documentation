@@ -7,7 +7,7 @@ permalink: /docs/extending/native/
 >NOTE: Incomplete. Come back later.
 
 
-1. Copy the template extension using the script in the [plugins folder](https://github.com/ManuelSchneid3r/albert/tree/master/src/plugins).
+1. Copy the template extension using the script in the plugins folder.
 2. Adjust the values in `metadata.json` and `CmakeLists.txt`.
 3. Adjust the extension to your liking. Check the extension interface for members that you may or must implement.
 
