@@ -4,4 +4,4 @@ title: Theming Albert
 permalink: /docs/theming/
 ---
 
->Todo
+Create your own theme using our theme creator: [theme creator](/docs/theming/themecreator/)
