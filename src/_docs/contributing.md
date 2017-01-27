@@ -27,10 +27,10 @@ There is plenty of other things you can do aside from coding:
 - Spread the word!
 - Join the community and help other users.
 - Use the application and report issues.
-- Check the issues tracker and try to help debugging. [![Issues](https://img.shields.io/github/issues/manuelschneid3r/albert.svg)](https://github.com/ManuelSchneid3r/albert/issues)
+- Check the issues tracker and try to help debugging. [![Issues](https://img.shields.io/github/issues/albertlauncher/albert.svg)](https://github.com/albertlauncher/albert/issues)
 - Improve the documentation (Link on top of the pages).
-- Support me as a creator by donating some bucks via [paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC),  [flattr](https://flattr.com/submit/auto?user_id=manuelschneid3r&url=https%3A%2F%2Fgithub.com%2FManuelSchneid3r%2Falbert) or [patreon](https://www.patreon.com/albertlauncher).
+- Support me as a creator by donating some bucks via [paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC) or [patreon](https://www.patreon.com/albertlauncher).
 
 
-<!-- [![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC) [![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=manuelschneid3r&url=https%3A%2F%2Fgithub.com%2FManuelSchneid3r%2Falbert)
+<!-- [![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC)
 -->
