@@ -19,6 +19,6 @@ The **#albertlauncher** channel on **irc.freenode.net** is the primary source of
 For all of you that do not enjoy the using IRC or just want to be connectable on your mobile phone there is a Albert community chat on telegram.
 
 
-##### [Github repository](https://github.com/manuelschneid3r/albert)
+##### [Github repository]({{ site.repository }})
 
 If you wonder why Albert does this and that check out the source code to see how things work under the hood. If you think you encountered a bug, file an issue or check if somebody did already.

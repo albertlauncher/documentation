@@ -5,11 +5,20 @@ permalink: /docs/changelog/
 ---
 This is the feature centric changelog. For a complete changelog refer to the git log.
 
-v0.9.0 (2017-01-??)
+v0.9.1 (2017-01-23)
+
+- Chooseable terminal command of a list of installed terminals.
+- The app icon now uses a theme icon
+- _Open terminal here_ action.
+- Mostly fixes
+
+
+v0.9.0 (2017-01-17)
 
 - New extension system architecture
 - External extensions extension
 - Firefox extension
+- Improved VirtualBox extension
 
 v0.8.11 (2016-09-29)
 

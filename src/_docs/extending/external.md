@@ -3,7 +3,7 @@ layout: docs
 title: External plugins
 permalink: /docs/extending/external/
 ---
-> Currently the term extension and plugin is used interchangeably
+> Note: Currently the term _extension_ and _plugin_ is used interchangeably
 
 Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called _external plugins_.
 

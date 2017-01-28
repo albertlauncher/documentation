@@ -28,13 +28,10 @@ sudo apt-get install albert
 
 ###### Debian 8 Jessie ([idkcpp](https://github.com/idkcpp)/[AdminLounge](https://software.adminlounge.org/))
 ```bash
-wget -qO - https://repo.adminlounge.org/archive.key | sudo apt-key add -
-
-# Either
-sudo echo "deb http://repo.adminlounge.org/ jessie main" >> /etc/apt/sources.list
-# Or
-sudo echo "deb http://repo.adminlounge.org/ jessie main" > /etc/apt/sources.list.d/adminlounge.list
-
+wget -qO - https://repo.adminlounge.org/archive.key \
+    | sudo apt-key add -
+sudo echo "deb http://repo.adminlounge.org/ jessie main" \
+    > /etc/apt/sources.list.d/adminlounge.list
 sudo apt-get update
 sudo apt-get install albert
 ```

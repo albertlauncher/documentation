@@ -7,20 +7,20 @@ permalink: /docs/extending/native/
 >NOTE: Incomplete. Come back later.
 
 
-1. Copy the template extension using the script in the [plugins folder](https://github.com/ManuelSchneid3r/albert/tree/master/src/plugins).
+1. Copy the template extension using the script in the plugins folder.
 2. Adjust the values in `metadata.json` and `CmakeLists.txt`.
 3. Adjust the extension to your liking. Check the extension interface for members that you may or must implement.
 
 Pretty easy, however there are some caveats: Your extension must have a unique id; set it in `metadata.json`. To keep the code readable the main class of the extension is called `Extension` and if the extension returns a configuration widget it shall be called `ConfigWidget`. This is not strictly necessary, your code will run either way, but the intention is to unify the filenames of the plugins. This would implicitly lead to naming conflicts, therefor all classes of an extensions live in a dedicated namespace. Remember to define the namespace in the `*.ui` files, too. Thats it.
 
 
-# Synchronous and asynchronous queries
+## Synchronous and asynchronous queries
 
 
 
 All plugins have to provide a [plugin specification](#the-plugin-specification), which is defined in the next section, and have to reside in dedicated directories following a compulsory layout described in the section [plugin deployment](#plugin-deployment).
 
-## The plugin specification
+### The plugin specification
 
 The plugin specification is a mandatory file that has to be shipped with a plugin. Its content is *JSON* formatted and its name has to be *metadata.json*. Its fields give the application information about the plugin without having to load the plugin.
 
