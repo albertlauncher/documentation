@@ -51,22 +51,23 @@
     }
 }
 
-.options {
+#options {
+    display: none;
     max-width: 640px;
     margin: 25px auto;
 }
 
-.options > div {
+#options > div {
     display: inline-block;
     width: 49%;
     vertical-align: top;
 }
 
-.options > div h5 {
+#options > div h5 {
     margin-bottom: 10px;
 }
 
-.options label {
+#options label {
     display: block;
     padding: 2px;
     font-weight: normal;
@@ -74,12 +75,12 @@
     line-height: initial;
 }
 
-.options label span {
+#options label span {
     display: inline-block;
     width: 80%;
 }
 
-.options input[type="color"] {
+#options input[type="color"] {
     -webkit-appearance: none;
     outline: none;
     border: 0;
@@ -92,7 +93,7 @@
     height: 38px;
 }
 
-.options input[type="number"] {
+#options input[type="number"] {
     display: inline-block;
     width: 16%;
     padding: 5px;
@@ -123,8 +124,9 @@
     right: 26px;
 }
 
-.albert {
+#albert {
     border: none;
+    display: none;
     color: var(--foreground_color);
     background-color: var(--background_color);
     border-radius: 12px;
