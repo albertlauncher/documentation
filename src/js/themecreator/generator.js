@@ -19,9 +19,6 @@ function main() {
         input.addEventListener('input', function () {
             updateTheme(input.name, input.value);
         });
-
-        // Update the theme for the first time so the pre area is filled with the values
-        updateTheme(input.name, input.value);
     });
 }
 
