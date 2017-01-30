@@ -73,9 +73,9 @@ sudo apt-get install g++ cmake qtbase5-dev libmuparser-dev \
 To configure, build and install run the following commands:
 ```bash
 git clone https://github.com/albertlauncher/albert.git
-mkdir albert-build-release
-cd albert-build-release
-cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
+mkdir albert-build
+cd albert-build
+cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
 make
 sudo make install
 ```
@@ -84,7 +84,7 @@ Lets go through them and clarify what they do. The first command clones the Albe
 
 After changing the working directory to the just created build directory the `cmake` command configures the build environment and creates the makefiles. The first positional parameter is the path to the source directory which contains a file called `CMakeLists.txt`. The `-D` parameter sets CMake variables.
 
-The CMake variable `CMAKE_BUILD_TYPE` specifies the build type to use. If you want to report bugs it makes sense to build a debug build, since the build then produces debugging information with which GDB can work. Core dumps of this build can be used to track down issues. Futher the make output is more verbose.
+The CMake variable `CMAKE_BUILD_TYPE` specifies the build type to use. If you want to report bugs it makes sense to build a `Debug` build, since the build then produces debugging information with which GDB can work. Core dumps of this build can be used to track down issues. Futher the make output is more verbose. If you dont want any of those that use the build type `Release`.
 
 `CMAKE_INSTALL_PREFIX` defines the prefix for the installation directory. This value usually defaults to `/usr/local`. Since albert looks up libraries, plugins and stylefiles etc only `/usr`, `/usr/local` are supported. If you still want to make it work somewhere else, you have to use environment variables to manipulate XDG base dir specs and the lookup paths of the dynamic linker. Do absolutely not do this unless you exactly know what you are doing.
 
