@@ -37,3 +37,7 @@ The [Desktop Entry Specification](https://specifications.freedesktop.org/desktop
 ##### .\* Wayland .\* ?
 
 Sorry, I cant help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problems.
+
+##### HiDPI?
+
+This is up to Qt. Unfortunately Qt does not support [HiDPI scaling](http://doc.qt.io/qt-5/highdpi.html) until 5.6. From there on you can use `QT_SCALE_FACTOR=2 albert` to run albert scaled. A better solution might be to set `QT_AUTO_SCREEN_SCALE_FACTOR=1` globally. This enables automatic scaling, based on the pixel density of the monitor. Note that this affects all Qt applications.

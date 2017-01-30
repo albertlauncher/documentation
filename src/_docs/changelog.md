@@ -5,13 +5,17 @@ permalink: /docs/changelog/
 ---
 This is the feature centric changelog. For a complete changelog refer to the git log.
 
+
+v0.9.2 (2017-01-30)
+
+- Bugfixes
+
 v0.9.1 (2017-01-23)
 
 - Chooseable terminal command of a list of installed terminals.
 - The app icon now uses a theme icon
 - _Open terminal here_ action.
 - Mostly fixes
-
 
 v0.9.0 (2017-01-17)
 
