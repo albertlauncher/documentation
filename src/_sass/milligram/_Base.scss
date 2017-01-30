@@ -16,6 +16,9 @@ body {
 	font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
 	line-height: 1.6;
   font-weight: 300;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  overflow-y: scroll;
+  margin: 0px;
 }
 
 // Set box-sizing globally to handle padding and border widths

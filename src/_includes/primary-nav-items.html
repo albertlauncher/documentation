@@ -2,20 +2,8 @@
     <li class="{% if page.overview %}current{% endif %}">
         <a href="/">Home</a>
     </li>
-    <li class="dropdown {% if page.url contains '/docs/' %}current{% endif %}">
+    <li class="{% if page.url contains '/docs/' %}current{% endif %}">
         <a href="/docs/">Docs</a>
-        <div>
-            <ul>
-                <li><a target="blank" href="/docs/"            >Overview</a></li>
-                <li><a target="blank" href="/docs/installing/" >Installing</a></li>
-                <li><a target="blank" href="/docs/using/"      >Using</a></li>
-                <li><a target="blank" href="/docs/extending/"  >Extending</a></li>
-                <li><a target="blank" href="/docs/theming/"    >Theming</a></li>
-                <li><a target="blank" href="/docs/faq/"        >Troubleshooting</a></li>
-                <li><a target="blank" href="/docs/contributing">Contributing</a></li>
-                <li><a target="blank" href="/docs/changelog"   >Changes</a></li>
-            </ul>
-        </div>
     </li>
     <li class="{% if page.author %}current{% endif %}">
         <a href="/news/">News</a>

@@ -4,6 +4,11 @@
       <span style="color:#ccc; font-size:0.6em; float:right;">{{ post.date | date_to_string }}</span>
   </h4>
   <p>
-    <span>{{ post.content | truncatewords: 50 }}<a href="{{ post.url }}"> Read full post.</a></span>
+    {% capture truncated_content %}{{ post.content | truncatewords: 50, '' }}{% endcapture %}
+    {% if post.content != truncated_content %}
+    <span>{{ truncated_content }}… <a href="{{ post.url }}"> Read full post.</a></span>
+    {% else %}
+    <span>{{ post.content}}</span>
+    {% endif %}
   </p>
 </article>
