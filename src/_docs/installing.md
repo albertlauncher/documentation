@@ -46,7 +46,7 @@ Building from sources is the least convenient, but most flexible way. The build 
 
 ### Prerequisites
 
-To build Albert from sources you will need CMake (≥2.8.11) and a C++ compiler supporting at least the C++11 standard. Albert uses the following modules of the Qt toolkit (≥5.1):
+To build Albert from sources you will need CMake (≥2.8.12) and a C++ compiler supporting at least the C++11 standard. Albert uses the following modules of the Qt toolkit (≥5.1):
 
 - QtCore, QtGui, QtWidgets, QtSQL, QtNetwork from the [Qt Essentials](http://doc.qt.io/qt-5/qtmodules.html#qt-essentials)
 - [Qt Concurrent](http://doc.qt.io/qt-5/qtconcurrent-index.html) for threading support
