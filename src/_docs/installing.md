@@ -7,16 +7,20 @@ permalink: /docs/installing/
 There are two ways to get Albert: Using a package manager or building Albert from the sources. Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
 
 ## Using package managers
+
+<p><font size="3rem" color="red"><i>We are looking for volunteering packagers for the missing distributions!</i></font></p>
+
 Currently Albert is not in any of the major official repositories. At least some user repositories contain it. Hopefully there will be more in future:
 
-###### Archlinux - AUR (Official)
+###### Archlinux - [AUR](https://aur.archlinux.org/packages/albert/) (Official)
 ```bash
 yaourt albert
 ```
+
 ###### Fedora - COPR ([rabin-io](https://github.com/rabin-io))
 ```bash
-dnf copr enable rabiny/albert
-dnf install albert
+sudo dnf copr enable rabiny/albert
+sudo dnf install albert
 ```
 
 ###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[webupd8](http://www.webupd8.org/))
