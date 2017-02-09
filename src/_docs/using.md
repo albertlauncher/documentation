@@ -44,48 +44,20 @@ Key  | Action
 ## The extensions
 
 From the user perspective the application consists of the launcher, which is the main window, the settings window and the tray icon if you enabled it. However under the hood Albert has a plugin based architecture, which allows the user to modify or extend the functionality of the application.
-There are a few extensions that get shipped together with the main albert core.
+There are several extensions that get shipped together with the main albert core.
 
+> TODO Finish this list
 
-
-#### MPRIS Control Center (coming with 0.8.12)
-
-This extension is for linux only. It lets you control running MPRIS-capable media players like Rhythmbox or VLC.
-MPRIS (Media Player Remote Interfacing Specification) is a protocol that enables media players to be controlled via DBus.
-Currently this extension supports the following commands:
-- Play
-- Pause
-- Next
-- Previous
-- Stop
-
-Just enter the action you want to perform (like "play" to start playback) and there will be an entry for every player that is running and the action is applicable.
-I.e. when you have only one player running and it's already playing, the Play-entry will not occure.
-Or; when you have two players running and one is playing, "next" will yield two entries. One for each player.
-
-If the media player supports the Raise method it can also be brought to front with albert.
-This may or may not work as well depending on the implementation of the Raise method within the media player.
-**But** there is no seperate entry to raise the player, this is an alternative action attached to all MPRIS-entries.
-
-This extension requires `libQt5DBus.so` to be installed.
-
-#### VirtualBox
-
-This extension lets you control your VirtualBox VMs. It supports various states in which the VM can be:
-- starting/restoring/saving/stopping : All controls are disabled
-- poweroff/aborted/saved : This VM can be **started**
-- running : This VM can be **paused**, saved and stopped
-- paused : This VM can be **resumed**, saved and reset
-
-The **bold** options are the main actions that will get executed if the entry is hit. The other ones are alternative actions.
-
-Type in the name of the VM you want to manipulate and an entry will appear.
-
-
-
-
-
-
-
-
-> *TODO*
+- [Applications](/docs/extensions/applications/)
+- [Calculator](/docs/extensions/calculator/)
+- Files
+- [Chromium](/docs/extensions/chromium/)
+- External extensions
+- Files
+- Firefox
+- [MPRIS](/docs/extensions/mpris/)
+- Secure Shell
+- System
+- Terminal
+- [VirtualBox](/docs/extensions/virtualbox/)
+- [Websearch](/docs/extensions/websearch/)
