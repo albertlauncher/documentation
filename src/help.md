@@ -6,7 +6,7 @@ permalink: /help/
 
 Problems with Albert? Try these.
 
-##### [Documentation](/docs/home/)
+##### [Documentation](/docs/)
 
 The documentation should cover everything you are concerned about. From a users point of view the user guide explains how to use Albert. Developers will find informations about the development of albert too.
 
