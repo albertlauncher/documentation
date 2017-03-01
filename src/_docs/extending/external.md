@@ -94,3 +94,7 @@ Albert looks in the [DataLocation](http://doc.qt.io/qt-5/qstandardpaths.html#Sta
 * /usr/share/albert/external
 
 Ids are guaranteed to be unique. This means that if several of those path contain a plugins with identical ids, only the first found plugin will be used.
+
+## Sharing extensions
+
+There is a [community repository]( https://github.com/albertlauncher/external/) for external extension. Currently this repository is not distributed with the app. However you can clone it to your disk to use the extensions. To share your extensions you have to fork it. Read the [README](https://github.com/albertlauncher/external/blob/master/README.md) in the repository for more information.
