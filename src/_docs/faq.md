@@ -24,6 +24,8 @@ Create a file called `.albertignore` in the folder that contains the file you wa
 
 This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that an other application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and make it ungrab it. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). Remove the desired key combination from the systems keyboard settings and try again to set it Albert.
 
+Another alternative to open albert is to let other applications, such as your desktop environment, handle the registration and run the command `albert show` or `albert toggle` on activation.
+
 **¹** <span style="font-size: 12px">Actually a registration of one key combination is made up of 4 grabs. Since X11 considers numlock and capslock as modifiers, the actual grabs comprise every permutation of num- and capslock modifiers plus the actual key combo. If one grab fails the registration is considered as failed.</span>
 
 ##### Why are my icons are not displayed correctly?
@@ -37,6 +39,8 @@ The [Desktop Entry Specification](https://specifications.freedesktop.org/desktop
 ##### .\* Wayland .\* ?
 
 Sorry, I cant help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problems.
+
+If you came here because setting the hotkey does not work under Wayland, note that you can let other applications, such as your desktop environment, handle the registration of hotkeys and run the command `albert show` or `albert toggle` on activation.
 
 ##### HiDPI?
 
