@@ -34,3 +34,7 @@ There is plenty of other things you can do aside from coding:
 
 <!-- [![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC)
 -->
+
+## Supporters
+
+Thanks go to the supporters Konstantin Vankov, Dmitry Sabani, Marcel Nageler, Brooke Dukes, Georgios Tzanakis and especially to the continuous supporter Diego Pereyra.
