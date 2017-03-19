@@ -56,7 +56,7 @@ There are several extensions that get shipped together with the main albert core
 - Files
 - Firefox
 - [MPRIS](/docs/extensions/mpris/)
-- Secure Shell
+- [Secure Shell](/docs/extensions/ssh/)
 - System
 - Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
