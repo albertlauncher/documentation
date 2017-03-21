@@ -54,7 +54,7 @@ Return the results by an array "items" containing JSON objects representing the 
   - `icon` is the icon of the result (name or path)
   - `actions` is a array of objects representing the actions for the item.
 
-An object representing an action has to contain the following values: `name`, `command` and `arguments`.
+The `id` of the item will be used to sort the items by usage. The `name`, `icon` and `description` will be displayed together as an item in the results list. If `icon` is an absolute path, the given file will be used. If the `icon` is not an absolute path, the algorithm described in the [Icon Theme Specification](https://freedesktop.org/wiki/Specifications/icon-theme-spec/) will be used to locate the icon. An object representing an action has to contain the following values: `name`, `command` and `arguments`.
 
 - `name` is the actions name
 - `command` is the program to be execute
