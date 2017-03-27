@@ -1,6 +1,6 @@
 # Jekyll-based Albert documentation website
 
-# Setup dev env
+### Setup dev env
 
 ```
 git clone git@github.com:albertlauncher/documentation.git 
