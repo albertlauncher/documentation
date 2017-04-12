@@ -79,7 +79,7 @@ To configure, build and install run the following commands:
 git clone https://github.com/albertlauncher/albert.git
 mkdir albert-build
 cd albert-build
-cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
 make
 sudo make install
 ```
