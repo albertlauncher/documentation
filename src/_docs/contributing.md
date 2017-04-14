@@ -37,4 +37,4 @@ There is plenty of other things you can do aside from coding:
 
 ## Supporters
 
-Thanks go to the supporters Konstantin Vankov, Dmitry Sabani, Marcel Nageler, Brooke Dukes, Georgios Tzanakis and especially to the continuous supporter Diego Pereyra.
+Thanks go to the supporters Konstantin Vankov, Dmitry Sabani, Marcel Nageler, Brooke Dukes, Georgios Tzanakis, Yaozhong Yan, Matthew Johnson and especially to the patron Diego Pereyra.

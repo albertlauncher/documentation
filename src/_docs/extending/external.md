@@ -24,7 +24,7 @@ following keys:
 * `author` (string, defaults to 'N/A')
 * `dependencies` (array of strings, defaults to 'empty')
 
-The interface id `iid` (currently `org.albert.extension.external/v2.0`) tells the application the type and version of the communication protocol . If the `iid` is incompatible this plugin will not show up in the plugins list. The remaining keys should be self-explanatory. Errors in this step are fatal: loading will not be continued.
+The interface id `iid` (currently `org.albert.extension.external/v2.1`) tells the application the type and version of the communication protocol . If the `iid` is incompatible this plugin will not show up in the plugins list. The remaining keys should be self-explanatory. Errors in this step are fatal: loading will not be continued.
 
 `INITIALIZE`
 The request to initialize the plugin. The plugin should check if all
@@ -51,10 +51,11 @@ Return the results by an array "items" containing JSON objects representing the 
   - `id` is the plugin wide unique id of the result
   - `name` is the name of the result
   - `description` is the description of the result
+  - `completion` is the completions string of the result
   - `icon` is the icon of the result (name or path)
   - `actions` is a array of objects representing the actions for the item.
 
-The `id` of the item will be used to sort the items by usage. The `name`, `icon` and `description` will be displayed together as an item in the results list. If `icon` is an absolute path, the given file will be used. If the `icon` is not an absolute path, the algorithm described in the [Icon Theme Specification](https://freedesktop.org/wiki/Specifications/icon-theme-spec/) will be used to locate the icon. An object representing an action has to contain the following values: `name`, `command` and `arguments`.
+The `id` of the item will be used to sort the items by usage. The `name`, `icon` and `description` will be displayed together as an item in the results list. `completion` is the string that will be used to replace the text in the input box when the user pressed <kbd>Tab</kbd>. If `icon` is an absolute path, the given file will be used. If the `icon` is not an absolute path, the algorithm described in the [Icon Theme Specification](https://freedesktop.org/wiki/Specifications/icon-theme-spec/) will be used to locate the icon. An object representing an action has to contain the following values: `name`, `command` and `arguments`.
 
 - `name` is the actions name
 - `command` is the program to be execute
