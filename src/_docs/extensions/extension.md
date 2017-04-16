@@ -1,5 +1,7 @@
 ---
 layout: docs
 title: External extension
-permalink: /docs/extensions/externalextension/
+permalink: /docs/extensions/external/
 ---
+
+> TODO
