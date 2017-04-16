@@ -5,6 +5,9 @@ permalink: /docs/changelog/
 ---
 This is the feature centric changelog. For a complete changelog refer to the git log.
 
+v0.11.1 (2017-04-16)
+
+- Bugfixes
 
 v0.11.0 (2017-04-16)
 
