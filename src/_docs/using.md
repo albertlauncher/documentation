@@ -46,18 +46,15 @@ Key  | Action
 From the user perspective the application consists of the launcher, which is the main window, the settings window and the tray icon if you enabled it. However under the hood Albert has a plugin based architecture, which allows the user to modify or extend the functionality of the application.
 There are several extensions that get shipped together with the main albert core.
 
-> TODO Finish this list
-
 - [Applications](/docs/extensions/applications/)
 - [Calculator](/docs/extensions/calculator/)
-- Files
 - [Chromium](/docs/extensions/chromium/)
-- External extensions
-- Files
-- Firefox
+- [External extensions](/docs/extensions/externalextensions/)
+- [Files](/docs/extensions/files/)
+- [Firefox](/docs/extensions/firefox/)
 - [MPRIS](/docs/extensions/mpris/)
 - [Secure Shell](/docs/extensions/ssh/)
-- System
-- Terminal
+- [System](/docs/extensions/system/)
+- [Terminal](/docs/extensions/terminal/)
 - [VirtualBox](/docs/extensions/virtualbox/)
 - [Websearch](/docs/extensions/websearch/)
