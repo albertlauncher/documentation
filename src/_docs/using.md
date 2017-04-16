@@ -49,7 +49,7 @@ There are several extensions that get shipped together with the main albert core
 - [Applications](/docs/extensions/applications/)
 - [Calculator](/docs/extensions/calculator/)
 - [Chromium](/docs/extensions/chromium/)
-- [External extensions](/docs/extensions/externalextensions/)
+- [External extensions](/docs/extensions/external/)
 - [Files](/docs/extensions/files/)
 - [Firefox](/docs/extensions/firefox/)
 - [MPRIS](/docs/extensions/mpris/)
