@@ -6,6 +6,58 @@ permalink: /docs/changelog/
 This is the feature centric changelog. For a complete changelog refer to the git log.
 
 
+v0.11.0 (2017-04-16)
+
+- Fine-grained control of the MIME types to be indexed.
+- Extensions can now have multiple triggers.
+- The sorting algorithm is now stable.
+- Browse mode now lists the results in lexicographical order with directories before the files.
+- The use of fallbacks has been disabled for triggered queries.
+- Further the websearch extension now contains an URL handler.
+- The qss property `selection-color` works as expected now.
+
+v0.10.4 (2017-04-14)
+
+- Bugfixes
+
+v0.10.3 (2017-04-02)
+
+- Terminal extension does no more show suggestions.
+- Any shell querying dropped.
+- Bugfixes
+
+v0.10.2 (2017-03-24)
+
+- Bugfixes
+
+v0.10.1 (2017-03-20)
+
+- Bugfixes
+
+v0.10.0 (2017-03-19)
+
+- Tab completion.
+- Hovering over the input box the mouse wheel can now be used to browse the history.
+- Spotlight themes (Bright, Dark and Space).
+- [MPRIS](/docs/extensions/mpris/) extension
+- [Secure Shell](/docs/extensions/ssh/) extension.
+- The terminal extension now provides the shell aliases too.
+- File browse mode.
+- The application extension allows to ignore the `OnlyShowIn`/`NotShowIn` keys.
+- The bash script to clone the template extension is now deprecated and replaced by a Python script.
+
+v0.9.5 (2017-03-13)
+
+- Bugfixes
+
+v0.9.4 (2017-03-01)
+
+- Bugfixes
+
+v0.9.3 (2017-02-05)
+
+- Bugfixes
+
 v0.9.2 (2017-01-30)
 
 - Bugfixes
