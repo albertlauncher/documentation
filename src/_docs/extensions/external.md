@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: External extensions
+title: External extension
 permalink: /docs/extensions/external/
 ---
 
