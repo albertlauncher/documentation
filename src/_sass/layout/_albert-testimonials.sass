@@ -1,0 +1,45 @@
+.a-testimonials
+  padding: 8rem 0
+
+  @media screen and (max-width: 550px)
+    padding: 3rem 0 6rem
+
+  &-wrapper
+    .row, .columns
+      display: flex
+
+      @media screen and (max-width: 550px)
+        display: block
+
+  .single
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+
+  blockquote
+    margin: 0 0 2rem 0
+    color: #4d4d4d
+    font-style: italic
+    font-size: 1.6rem
+
+  .source
+    text-align: center
+    a
+      text-decoration: none
+      color: #5d5d5d
+      font-weight: 900
+      font-size: 1.8rem
+
+      &:hover
+        color: $link-color
+
+  .half-rule
+    width: 100px
+    margin: 4rem auto
+
+  .call-to-action
+    margin-top: 5rem
+    text-align: center
+
+    p
+      font-size: 2rem
