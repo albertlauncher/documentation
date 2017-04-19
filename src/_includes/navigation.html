@@ -1,0 +1,27 @@
+<nav class="a-navigation">
+  <a class="a-title" href="{{site.url}}">
+      <img class="a-logo" src="{{site.url}}/img/albert.svg" alt="Albert" title="Albert">
+      <span class="">{{site.title}}</span>
+  </a>
+  <ul>
+      <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+          <a href="/docs/">Docs</a>
+      </li>
+      <li class="{% if page.author %}current{% endif %}">
+          <a href="/news/">News</a>
+      </li>
+      <li>
+        <a href="#">Features</a>
+      </li>
+      <li>
+        <a href="#">Downloads</a>
+      </li>
+      <li>
+        <a href="#">Get Involved</a>
+      </li>
+      <li class="{% if page.url contains '/help/' %}current{% endif %}">
+          <a href="/help/">Support</a>
+      </li>
+  </ul>
+
+</nav>
