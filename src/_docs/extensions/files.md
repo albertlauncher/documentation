@@ -10,7 +10,7 @@ You can browse your file system by entering a path or use the offline index to l
 
 One way to access files is to use the offline index. The extension indexes files that can be accesses by their name. In the settings you can set paths that define where the extension should look for files. In this paths the extension recursively scans for files and indexes them.
 
-Your can also exclude directories in the tree of a path by using ignore files. Create a file called `.albertignore` in the folder that contains the file you want to ignore. Fill it with the filenames you want to ignore. One per line. The ignores supports [wildcard matching](http://doc.qt.io/qt-5/qregexp.html#wildcard-matching). Global ignores like e.g. the `.gitignore` provides are currently not supported.
+You can also exclude directories in the tree of a path by using ignore files. Create a file called `.albertignore` in the folder that contains the files you want to ignore and fill it with their names, one filename per line. The ignores supports [wildcard matching](http://doc.qt.io/qt-5/qregexp.html#wildcard-matching).
 
 You also have fine-grained control over the MIME types that should be indexed. The _Advanced_ button in the settings opens a dialog that lets you set a list of wildcard patterns that are used to match against the MIME types of the indexed files. The check boxes besides the button are shortcuts that let you add or remove the most popular patterns ("audio/\*, video/\*, etc.").
 
