@@ -37,4 +37,13 @@ There is plenty of other things you can do aside from coding:
 
 ## Supporters
 
-Thanks go to the supporters Konstantin Vankov, Dmitry Sabani, Marcel Nageler, Brooke Dukes, Georgios Tzanakis, Yaozhong Yan, Matthew Johnson and especially to the patron Diego Pereyra.
+I would like to express my sincere gratitude to the supporters
+Konstantin Vankov,
+Dmitry Sabani,
+Marcel Nageler,
+Brooke Dukes,
+Georgios Tzanakis,
+Yaozhong Yan,
+Matthew Johnson,
+Norbert Fuksz
+and especially to the patron Diego Pereyra.
