@@ -60,6 +60,7 @@ The following table lists the default binary operators supported by the parser.
 |*|multiplication|6|
 |/|division|6|
 |^|raise x to the power of y|7|
+
 \*The assignment operator is special since it changes one of its arguments and can only by applied to variables.
 
 ## Ternary Operators
