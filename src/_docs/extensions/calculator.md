@@ -48,7 +48,7 @@ The following table lists the default binary operators supported by the parser.
 |-|-|-|
 |=|assignement|-1|
 |&&|logical and|1|
-|&#124;&#124;|logical or|2|
+|\|\||logical or|2|
 |<=|less or equal|4|
 |>=|greater or equal|4|
 |!=|not equal|4|
