@@ -8,7 +8,7 @@ As you would expect from a launcher, the main use case is to type a query into a
 
 By pressing the hotkey the launcher is shown and the focused input line awaits a query. If you press <kbd>Esc</kbd> or the hotkey again or if the window looses focus, the window hides. The query entered in the input box is delegated to a set of plugins, which in turn return items that are somehow related to the query.
 
-While typing a query Albert instantly shows the results in a vertical list below the input box. These results can be browsed like a regular list view. With the keys <kbd>⬆</kbd> and <kbd>⬇</kbd> the selection can be moved a single item, <kbd>PgUp</kbd> and <kbd>PgDn</kbd> moves the selection by the amount of visible items, <kbd>Home</kbd> and <kbd>End</kbd> moves the selection to the first and last item respectively. If you found the item you were looking for, you can run its associated action by activating the item with <kbd>⏎</kbd>, <kbd>Enter</kbd> or a mouse click.
+While typing a query Albert instantly shows the results in a vertical list below the input box. These results can be browsed like a regular list view. With the keys <kbd>⬆</kbd> and <kbd>⬇</kbd> the selection can be moved a single item, <kbd>PgUp</kbd> and <kbd>PgDn</kbd> moves the selection by the amount of visible items, <kbd>Ctrl</kbd>+<kbd>Home</kbd> and <kbd>Ctrl</kbd>+<kbd>End</kbd> moves the selection to the first and last item respectively. You have to hold <kbd>Ctrl</kbd> since the input line has precedence. If you found the item you were looking for, you can run its associated action by activating the item with <kbd>⏎</kbd>, <kbd>Enter</kbd> or a mouse click.
 
 
 If a query yielded no results, several fallback items are provided. Fallback items are items that can handle every query, e.g. an item that opens an external search engine like google in your browser or your local dictionary application.
@@ -35,7 +35,7 @@ Key  | Action
 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> | Activate the 2<sup>nd</sup> alternative action of the selected item
 <kbd>Shift</kbd>+<kbd>Enter</kbd> | Activate the 3<sup>rd</sup> alternative action of the selected item
 <kbd>Ctrl</kbd>+<kbd>,</kbd><br><kbd>Alt</kbd>+<kbd>,</kbd> | Show the settings dialog
-<kbd>⬆</kbd>,<kbd>⬇</kbd>,<br><kbd>PgUp</kbd>,<kbd>PgDn</kbd>,<br><kbd>Home</kbd>,<kbd>End</kbd> | Navigation. If the first item is selected, <kbd>⬆</kbd> iterates though the query history.
+<kbd>⬆</kbd>,<kbd>⬇</kbd>,<br><kbd>PgUp</kbd>,<kbd>PgDn</kbd>,<br><kbd>Ctrl</kbd>+<kbd>Home</kbd>,<br><kbd>Ctrl</kbd>+<kbd>End</kbd> | Navigation in the results list. If the first item is selected, <kbd>⬆</kbd> iterates though the query history.
 <kbd>Ctrl</kbd>+<kbd>⬆</kbd><br><kbd>Ctrl</kbd>+<kbd>⬇</kbd> | Navigate in query history
 <kbd>Alt</kbd>+<kbd>F4</kbd> | Quit Albert
 
