@@ -1,10 +1,5 @@
-# Jekyll-based Albert documentation website
+# Jekyll-powered Albert documentation website source code
 
-### Setup dev env
+Automatically built and deployed by Travis CI.
 
-```
-git clone git@github.com:albertlauncher/documentation.git 
-cd documentation
-git submodule init
-git submodule update
-```
+The output is goes [here](https://github.com/albertlauncher/albertlauncher.github.io) and is browsable [here](https://albertlauncher.github.io/).
