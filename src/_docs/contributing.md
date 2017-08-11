@@ -7,7 +7,7 @@ permalink: /docs/contributing/
 I'd like like to invite anyone to be part of the project. Generally this is pretty straight forward: Fork the repository, push your changes to the fork and finally send a pull request. However due to problems in the past there are some rules on ***how*** you should contribute:
 
 1. _**Do absolutely not just implement things and send a PR!**_
-2. [Contact](/docs/contact/) us / Open an issue / Comment an issue.
+2. [Contact](/help/) us / Open an issue / Comment an issue.
 3. Discuss if the idea is reasonable and find a well designed approach.
 4. Work on the issue. Reflect your work. If you have doubts, communicate it.
 5. Test it. Not real world testing, but use it a few days yourself.
