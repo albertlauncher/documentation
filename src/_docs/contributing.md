@@ -15,10 +15,7 @@ I'd like like to invite anyone to be part of the project. Generally this is pret
 
 This way nobody has to reject PR's, nobodies PR's will get rejected and there won't be multiple developers working on the same issue.
 
-By contributing your code, you agree to license your contribution under the GPL license. According to the goals, only code that is well designed, documented, clear and readable will be accepted. In the words of the developers of [Syncthing](http://docs.syncthing.net/dev/intro.html#why-are-you-being-so-hard-on-my-pull-request):
-
->The contributor says: *"I implemented a new feature in your project for you!"*
->However, the maintainer hears: *"I wrote some code. I’d like you to test, support, document and maintain it for me forever."*
+By contributing your code, you agree to license your contribution under the GPL license. According to the goals, only code that is well designed, documented, clear and readable will be accepted.
 
 ## Other contributions
 
