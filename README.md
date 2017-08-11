@@ -1,4 +1,4 @@
-# Jekyll-powered Albert documentation website source code
+# Jekyll-powered Albert documentation website
 
 Automatically built and deployed by Travis CI.
 
