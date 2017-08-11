@@ -1,0 +1,14 @@
+language: ruby
+
+install: gem install jekyll # html-proofer
+
+script: jekyll build -s src -d ./site # && htmlproofer ./site
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  on:
+    branch: master
+  script: ./deploy.sh
+
+sudo: false
