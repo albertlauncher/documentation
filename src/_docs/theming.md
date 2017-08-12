@@ -4,4 +4,37 @@ title: Theming Albert
 permalink: /docs/theming/
 ---
 
-Create your own theme using our theme creator: [theme creator](/docs/theming/themecreator/)
+The main user interface can be customized using [QStyleSheets](http://doc.qt.io/qt-5/stylesheet.html). Qt Style Sheets are a powerful mechanism that allows you to customize the appearance of widgets. The concepts, terminology, and syntax of Qt Style Sheets are heavily inspired by HTML Cascading Style Sheets (CSS) but adapted to the world of widgets.
+
+Before handcrafting your own stylesheet you might want to consider the convenient [theme creator](/docs/theming/themecreator/) written by Ricardo Fuhrmann. If you're not satisfied with the output, you can still customize the stylesheet.
+
+## Writing stylesheets
+
+The user interface consists of five widgets: The window itself, the input line, the settings button the two list views for the items and their actions. In Qt terms a [QFrame](http://doc.qt.io/qt-5/qframe.html), a [QLineEdit](http://doc.qt.io/qt-5/qlineedit.html), a [QPushButton](http://doc.qt.io/qt-5/qpushbutton.html) and a [QListView](http://doc.qt.io/qt-5/qlistview.html). All of them support the [box model](http://doc.qt.io/qt-5/stylesheet-customizing.html).
+
+Tho differentiate the views they have an ID Selector to refer to it, for the sake of completeness all other widgets too: `frame`, `inputLine`, `settingsButton`, `resultsList` (until v0.12 `proposalList`) and `actionList`. You can identify them like this :
+
+```
+QListView#actionList {
+	font-size: 20px;
+}
+```
+
+There is an excellent documentation on QStyleSheets:
+
+- [Overview](http://doc.qt.io/qt-5/stylesheet.html)
+  - [The Style Sheet Syntax](http://doc.qt.io/qt-5/stylesheet-syntax.html)
+  - [Customizing Qt Widgets Using Style Sheets](http://doc.qt.io/qt-5/stylesheet-customizing.html)
+  - [Qt Style Sheets Reference](http://doc.qt.io/qt-5/stylesheet-reference.html ), especially the sections
+    - [Customizing QFrame](http://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qframe)
+    - [Customizing QLineEdit](http://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qlineedit)
+    - [Customizing QListView](http://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qlistview)
+  - [Qt Style Sheets Examples](http://doc.qt.io/qt-5/stylesheet-examples.html)
+
+Further check the [existing themes](https://github.com/albertlauncher/albert/tree/dev/data/themes).
+
+If your done place the file in "~/.local/share/albert/themes/" and restart albert. The restart is only necessary because the file is not listed. If the file is listed you can apply changes by switching to and other theme and back again.
+
+## Known issues
+
+There is one single limitation to the customizablility of the UI. The subtext in the list views items. The item is printed using a custom QStyleItemDelegate and the regular items do not intend to display a second text. So there is no (proper) possibilty to design the subtexts font size.
