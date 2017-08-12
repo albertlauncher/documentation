@@ -33,8 +33,8 @@ There is an excellent documentation on QStyleSheets:
 
 Further check the [existing themes](https://github.com/albertlauncher/albert/tree/dev/data/themes).
 
-If your done place the file in "~/.local/share/albert/themes/" and restart albert. The restart is only necessary because the file is not listed. If the file is listed you can apply changes by switching to and other theme and back again.
+If your done place the file in "~/.local/share/albert/themes/" and restart albert. The restart is necessary because file list is read once at start. If the file is listed you can apply changes by switching to and other theme and back again.
 
 ## Known issues
 
-There is one single limitation to the customizablility of the UI. The subtext in the list views items. The item is printed using a custom QStyleItemDelegate and the regular items do not intend to display a second text. So there is no (proper) possibilty to design the subtexts font size.
+There a limitation in the customizability of the UI: The subtext in the list views items. The item is printed using a custom QStyleItemDelegate and the regular items do not intend to display a second text. So there is no (proper) possibilty to design the subtexts font size.
