@@ -1,4 +1,4 @@
-# Jekyll-powered Albert documentation website
+# Jekyll-powered Albert documentation website [![Build Status](https://travis-ci.org/albertlauncher/documentation.svg?branch=master)](https://travis-ci.org/albertlauncher/documentation)
 
 Automatically built and deployed by Travis CI.
 
