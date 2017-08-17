@@ -4,6 +4,8 @@ title: Using Albert
 permalink: /docs/using/
 ---
 
+To get up an running just run `albert` in terminal and press the hotkey (which is configured upon install, from the Settings menu item in the tray or in ~/.config/albert.config). To make albert autostart checkout [Troubleshooting](/docs/faq). 
+
 As you would expect from a launcher, the main use case is to type a query into an input box and finally to interact with some sort of results. Actually there is not much more Albert allows you to do - launching things. No more, no less.
 
 By pressing the hotkey the launcher is shown and the focused input line awaits a query. If you press <kbd>Esc</kbd> or the hotkey again or if the window looses focus, the window hides. The query entered in the input box is delegated to a set of plugins, which in turn return items that are somehow related to the query.
