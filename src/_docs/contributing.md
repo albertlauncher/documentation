@@ -35,6 +35,7 @@ There is plenty of other things you can do aside from coding:
 ## Supporters
 
 I would like to express my sincere gratitude to the supporters
+
 Konstantin Vankov,
 Dmitry Sabani,
 Marcel Nageler,
@@ -42,5 +43,9 @@ Brooke Dukes,
 Georgios Tzanakis,
 Yaozhong Yan,
 Matthew Johnson,
-Norbert Fuksz
-and especially to the patron Diego Pereyra.
+Norbert Fuksz,
+Mario Hros
+
+and especially to my patrons
+
+Diego Pereyra and M.H.
