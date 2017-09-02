@@ -12,7 +12,7 @@ Before handcrafting your own style sheet you might want to consider the convenie
 
 The user interface consists of five widgets: The window itself, the input line, the settings button the two list views for the items and their actions. In Qt terms a [QFrame](http://doc.qt.io/qt-5/qframe.html), a [QLineEdit](http://doc.qt.io/qt-5/qlineedit.html), a [QPushButton](http://doc.qt.io/qt-5/qpushbutton.html) and a [QListView](http://doc.qt.io/qt-5/qlistview.html). All of them support the [box model](http://doc.qt.io/qt-5/stylesheet-customizing.html).
 
-Tho differentiate the views they have an ID Selector to refer to it, for the sake of completeness all other widgets too: `frame`, `inputLine`, `settingsButton`, `resultsList` (until v0.12 `proposalList`) and `actionList`. You can identify them like this :
+To differentiate the views they have an ID Selector to refer to it, for the sake of completeness all other widgets too: `frame`, `inputLine`, `settingsButton`, `resultsList` (until v0.12 `proposalList`) and `actionList`. You can identify them like this :
 
 ```
 QListView#actionList {
