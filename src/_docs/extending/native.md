@@ -44,7 +44,7 @@ Implement the `Core::Frontend` interface. Implementing a frontend is a cumbersom
 
 ### The plugin metadata
 
-The [plugin metadata(https://github.com/albertlauncher/albert/blob/dev/plugins/templateExtension/metadata.json) is a mandatory file that is needed to compile the plugin. Its content is *JSON* formatted and its name has to be equal to the the one specified in the `Q_PLUGIN_METADATA` in the extensions main class. The convention is to call it `metadata.json`. Its fields give the application information about the plugin without having to load the plugin.
+The [plugin metadata](https://github.com/albertlauncher/albert/blob/dev/plugins/templateExtension/metadata.json) is a mandatory file that is needed to compile the plugin. Its content is *JSON* formatted and its name has to be equal to the the one specified in the `Q_PLUGIN_METADATA` in the extensions main class. The convention is to call it `metadata.json`. Its fields give the application information about the plugin without having to load the plugin.
 
 Currently the plugin specification has the following keys:
 - `id` is the unique identifier of the app. A plugin will not be loaded if its id has been registered already by an other plugin.
