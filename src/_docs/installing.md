@@ -46,31 +46,13 @@ Building from sources is the least convenient, but most flexible way. The build 
 
 ### Prerequisites
 
-To build Albert from sources you will need CMake (≥2.8.12) and a C++ compiler supporting at least the C++11 standard. Albert uses the following modules of the Qt toolkit (≥5.5):
+The goal is to be always compatible to the lasest Ubuntu LTS release. To build Albert from sources you will need CMake, a C++ compiler supporting at least the C++14 standard and the Qt toolkit. 
 
-- QtCore, QtGui, QtWidgets, QtSQL, QtNetwork from the [Qt Essentials](http://doc.qt.io/qt-5/qtmodules.html#qt-essentials)
-- [Qt Concurrent](http://doc.qt.io/qt-5/qtconcurrent-index.html) for threading support
-- [Qt X11 Extras](doc.qt.io/qt-5/qtx11extras-index.html) for hotkeys on Linux
-- [Qt Svg](http://doc.qt.io/qt-5/qtsvg-index.html) for SVG rendering
+Further the plugins may introduce optional dependencies, e.g the calculator plugin needs the [muparser](http://muparser.beltoforion.de/) library and the QMLBoxModel frontend needs the QtDeclarative library. Check the [travis file](https://github.com/albertlauncher/albert/blob/dev/.travis.yml) for an updated list of dependencies.
 
-Further the plugins may introduce optional dependencies, e.g the calculator plugin needs the [muparser](http://muparser.beltoforion.de/) library. If the optional dependency is not installed the plugin may refuse to load, the core application will run fine though.
+Problems may arise with distributions that split submodules into optional dependencies. E.g. Ubuntu is known to split the SQL driver submodules into separate packages. Elementary OS which builds on Ubuntu does not install optional dependencies, users may therefore encounter linkage errors a have to explicitly install the missing dependencies.
 
-Problems may arise with distributions that split submodules into optional dependencies. E.g. Ubuntu is known to split the SQL driver submodules into separate packages. Elementary OS which builds on Ubuntu does not install optional dependencies, users may therefor encounter linkage errors a have to explicitly install the missing dependencies.
-
-Another concern is the difference between compile time and runtime dependencies. Some distributions ship libraries as single packages while others ship a normal package and a *\*-dev* package. Dev packages usually contain the header files and static libraries additionally to the shared libraries. Normal packages are stripped down to the shared libraries. On distributions that do not differ between this kind of packages basically every package is a dev package. For the compilation on e.g. Ubuntu dev packages are needed at compile time but at runtime normal packages are sufficient.
-
-Here are some hints for the package names on some operating systems:
-
-###### Arch Linux
-```bash
-sudo pacman -S gcc cmake qt5-base qt5-x11extras qt5-svg muparser
-```
-
-###### Ubuntu 14.04 and newer
-```bash
-sudo apt-get install g++ cmake qtbase5-dev libmuparser-dev \
-  libqt5x11extras5-dev libqt5svg5-dev libqt5sql5-sqlite
-```
+Another concern is the difference between compile time and runtime dependencies. Some distributions ship libraries as single packages while others ship a normal package and a *\*-dev* package. Dev packages usually contain the header files and static libraries additionally to the shared libraries. Normal packages are stripped down to the shared libraries. On distributions that do not differ between this kind of packages basically every package is a dev package. For the compilation on e.g. Ubuntu dev packages are needed at compile time but at runtime normal packages are sufficient. If the optional dependency of a plugin is not available at runtime it will refuse to load, the core application will run fine though. 
 
 ### Compilation
 
