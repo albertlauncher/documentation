@@ -58,7 +58,7 @@ Another concern is the difference between compile time and runtime dependencies.
 
 To configure, build and install run the following commands:
 ```bash
-git clone https://github.com/albertlauncher/albert.git
+git clone --recursive https://github.com/albertlauncher/albert.git
 mkdir albert-build
 cd albert-build
 cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
