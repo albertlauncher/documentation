@@ -34,8 +34,8 @@ sudo apt-get install albert
 ```bash
 wget -qO - https://repo.adminlounge.org/archive.key \
     | sudo apt-key add -
-sudo echo "deb http://repo.adminlounge.org/ jessie main" \
-    > /etc/apt/sources.list.d/adminlounge.list
+sudo bash -c 'echo "deb http://repo.adminlounge.org/ jessie main" \
+    > /etc/apt/sources.list.d/adminlounge.list'
 sudo apt-get update
 sudo apt-get install albert
 ```
