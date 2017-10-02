@@ -46,6 +46,8 @@ If you came here because setting the hotkey does not work under Wayland, note th
 
 This is up to Qt. Unfortunately Qt does not support [HiDPI scaling](http://doc.qt.io/qt-5/highdpi.html) until 5.6. From there on you can use `QT_SCALE_FACTOR=2 albert` to run albert scaled. A better solution might be to set `QT_AUTO_SCREEN_SCALE_FACTOR=1` globally. This enables automatic scaling, based on the pixel density of the monitor. Note that this affects all Qt applications.
 
-##### fatal error: xyz.h: No such file or directory. compilation terminated.
+##### fatal error: \*.h: No such file or directory.
 
 Check if you have installed the dependencies. A good way to check the current dependencies is to check `depends`, `makedepends` and `optdepends` sections in the official Arch Linux [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=albert). If you dont want to build a specific plugin you dont have to. Configure CMake accordingly by setting build switches, e.g. `-DBUILD_VIRTUALBOX=OFF`. See the possible build switches and their default values [here](https://github.com/albertlauncher/plugins/blob/master/CMakeLists.txt).
+
+In general you should avoid compiling albert on your own and use package managers.
