@@ -3,10 +3,13 @@
 {% include head.html %}
 <body>
     <main class="wrapper">
+      {% include hamburger-menu.html %}
+      {% include navigation-overlay.html %}
       {% include header.html %}
       {{ content }}
       {% include footer.html %}
       {% include anchor_links.html %}
     </main>
+  {% include scripts.html %}
 </body>
 </html>

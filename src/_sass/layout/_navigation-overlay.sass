@@ -1,0 +1,39 @@
+.a-navigation-overlay
+	display: flex
+	position: fixed
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0, 0.9)
+	min-width: 100%
+	min-height: 100%
+	transition: opacity 0.5s, visibility 0s 0.5s
+	z-index: 100000
+	visibility: hidden
+	opacity: 0
+	justify-content: center
+	align-items: center
+
+	&.open
+		opacity: 1
+		visibility: visible
+		transition: opacity 0.5s
+
+	ul, li
+		list-style-type: none
+
+	.nav-link
+		text-align: center
+		font-size: 2rem
+		color: #818181
+		padding: 8px
+		text-decoration: none
+
+		&:hover
+			color: #fff
+			text-decoration: underline
+
+	.instruction
+		padding: 8px
+		align-self: flex-end
+		color: #818181
+		font-size: 1.3rem
