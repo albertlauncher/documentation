@@ -13,6 +13,8 @@ To save state between the executions the plugin can return a JSON object called 
 
 ## Deployment
 
+> Note that the exteral extensions have to be executable to be used by albert
+
 The extension check its data directories for a directory called `extensions`. The name of a data directory is the id of the extension. I the case of the external extension this is `org.albert.extension.externalextensions`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order:
 
 * ~/.local/share/albert/org.albert.extension.externalextensions/extensions
@@ -20,4 +22,5 @@ The extension check its data directories for a directory called `extensions`. Th
 * /usr/share/albert/org.albert.extension.externalextensions/extensions
 
 Ids are guaranteed to be unique. This means that if several of those path contain a plugins with identical ids, only the first found plugin will be used.
+
 
