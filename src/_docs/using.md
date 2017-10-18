@@ -4,7 +4,7 @@ title: Using Albert
 permalink: /docs/using/
 ---
 
-To get up and running just run `albert` in terminal and press the hotkey (which is configured upon install) to start using it. When albert is running you can configure or quit the application via the tray icon. To make albert autostart checkout [Troubleshooting](/docs/faq). 
+To get up and running just run `albert` in terminal and press the hotkey (which is configured upon install) to start using it. When albert is running you can configure or quit the application via the tray icon. To make albert autostart checkout [Troubleshooting](/docs/faq).
 
 As you would expect from a launcher, the main use case is to type a query into an input box and finally to interact with some sort of results. Actually there is not much more Albert allows you to do - launching things. No more, no less.
 
@@ -47,10 +47,18 @@ There are several extensions that get shipped together with the main albert core
 - [Chromium](/docs/extensions/chromium/)
 - [External extensions](/docs/extensions/external/)
 - [Files](/docs/extensions/files/)
-- [Firefox](/docs/extensions/firefox/)
+- Firefox
+- Hash generator
+- Key value store
 - [MPRIS](/docs/extensions/mpris/)
+- Python
 - [Secure Shell](/docs/extensions/ssh/)
-- [System](/docs/extensions/system/)
-- [Terminal](/docs/extensions/terminal/)
+- System
+- Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
 - [Websearch](/docs/extensions/websearch/)
+
+## The frontends
+
+- QML BoxModel
+- Widgets BoxModel
