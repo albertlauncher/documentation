@@ -13,7 +13,7 @@ This article is about the native extension of the albert launcher.
 
 ### Overview
 
-A native albert extension is a [Qt Plugin](http://doc.qt.io/qt-5/plugins-howto.html#the-low-level-api-extending-qt-applications.) which is nothing else but a special shared library. A plugin has to have the correct interface id (IID) and of course to implement this interfaces to be loaded, e.g. `Core::Extension` or `Core::Frontend`. The best way to to get an overview is to read the [core library interface](https://github.com/albertlauncher/albert/tree/dev/src/lib/albertcore/include) classes. The headers comments and the other plugins especially the [template extension](https://github.com/albertlauncher/albert/tree/dev/plugins/templateExtension) should get you started.
+A native albert extension is a [Qt Plugin](http://doc.qt.io/qt-5/plugins-howto.html#the-low-level-api-extending-qt-applications.) which is nothing else but a special shared library. A plugin has to have the correct interface id (IID) and of course to implement this interfaces to be loaded, e.g. `Core::Extension` or `Core::Frontend`. The best way to to get an overview is to read the [core library interface](https://github.com/albertlauncher/albert/tree/master/lib/albertcore/include) classes. The headers comments and the other plugins especially the [template extension](https://github.com/albertlauncher/plugins/tree/master/templateExtension) should get you started.
 
 The internal API is still not final yet. If you want to write a plugin check the other extensions. There are some caveats and requirements you should know:
 
@@ -24,7 +24,7 @@ The internal API is still not final yet. If you want to write a plugin check the
 
 ### Getting started
 
-The best way to get started is to copy the [template extension](https://github.com/albertlauncher/albert/tree/dev/plugins/templateExtension) and adjust the contents.
+The best way to get started is to copy the [template extension](https://github.com/albertlauncher/plugins/tree/master/templateExtension) and adjust the contents.
 
 To keep the code readable there are some conventions that are not strictly necessary, but the intention is to unify the filenames of the plugins.The main class of the extension is called `Extension` and if the extension returns a configuration widget the class shall be called `ConfigWidget`. The metadata file is called `metadata.json`. This would implicitly lead to naming conflicts, therefor all classes of an extensions live in a dedicated namespace having the name of the extension. In bullets:
 
@@ -44,7 +44,7 @@ Implement the `Core::Extension` and `Core::QueryHandler` interface. Especially `
 
 The `Core::Query` object contains all necessary information and accepts objects of abstract type `Core::Item`. Subclass it or use `Core::StandardItem`. The items interface has a getter for actions of abstract type `Core::Action`. Again subclass it or use `Core::StandardAction`. Furter there is the `Core::IndexableItem` interface with its standard implementation `Core::StandardIndexItem`. These items are for the use with the utility class `Core::OfflineIndex` which does basic offline indexing and searching for you.
 
-To get a detailed description of the interfaces read the header files of the [core library interface classes](https://github.com/albertlauncher/albert/tree/dev/src/lib/albertcore/include).
+To get a detailed description of the interfaces read the header files of the [core library interface classes](https://github.com/albertlauncher/albert/tree/master/lib/albertcore/include).
 
 ### Frontend plugins
 
@@ -53,7 +53,7 @@ Implement the `Core::Frontend` interface. Implementing a frontend is a cumbersom
 
 ### The plugin metadata
 
-The [plugin metadata](https://github.com/albertlauncher/albert/blob/dev/plugins/templateExtension/metadata.json) is a mandatory file that is needed to compile the plugin. Its content is *JSON* formatted and its name has to be equal to the the one specified in the `Q_PLUGIN_METADATA` in the extensions main class. The convention is to call it `metadata.json`. Its fields give the application information about the plugin without having to load the plugin.
+The plugin metadata is a mandatory file that is needed to compile the plugin. Its content is *JSON* formatted and its name has to be equal to the the one specified in the `Q_PLUGIN_METADATA` in the extensions main class. The convention is to call it `metadata.json`. Its fields give the application information about the plugin without having to load the plugin.
 
 Currently the plugin specification has the following keys:
 - `id` is the unique identifier of the app. A plugin will not be loaded if its id has been registered already by an other plugin.

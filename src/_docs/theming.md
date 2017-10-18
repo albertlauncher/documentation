@@ -31,7 +31,7 @@ There is an excellent documentation on QStyleSheets:
     - [Customizing QListView](http://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qlistview)
   - [Qt Style Sheets Examples](http://doc.qt.io/qt-5/stylesheet-examples.html)
 
-Further check the [existing themes](https://github.com/albertlauncher/albert/tree/dev/plugins/widgetboxmodel/share/themes).
+Further check the [existing themes](https://github.com/albertlauncher/plugins/tree/master/widgetboxmodel/share/themes).
 
 If your done place the file in "~/.local/share/albert/org.albert.frontend.boxmodel.widgets/themes/" and restart albert. The restart is necessary because file list is read once at start. If the file is listed you can apply changes by switching to other themes and and back again.
 

@@ -1,6 +1,5 @@
 - title: User guide
   docs:
-    - index
     - installing
     - using
     - extending
