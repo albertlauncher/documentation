@@ -51,7 +51,7 @@ There are several extensions that get shipped together with the main albert core
 - Hash generator
 - Key value store
 - [MPRIS](/docs/extensions/mpris/)
-- Python
+- [Python](/docs/extensions/python/)
 - [Secure Shell](/docs/extensions/ssh/)
 - System
 - Terminal
