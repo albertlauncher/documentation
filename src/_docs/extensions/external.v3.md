@@ -15,7 +15,7 @@ following keys:
 * `author` (string, defaults to 'N/A')
 * `dependencies` (array of strings, defaults to 'empty')
 
-The interface id `iid` (currently `org.albert.extension.external/v2.0` tells the application the type and version of the communication protocol . If the `iid` is incompatible this plugin will not show up in the plugins list. The remaining keys should be self-explanatory. Errors in this step are fatal: loading will not be continued.
+The interface id `iid` (currently `org.albert.extension.external/v3.0` tells the application the type and version of the communication protocol . If the `iid` is incompatible this plugin will not show up in the plugins list. The remaining keys should be self-explanatory. Errors in this step are fatal: loading will not be continued.
 
 #### `INITIALIZE`
 The request to initialize the plugin. The plugin should load potential state from persistant storage, check if all requirements are met and set the exit code accordingly. (Everything but zero is an error). Errors in this step are fatal: loading will not be continued.
