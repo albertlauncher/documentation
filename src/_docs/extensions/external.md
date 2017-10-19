@@ -4,9 +4,10 @@ title: External extension
 permalink: /docs/extensions/external/
 ---
 
-> Note: This documentation refers to the extension shipped from v0.13 on
+***Note: This scripting extension is deprecated as of v0.14.0. Use the pyhton extension instead***
 
-Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called _external plugins_.
+
+Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called _external plugins_. This documentation refers to the extension shipped with v0.13.
 
 An external plugin (hereafter plugin) is basically an executable which has a particular interface. Imagine the plugin as a set of functions that can be dynamically invoked. Which function is invoked, is defined by the environment variable `$ALBERT_OP`. The plugin should read this environment variable and react accordingly. Additionally to the mandatory environment variable `$ALBERT_OP` there may be some other variables defined. Imagine those as the parameters to the dynamic function. The return value of this function is returned to the application through the standard output stream (stdout). Depending on `$ALBERT_OP` the expected data may differ, but all responses have to be a JSON object containing properties. The set of possible `$ALBERT_OP`s and the expected properties and their structures are defined by the [*Communication protocol v3*](/docs/extensions/external/v3/) (Since v0.13, [*v2*](/docs/extensions/external/v2/) until 0.13).
 
