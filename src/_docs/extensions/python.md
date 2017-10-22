@@ -4,11 +4,121 @@ title: Python extension
 permalink: /docs/extensions/python/
 ---
 
-The Python plugin makes the application extendable by embedding Python modules.
+> TODO: Finish
 
->Todo nice description
+The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is "Python extension" and a Python modules in this context is called "Python extension" too, this article refers to the Python extensions by using the term *Python modules*. A Python module must have a specific interface to be applicable as extension. The interface uses classes which are defined in the builtin `albertv0` module. Check the relevant sections below.
 
->Todo Api reference
+## Extension interface 
+
+The extension interface is a versioned protocol that describes how the Python extension interacts with the Python modules. The current interface identifier is "PythonInterface/v0.1". The interface currently comprises the following:
+
+##### `handleQuery(Query)`
+Mandatory function
+
+##### `initialize()`
+Optional function
+
+##### `finalize()`
+Optional function
+
+##### `__iid__`
+Mandatory variable (string)
+
+##### `__prettyname__`
+Optional variable (string)
+
+##### `__version__`
+Optional variable (string)
+
+##### `__trigger__`
+Optional variable (string)
+
+##### `__author__`
+Optional variable (string)
+
+##### `__dependencies__`
+Optional variable (list of strings)
+
+## Api reference - The `albertv0` module
+
+The Python API exposes several fuctions and classes for use with Albert. 
+
+### The `Query` class
+
+The query class is passed to the function handle query. It holds the following read-only properties.
+
+##### `string`
+
+##### `rawString`
+
+##### `trigger`
+
+##### `isTriggered`
+
+##### `isValid`
+
+### Abstract classes
+
+##### `ActionBase`
+
+##### `ItemBase`
+
+##### `Urgency`
+
+### Standard actions
+
+##### `FuncAction`
+
+##### `ClipAction`
+
+##### `UrlAction`
+
+##### `ProcAction`
+
+##### `TermAction`
+
+### The `Item` class
+
+##### `Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])`
+ctor
+
+##### `id`
+variable : string
+
+##### `icon`
+variable : string
+
+##### `text`
+variable : string
+
+##### `subtext`
+variable : string
+
+##### `completion`
+variable : string
+
+##### `urgency`
+variable : string
+
+##### `addAction(Action)`
+Function taking actions
+
+### Free functions
+
+##### `debug(text)`
+Logging function
+
+##### `info(text)`
+Logging function
+
+##### `warning(text)`
+Logging function
+
+##### `critical(text)`
+Logging function
+
+##### `iconLookup(iconName)`
+Performs xdg icon lookup and returns a path. Empty if nothing found.
 
 ## Deployment
 
