@@ -4,7 +4,9 @@ title: Python extension
 permalink: /docs/extensions/python/
 ---
 
-The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is "Python extension" and a Python modules in this context is called "Python extension" too, this article refers to the Python extensions by using the term *Python modules*. A Python module must have a specific interface to be applicable as extension. The interface uses classes which are defined in the builtin `albertv0` module. Check the relevant sections below.
+The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is "Python extension" and a Python module in this context is called "Python extension" too, this article refers to the Python extensions by using the term *Python modules*.
+
+A Python module must have a specific interface to be applicable as extension. The interface uses classes which are defined in the builtin `albertv0` module. Check the relevant sections below.
 
 The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
 
@@ -38,26 +40,31 @@ Optional variable (string). If this extension should be run exclusively, this va
 Optional variable (string). This variable should hold the name of the author of the extension.
 
 ##### `__dependencies__`
-Optional variable (list of strings). This string should contain any dependencies the extension need to be used.
+Optional variable (list of strings). This string should contain any dependencies the extension needs to be used.
 
 
 ## Api reference - The `albertv0` module
 
-The Python API exposes several functions and classes for use with Albert.
+The built-in albert module exposes several functions and classes for use with Albert.
 
 ### The `Query` class
 
 The query class represents a query execution. It holds the necessary information to handle a Query. It is passed to the handleQuery function. It holds the following read-only properties.
 
 ##### `string`
+This is the actual query string without the trigger. If the query is not triggered this string equals rawstring.
 
 ##### `rawString`
+This is the full query string including the trigger. If the query is not triggered this string equals string.
 
 ##### `trigger`
+This is the trigger that has been used to start this extension.
 
 ##### `isTriggered`
+Indicates that this query has been triggered.
 
 ##### `isValid`
+This flag indicates if the query is valid. A query is valid as long as the core cancels it. You should regularly check this flag and abort the query handling if the flag is False to release threads in the threadpool for the next query.
 
 ### Abstract classes
 
