@@ -18,6 +18,8 @@ The extension interface is a versioned protocol that describes how the Python ex
 ##### `handleQuery(Query)`
 Mandatory function. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution.
 
+This function should return a list of Item objects. See the Item class section below. 
+
 ##### `initialize()`
 Optional function. This function is called when the extension is loaded.
 
@@ -68,66 +70,84 @@ This flag indicates if the query is valid. A query is valid as long as the core 
 
 ### Abstract classes
 
-##### `ActionBase`
+##### The `ActionBase` class
 
-##### `ItemBase`
+The base class for actions. This is a wrapper for the internal Action interface. You should not need it. If you think you do I‘d be interested why. Please contact me. 
 
-##### `Urgency`
+##### The `ItemBase` class
 
-### Standard actions
+The base class for items. This is a wrapper for the internal Item interface. You should not need this unless you need the Urgency enum. 
 
-##### `FuncAction`
+###### The `Urgency` enum
+The urgency of an item. Note that this enum is defined in the scope of the ItemBase class. 
 
-##### `ClipAction`
+### Standard action classes
+
+Standard actions are realizations of the Action interface from the core. They implement often used actions for Albert items.
+
+##### The `ClipAction` class
+This class copies the given text to the clipboard on activation. 
 
 ##### `UrlAction`
+This class opens the given URL with the systems default URL handler for the scheme of the URL on activation. 
 
 ##### `ProcAction`
+This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set. 
 
 ##### `TermAction`
+This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. 
+
+##### The `FuncAction` class
+This class is a general purpose action. On activation the callable is executed. 
 
 ### The `Item` class
 
+This class represents a result item. Objects of this class are intended to be returned by the handleQuery function.  
+
 ##### `Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])`
-ctor
+This is the constructor of the item.
+
+Note that the default icon path is ":python_module" which is an embedded resource icon depicting a Python script and the urgency defaults to normal. 
 
 ##### `id`
-variable : string
+The identifier string of the item. It is used for ranking aloritms and should not be empty. 
 
 ##### `icon`
-variable : string
+The path of the icon displayed in the item. 
 
 ##### `text`
-variable : string
+The primary text of the item.
 
 ##### `subtext`
-variable : string
+The secondary text of the item. This text should have informative character. 
 
 ##### `completion`
-variable : string
+The completion string of the item. This string will be used to replace the input line when the user hits the Tab key on an item. 
+
+Note that the semantics may vary depending in the context. Often evaluate semantics are more appropriate. 
 
 ##### `urgency`
-variable : string
+The urgency of the item. Note that the Urgency enum is defined in the ItemBase class. See the Urgency enum. 
 
 ##### `addAction(Action)`
-Function taking actions
+Add an action to the item. 
 
 ### Free functions
 
 ##### `debug(text)`
-Logging function
+Log a debug message. Note that this is effectively a NOP in release builds. 
 
 ##### `info(text)`
-Logging function
+Log an info message. 
 
 ##### `warning(text)`
-Logging function
+Log a warning message. 
 
 ##### `critical(text)`
-Logging function
+Log a critical message. 
 
 ##### `iconLookup(iconName)`
-Performs xdg icon lookup and returns a path. Empty if nothing found.
+Perform xdg icon lookup and return a path. Empty if nothing found.
 
 ## Deployment
 
