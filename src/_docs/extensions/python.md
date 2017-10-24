@@ -4,48 +4,50 @@ title: Python extension
 permalink: /docs/extensions/python/
 ---
 
-> TODO: Finish
-
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is "Python extension" and a Python modules in this context is called "Python extension" too, this article refers to the Python extensions by using the term *Python modules*. A Python module must have a specific interface to be applicable as extension. The interface uses classes which are defined in the builtin `albertv0` module. Check the relevant sections below.
 
-## Extension interface 
+The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
+
+
+## Extension interface (0.1)
 
 The extension interface is a versioned protocol that describes how the Python extension interacts with the Python modules. The current interface identifier is "PythonInterface/v0.1". The interface currently comprises the following:
 
 ##### `handleQuery(Query)`
-Mandatory function
+Mandatory function. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution.
 
 ##### `initialize()`
-Optional function
+Optional function. This function is called when the extension is loaded.
 
 ##### `finalize()`
-Optional function
+Optional function. This function is called when the extension is unloaded.
 
 ##### `__iid__`
-Mandatory variable (string)
+Mandatory variable (string). This variable has to hold the interface version the extension implements.
 
 ##### `__prettyname__`
-Optional variable (string)
+Optional variable (string). This variable should hold the pretty name of the extension. This string will be displayed to the user.
 
 ##### `__version__`
-Optional variable (string)
+Optional variable (string). This variable should hold the version of the extension. This string will be displayed to the user. The versioning scheme should follow the [semantic versioning](http://semver.org).
 
 ##### `__trigger__`
-Optional variable (string)
+Optional variable (string). If this extension should be run exclusively, this variable has to hold the trigger that causes the extension to be executed.
 
 ##### `__author__`
-Optional variable (string)
+Optional variable (string). This variable should hold the name of the author of the extension.
 
 ##### `__dependencies__`
-Optional variable (list of strings)
+Optional variable (list of strings). This string should contain any dependencies the extension need to be used.
+
 
 ## Api reference - The `albertv0` module
 
-The Python API exposes several fuctions and classes for use with Albert. 
+The Python API exposes several functions and classes for use with Albert.
 
 ### The `Query` class
 
-The query class is passed to the function handle query. It holds the following read-only properties.
+The query class represents a query execution. It holds the necessary information to handle a Query. It is passed to the handleQuery function. It holds the following read-only properties.
 
 ##### `string`
 
