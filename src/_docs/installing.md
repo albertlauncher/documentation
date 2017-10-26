@@ -17,13 +17,13 @@ Currently Albert is not in any of the major official repositories. At least some
 yaourt albert
 ```
 
-###### Fedora - COPR ([copr](https://copr.fedorainfracloud.org/coprs/rabiny/albert/)/[rabin-io](https://github.com/rabin-io))
+###### Fedora - COPR ([rabin-io](https://github.com/rabin-io)/[copr](https://copr.fedorainfracloud.org/coprs/rabiny/albert/))
 ```bash
 sudo dnf copr enable rabiny/albert
 sudo dnf install albert
 ```
 
-###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[webupd8](http://www.webupd8.org/))
+###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[launchpad](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8))
 ```bash
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
