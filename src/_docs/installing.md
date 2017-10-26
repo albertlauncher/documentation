@@ -17,7 +17,7 @@ Currently Albert is not in any of the major official repositories. At least some
 yaourt albert
 ```
 
-###### Fedora - COPR ([rabin-io](https://github.com/rabin-io))
+###### Fedora - COPR ([copr](https://copr.fedorainfracloud.org/coprs/rabiny/albert/)/[rabin-io](https://github.com/rabin-io))
 ```bash
 sudo dnf copr enable rabiny/albert
 sudo dnf install albert
