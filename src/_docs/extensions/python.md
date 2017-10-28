@@ -26,6 +26,9 @@ Optional function. This function is called when the extension is loaded.
 ##### `finalize()`
 Optional function. This function is called when the extension is unloaded.
 
+##### The docstring of the module (`__doc__`)
+The docstring of the module is used as description of the extension. This string will be displayed to the user.
+
 ##### `__iid__`
 Mandatory variable (string). This variable has to hold the interface version the extension implements.
 
