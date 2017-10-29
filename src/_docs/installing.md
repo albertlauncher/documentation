@@ -16,7 +16,7 @@ Currently Albert is not in any of the major official repositories. At least some
 ```bash
 yaourt albert
 ```
-###### Fedora and openSuse - [OBS]() (Official) 
+###### Fedora and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) (Official) 
 These packages are built using the openSUSE Build Service. First you have to import the keyfile:
 ```bash
 sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
