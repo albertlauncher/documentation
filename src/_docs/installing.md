@@ -16,12 +16,12 @@ Currently Albert is not in any of the major official repositories. At least some
 ```bash
 yaourt albert
 ```
-
-###### Fedora - COPR ([rabin-io](https://github.com/rabin-io)/[copr](https://copr.fedorainfracloud.org/coprs/rabiny/albert/))
+###### Fedora and openSuse - [OBS]() (Official) 
+These packages are built using the openSUSE Build Service. First you have to import the keyfile:
 ```bash
-sudo dnf copr enable rabiny/albert
-sudo dnf install albert
+sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 ```
+Now follow the instructions [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert).
 
 ###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[launchpad](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8))
 ```bash
