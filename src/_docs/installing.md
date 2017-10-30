@@ -8,37 +8,28 @@ There are two ways to get Albert: Using a package manager or building Albert fro
 
 ## Using package managers
 
-<p><font size="3rem" color="red"><i>We are looking for volunteering packagers for the missing distributions!</i></font></p>
-
 Currently Albert is not in any of the major official repositories. At least some user repositories contain it. Hopefully there will be more in future:
 
 ###### Archlinux - [AUR](https://aur.archlinux.org/packages/albert/) (Official)
 ```bash
 yaourt albert
 ```
-###### Fedora and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) (Official) 
-These packages are built using the openSUSE Build Service. First you have to import the keyfile:
+###### Debain9, Ubuntu 16.04+, Fedora 25+ and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) (Official) 
+These packages are built using the openSUSE Build Service. First you have to import the keyfile. How to do this depends on your package manager. 
+
+For rpm based package managers do:
 ```bash
 sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 ```
+
+while for deb based package managers you have to :
+```bash
+wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_9.0/Release.key -O Release.key
+apt-key add - < Release.key
+apt-get update
+```
+
 Now follow the instructions [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert).
-
-###### Ubuntu - PPA ([hotice](https://github.com/hotice)/[launchpad](https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8))
-```bash
-sudo add-apt-repository ppa:nilarimogard/webupd8
-sudo apt-get update
-sudo apt-get install albert
-```
-
-###### Debian 8 Jessie ([idkcpp](https://github.com/idkcpp)/[AdminLounge](https://software.adminlounge.org/))
-```bash
-wget -qO - https://repo.adminlounge.org/archive.key \
-    | sudo apt-key add -
-sudo bash -c 'echo "deb http://repo.adminlounge.org/ strech main" \
-    > /etc/apt/sources.list.d/adminlounge.list'
-sudo apt-get update
-sudo apt-get install albert
-```
 
 ## Building from sources
 
