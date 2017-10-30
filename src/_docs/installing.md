@@ -24,7 +24,7 @@ sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/publi
 
 while for deb based package managers you have to :
 ```bash
-wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_9.0/Release.key -O Release.key
+wget -nv https://build.opensuse.org/projects/home:manuelschneid3r/public_key -O Release.key
 apt-key add - < Release.key
 apt-get update
 ```
