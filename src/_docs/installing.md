@@ -19,12 +19,14 @@ These packages are built using the openSUSE Build Service. First you have to imp
 
 For rpm based package managers do:
 ```bash
-sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
+sudo rpm --import \
+  https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 ```
 
-while for deb based package managers you have to :
+while for deb based package managers you have to:
 ```bash
-wget -nv https://build.opensuse.org/projects/home:manuelschneid3r/public_key -O Release.key
+wget -nv -O Release.key \ 
+  https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 apt-key add - < Release.key
 apt-get update
 ```
