@@ -36,16 +36,21 @@ There is plenty of other things you can do aside from coding:
 
 I would like to express my sincere gratitude to the supporters
 
-Konstantin Vankov,
-Dmitry Sabani,
-Marcel Nageler,
 Brooke Dukes,
+Dmitry Sabani,
 Georgios Tzanakis,
-Yaozhong Yan,
+Konstantin Vankov,
+Marcel Nageler,
+Mario Hros,
 Matthew Johnson,
 Norbert Fuksz,
-Mario Hros
+Robert Orzanna,
+Yan Doroshenko,
+Yaozhong Yan
 
-and especially to my patrons
+and my patrons
 
-Diego Pereyra and M.H.
+Diego Pereyra,
+M H,
+Mario Witte,
+psymole
