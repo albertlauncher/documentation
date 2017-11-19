@@ -43,8 +43,10 @@ Sorry, I cant help you with this. Waylands integration into the major DEs is far
 If you came here because setting the hotkey does not work under Wayland, note that you can let other applications, such as your desktop environment, handle the registration of hotkeys and run the command `albert show` or `albert toggle` on activation.
 
 ##### HiDPI?
+ 
+Unfortunately Qt does not support [HiDPI scaling](http://doc.qt.io/qt-5/highdpi.html) until 5.6. From there on you can use the environment variable `QT_SCALE_FACTOR=2` to run albert scaled. Further you can use `QT_AUTO_SCREEN_SCALE_FACTOR=1` to enable automatic scaling, based on the pixel density of the monitor.
 
-This is up to Qt. Unfortunately Qt does not support [HiDPI scaling](http://doc.qt.io/qt-5/highdpi.html) until 5.6. From there on you can use `QT_SCALE_FACTOR=2 albert` to run albert scaled. A better solution might be to set `QT_AUTO_SCREEN_SCALE_FACTOR=1` globally. This enables automatic scaling, based on the pixel density of the monitor. Note that this affects all Qt applications.
+Note that 14.9 introduces automated scaling based on the dpi the screen reports. The scale factors are multiplicative. Setting QT_SCALE_FACTOR=2 on a 2x device gives an effective devicePixelRatio of 4.
 
 ##### fatal error: \*.h: No such file or directory.
 
