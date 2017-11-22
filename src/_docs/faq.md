@@ -4,6 +4,10 @@ title: Troubleshooting
 permalink: /docs/faq/
 ---
 
+##### Why are items not sorted the way I prefer?
+
+Simply because Albert does not know your preferences. The results of the different plugins are not sorted in a special order. Fortunately albert remembers your usage patterns. In detail Albert sorts urgency, score and length of title in this order. The score is determined by the score an extension gives the item and the usage frequency. If you use albert a while you will get a comfortable order of the items. Just "train" it.
+
 ##### How can I autostart Albert?
 
 At the moment there is no autostart option, since this application is meant to be desktop agnostic and there is no standard way to achieve this. The most promising approach for the future is the XDG [Desktop Application Autostart Specification](http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html) but not all desktop environments do support it. Link the desktop file into your autostart directory: `ln -s /usr/share/applications/albert.desktop ~/.config/autostart/`
