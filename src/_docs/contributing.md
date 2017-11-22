@@ -21,36 +21,15 @@ By contributing your code, you agree to license your contribution under the GPL 
 
 There is plenty of other things you can do aside from coding:
 
-- Spread the word!
+- Star the [project. ![Issues](https://img.shields.io/github/stars/albertlauncher/albert.svg?style=social&label=Stars)](https://github.com/albertlauncher/albert)
+- Spread the word.
 - Join the community and help other users.
 - Use the application and report issues.
 - Check the [issues](https://github.com/albertlauncher/albert/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20sort%3Areactions-%2B1-desc) and try to help debugging. [![Issues](https://img.shields.io/github/issues/albertlauncher/albert.svg)](https://github.com/albertlauncher/albert/issues)
 - Improve the documentation (Link on top of the pages).
-- Support me as a creator by donating some bucks via [paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC) or [patreon](https://www.patreon.com/albertlauncher).
+- Support me as a creator by [donating some bucks](/docs/donation/).
 
-
-<!-- [![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC)
--->
 
 ## Supporters
 
-I would like to express my sincere gratitude to the supporters
-
-Brooke Dukes,
-Dmitry Sabani,
-Georgios Tzanakis,
-Konstantin Vankov,
-Marcel Nageler,
-Mario Hros,
-Matthew Johnson,
-Norbert Fuksz,
-Robert Orzanna,
-Yan Doroshenko,
-Yaozhong Yan
-
-and my patrons
-
-Diego Pereyra,
-M H,
-Mario Witte,
-psymole
+The list [moved](/docs/supporters).
