@@ -6,7 +6,7 @@ permalink: /docs/faq/
 
 ##### Why are items not sorted the way I prefer?
 
-Simply because Albert does not know your preferences. The results of the different plugins are not sorted in a special order. Fortunately albert remembers your usage patterns. In detail Albert sorts urgency, score and length of title in this order. The score is determined by the score an extension gives the item and the usage frequency. If you use albert a while you will get a comfortable order of the items. Just "train" it.
+Simply because Albert does not know your preferences. The results of the different plugins are not sorted in a special order. Fortunately Albert remembers your usage patterns. In detail Albert sorts by urgency, score and length of title, in this order. The score is determined by the score an extension gives the item and the usage score. The score of the extension is often the ratio of the match length to title length and the usage score is your usage history with a pinch of magic. If you use albert a while you will get a comfortable order of the items. Just "train" it.
 
 ##### How can I autostart Albert?
 
