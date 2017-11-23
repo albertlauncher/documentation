@@ -15,7 +15,7 @@ These are there services you can use to donate. I want to make it simple, so if 
 
 * Patreon:  
 
-  <a href="https://www.patreon.com/bePatron?u=4631163" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  [![Donate via Patreon](/img/patreon.png)](https://www.patreon.com/bePatron?u=4631163)
 
 * Bitcoin:
 
