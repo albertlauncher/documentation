@@ -3,7 +3,103 @@ layout: docs
 title: Changelog
 permalink: /docs/changelog/
 ---
-This is the feature centric changelog. For a complete changelog refer to the git log.
+This is the feature centric changelog. It may be a bit behind, since I update it in batches. For a complete changelog refer to the news and git log.
+
+v0.14.13 (2017-11-25)
+
+- Rich text support
+- New AUR Python extension
+- New `scrot` Python extension
+
+
+v0.14.12 (2017-11-23)
+
+- New CopyQ Python extension (Ported from external extension)
+
+v0.14.11 (2017-11-19)
+
+- New `locate` Python extension
+
+v0.14.10 (2017-11-16)
+
+- Bugfixes
+
+v0.14.9 (2017-11-16)
+
+- Better HiDPI support
+- New commandline option for debug output (-d)
+
+v0.14.8 (2017-11-14)
+
+- New Gnote Python extension (Ported from external extension)
+- New Tomboy Python extension (Ported from external extension)
+- New Pacman Python extension
+- New Pass Python extension
+- New Kill Python extension
+
+v0.14.7 (2017-11-03)
+
+- Bugfixes
+
+v0.14.6 (2017-10-31)
+
+- New Wikipedia Python extension
+
+v0.14.5 (2017-10-30)
+
+- Bugfixes
+
+v0.14.4 (2017-10-25)
+
+- New base converter Python extension
+
+v0.14.3 (2017-10-21)
+
+- New Google Translate Python extension
+
+v0.14.2 (2017-10-20)
+
+- Bugfixes
+
+v0.14.1 (2017-10-19)
+
+- Bugfixes
+
+v0.14.0 (2017-10-18)
+
+- New Python Embedding extension
+- New Python Eval Python extension
+- New Debugging Python extension
+- New Zeal Python extension
+- New GoldenDict Python extension
+- New Unit Converter Python extension (Gnu units)
+- New Currency Converter Python extension (Google finance)
+
+v0.13.1 (2017-00-30)
+
+- Bugfixes
+
+v0.13.0 (2017-09-28)
+
+- Modular frontends
+- QML frontend
+- Tree structure in file index and "smart" indexing
+- New KeyValue extension
+- New Hash Generator extension
+- Shell like completion for terminal extension
+
+v0.12.0 (2017-06-09)
+
+- Git-like ignore files
+- Dedicated dialog for websearch editing.
+
+v0.11.3 (2017-05-28)
+
+-  Bugfixes
+
+v0.11.2 (2017-05-13)
+
+- <kbd>Home</kbd> and <kbd>End</kbd> now work for the results list holding <kbd>Ctrl</kbd>.
 
 v0.11.1 (2017-04-16)
 
