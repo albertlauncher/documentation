@@ -14,7 +14,7 @@ At the moment there is no autostart option, since this application is meant to b
 
 ##### Which application is used to open an item?
 
-Unless explicitely defined by the responsible extension, Albert uses the system defaults. They are managed by your desktop environment and defined as stated in the freedesktop.org [Association between MIME types and applications](http://standards.freedesktop.org/mime-apps-spec/mime-apps-spec-1.0.html) standard. See the [Arch Linux](https://wiki.archlinux.org/index.php/Default_applications#MIME_types_and_desktop_entries) or [Debian](https://wiki.debian.org/MIME) wiki for a human readable version of the standard. One generic way to change those associations is `xdg-mime`. Check the manual for more informations.
+Unless explicitly defined by the responsible extension, Albert uses the system defaults. They are managed by your desktop environment and defined as stated in the freedesktop.org [Association between MIME types and applications](http://standards.freedesktop.org/mime-apps-spec/mime-apps-spec-1.0.html) standard. See the [Arch Linux](https://wiki.archlinux.org/index.php/Default_applications#MIME_types_and_desktop_entries) or [Debian](https://wiki.debian.org/MIME) wiki for a human readable version of the standard. One generic way to change those associations is `xdg-mime`. Check the manual for more informations.
 
 ##### "FATAL: Stylefile not found: xxx", where is it?
 
@@ -26,7 +26,7 @@ Create a file called `.albertignore` in the folder that contains the file you wa
 
 ##### "Error. Key-X could not be registered."!?
 
-This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that an other application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and make it ungrab it. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). Remove the desired key combination from the systems keyboard settings and try again to set it Albert.
+This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that another application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and make it ungrab it. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). Remove the desired key combination from the system's keyboard settings and try again to set it Albert.
 
 Another alternative to open albert is to let other applications, such as your desktop environment, handle the registration and run the command `albert show` or `albert toggle` on activation.
 
@@ -42,7 +42,7 @@ The [Desktop Entry Specification](https://specifications.freedesktop.org/desktop
 
 ##### .\* Wayland .\* ?
 
-Sorry, I cant help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problems.
+Sorry, I can't help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problems.
 
 If you came here because setting the hotkey does not work under Wayland, note that you can let other applications, such as your desktop environment, handle the registration of hotkeys and run the command `albert show` or `albert toggle` on activation.
 
@@ -54,6 +54,6 @@ Note that 14.9 introduces automated scaling based on the dpi the screen reports.
 
 ##### fatal error: \*.h: No such file or directory.
 
-Check if you have installed the dependencies. A good way to check the current dependencies is to check `depends`, `makedepends` and `optdepends` sections in the official Arch Linux [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=albert). If you dont want to build a specific plugin you dont have to. Configure CMake accordingly by setting build switches, e.g. `-DBUILD_VIRTUALBOX=OFF`. See the possible build switches and their default values [here](https://github.com/albertlauncher/plugins/blob/master/CMakeLists.txt).
+Check if you have installed the dependencies. A good way to check the current dependencies is to check `depends`, `makedepends` and `optdepends` sections in the official Arch Linux [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=albert). If you don't want to build a specific plugin you don't have to. Configure CMake accordingly by setting build switches, e.g. `-DBUILD_VIRTUALBOX=OFF`. See the possible build switches and their default values [here](https://github.com/albertlauncher/plugins/blob/master/CMakeLists.txt).
 
 In general you should avoid compiling albert on your own and use package managers.
