@@ -50,9 +50,9 @@ If you came here because setting the hotkey does not work under Wayland, note th
  
 Unfortunately Qt does not support [HiDPI scaling](http://doc.qt.io/qt-5/highdpi.html) until 5.6. From there on you can use the environment variable `QT_SCALE_FACTOR=2` to run albert scaled. Further you can use `QT_AUTO_SCREEN_SCALE_FACTOR=1` to enable automatic scaling, based on the pixel density of the monitor.
 
-Note that v0.14.9 introduces automated scaling based on the dpi the screen reports. The scale factors are multiplicative. Setting QT_SCALE_FACTOR=2 on a 2x device gives an effective devicePixelRatio of 4. v0.14.13 changes this behavior when env vars related to scaling are set, no automatic scaling is applied.
+Note that v0.14.9 introduces automated scaling based on the dpi the screen reports. The scale factors are multiplicative. Setting QT_SCALE_FACTOR=2 on a 2x device gives an effective devicePixelRatio of 4. v0.14.13 changes this behavior when environment variables related to scaling are set, no automatic scaling is applied.
 
-
+The automatic scaling may not fit your needs, especially on small HiDPI screens people tend to rather want small scaling. If you are not satisfied with the automatic scaling Qt applies, just set one of the environment variables, e.g. `QT_SCALE_FACTOR=1`.
 
 ##### fatal error: \*.h: No such file or directory.
 
