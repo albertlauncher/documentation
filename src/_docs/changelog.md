@@ -5,6 +5,10 @@ permalink: /docs/changelog/
 ---
 This is the feature centric changelog. It may be a bit behind, since I update it in batches. For a complete changelog refer to the news and git log.
 
+v0.14.14 (2017-12-06)
+
+- New npm Python extension
+
 v0.14.13 (2017-11-25)
 
 - Rich text support
