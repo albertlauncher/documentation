@@ -41,6 +41,12 @@ The goal is to be always compatible to the lasest Ubuntu LTS release. To build A
 
 Further the plugins may introduce optional dependencies, e.g the calculator plugin needs the [muparser](http://muparser.beltoforion.de/) library and the QMLBoxModel frontend needs the QtDeclarative library. Check the [travis file](https://github.com/albertlauncher/albert/blob/dev/.travis.yml) for an updated list of dependencies.
 
+On a Debian based system, the dependencies may be satisified by installing:
+
+```
+cmake g++ qt5-default libqt5x11extras5-dev libqtsvg5-dev libqt5qml5 qtdeclarative5-dev libmuparser-dev pybind11-dev python3-dev
+```
+
 Problems may arise with distributions that split submodules into optional dependencies. E.g. Ubuntu is known to split the SQL driver submodules into separate packages. Elementary OS which builds on Ubuntu does not install optional dependencies, users may therefore encounter linkage errors a have to explicitly install the missing dependencies.
 
 Another concern is the difference between compile time and runtime dependencies. Some distributions ship libraries as single packages while others ship a normal package and a *\*-dev* package. Dev packages usually contain the header files and static libraries additionally to the shared libraries. Normal packages are stripped down to the shared libraries. On distributions that do not differ between this kind of packages basically every package is a dev package. For the compilation on e.g. Ubuntu dev packages are needed at compile time but at runtime normal packages are sufficient. If the optional dependency of a plugin is not available at runtime it will refuse to load, the core application will run fine though. 
