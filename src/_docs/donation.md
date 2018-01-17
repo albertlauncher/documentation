@@ -19,7 +19,7 @@ These are there services you can use to donate. I want to make it simple, so if 
 
 * Crypto:
   
-  If you want to appear on the list of supporters or if you would like to send other coins than the ones listed below, please [contact me](https://t.me/manuelschneider).
+  If you want to appear on the list of supporters for your crypto donation or if you would like to send other coins than the ones listed below, please [contact me](https://t.me/manuelschneider).
   
   * ![BTC](https://files.coinmarketcap.com/static/img/coins/16x16/bitcoin.png) Bitcoin:
 
