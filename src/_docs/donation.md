@@ -6,7 +6,7 @@ permalink: /docs/donation/
 
 If you found here you are probably thinking about donating some bucks for the development of your favorite keyboard launcher ;D That's great. Thank you. It makes me happy to know that people are grateful for what I (love to) do, and I highly appreciate that you are thinking about a donation.
 
-These are there services you can use to donate. I want to make it simple, so if you think the list below is missing something let me know.
+These are the services you can use to donate. I want to make it simple, so if you think the list below is missing something let me know.
 
 
 * PayPal:
