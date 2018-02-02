@@ -14,7 +14,7 @@ The documentation should cover everything you are concerned about. From a users 
 
 - [Telegram](https://telegram.me/albert_launcher_community)
 - [Discord](https://discord.gg/enGMWUG)
-- [IRC](irc://irc.freenode.net/albertlauncher) [(Web Client)](http://webchat.freenode.net?channels=%23albertlauncher)
+- [IRC](irc://irc.freenode.net/albertlauncher) / [(Web Client)](http://webchat.freenode.net?channels=%23albertlauncher)
 
 
 ##### [Github repository]({{ site.repository }})
