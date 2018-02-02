@@ -10,13 +10,11 @@ Problems with Albert? Try these.
 
 The documentation should cover everything you are concerned about. From a users point of view the user guide explains how to use Albert. Developers will find informations about the development of albert too.
 
-##### [Telegram Chat](https://telegram.me/albert_launcher_community)
+##### Chats
 
-The **Albert Launcher Chat** in **Telegram** is most convenient source of support if the documentation did not help you. All users are invited to join and stay in the channel to build a vivid community.
-
-##### [IRC channel](IRC://irc.freenode.net/albertlauncher)
-
-The **#albertlauncher** channel on **irc.freenode.net** is another place where you can get help. This place is more about the technical things. Github regularly pushes events from the repo in this channel. As in the telegram chat all users are invited to join and stay in the channel to build a vivid community. If you have no IRC client there are [web clients](http://webchat.freenode.net?channels=%23albertlauncher) too.
+- [Telegram](https://telegram.me/albert_launcher_community)
+- [Discord](https://discord.gg/enGMWUG)
+- [IRC](irc://irc.freenode.net/albertlauncher) [(Web Client)](http://webchat.freenode.net?channels=%23albertlauncher)
 
 
 ##### [Github repository]({{ site.repository }})
