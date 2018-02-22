@@ -23,7 +23,7 @@ sudo rpm --import \
 
 while for deb based package managers you have to:
 ```bash
-wget -nv -O Release.key \ 
+wget -nv -O Release.key \
   https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 apt-key add - < Release.key
 apt-get update
