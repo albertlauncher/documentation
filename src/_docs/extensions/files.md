@@ -6,11 +6,11 @@ permalink: /docs/extensions/files/
 
 The files extension offers ways to access files through Albert.
 
-One way to access files is to use the offline index. The extension indexes files that can be accesses by their filename. In the settings you can set paths that define where the extension should look for files. In this paths the extension recursively scans for files and indexes them.
+One way to access files is to use the offline index. The extension indexes files that can be accessed by their filename. In the settings you can set paths the extension recursively scans for files.
 
-Further the files extension provides a way to browse through file system using paths. This is handy to access files that are _not_ indexed. Queries that begin with either `/` or `~` are interpreted as a beginning of a path and the extension lists the files in this directory. In combination with the tab completion this is a nice way to browse the file system.
+Further the files extension provides a way to browse through the file system using paths. This is handy to access files that are _not_ indexed. Queries beginning with either `/` or `~` are interpreted as a path. In combination with the tab completion this is a nice way to browse the file system.
 
-The offline index can be configured in several ways and it is recommended that you configure the extension depending on your needs. Simply indexing all files on your system may be your first thought, but on the one hand the vast amounts of files you'll never use will pollute the output and on the other hand a large file index may introduce performance penalties, like long indexing and lookup times and high memory usage.
+The offline index can be configured in several ways. It is recommended that you configure the extension depending on your needs. Simply indexing all files on your system may be convenient, but on one hand the vast amounts of files you'll never use will pollute the output and on the other hand a large file index may introduce performance penalties, like long indexing and lookup times and high memory usage.
 
 Generally you have to define where the extension should look for files. But you may not want to index all of the files in the directory tree below the paths you specified. You have now two options to exclude files from indexing: File filters and MIME type filters.
 
