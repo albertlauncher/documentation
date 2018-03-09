@@ -23,7 +23,7 @@ Tony Wu,
 Yan Doroshenko,
 Yaozhong Yan
 
-and my patrons
+and especially my patrons
 
 Alexander Browne,
 Diego Pereyra,
@@ -33,3 +33,5 @@ Marcus Baw,
 Mario Witte,
 Tamara Stefanovic,
 psymole
+
+Thank you so much ❤️
