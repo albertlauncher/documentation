@@ -8,6 +8,10 @@ permalink: /docs/extensions/calculator/
 
 The calculator should be self-explanatory. The calculator item appears as soon as you type a valid math expression into the input box. Euler's number `_e` and π `_pi` are predefined.
 
+## Known limitations
+
+Muparser uses double precision floats which introduces the well known problems [precision](https://stackoverflow.com/questions/588004/is-floating-point-math-broken).
+
 ## Built-in functions
 
 The following table gives an overview of the functions supported by the default implementation. It lists the function names, the number of arguments and a brief description.
