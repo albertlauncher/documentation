@@ -10,7 +10,7 @@ The calculator should be self-explanatory. The calculator item appears as soon a
 
 ## Known limitations
 
-Muparser uses double precision floats which introduces the well known problems [precision](https://stackoverflow.com/questions/588004/is-floating-point-math-broken).
+Muparser uses double precision floats which introduces the well known [precision problems](https://stackoverflow.com/questions/588004/is-floating-point-math-broken).
 
 ## Built-in functions
 
