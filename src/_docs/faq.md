@@ -24,13 +24,26 @@ Albert searches for theme files in the directory `albert/themes` in the [QStanda
 
 Create a file called `.albertignore` in the folder that contains the file you want to ignore. Fill it with the filenames you want to ignore. One per line. The ignores supports [wildcard matching](http://doc.qt.io/qt-5/qregexp.html#wildcard-matching). Global ignores like e.g. the `.gitignore` provides are currently not supported.
 
-##### "Error. Key-X could not be registered."!?
+##### Everything related to hotkeys
 
-This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that another application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and make it ungrab it. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). Remove the desired key combination from the system's keyboard settings and try again to set it Albert.
+###### Error. Key-XYZ could not be registered.
 
-Another alternative to open albert is to let other applications, such as your desktop environment, handle the registration and run the command `albert show` or `albert toggle` on activation.
+This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that another application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and disable the grab. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). If it is possible remove the desired key combination from the system's keyboard settings and try again to set it Albert. If the grab is hardcoded you're out of luck. Use the workaround below or use another key.
 
 **¹** <span style="font-size: 12px">Actually a registration of one key combination is made up of 4 grabs. Since X11 considers numlock and capslock as modifiers, the actual grabs comprise every permutation of num- and capslock modifiers plus the actual key combo. If one grab fails the registration is considered as failed.</span>
+
+###### Hotkey is set but does not work
+
+This is one of the weirdest and most annoying issue on linux. There may be several reasons. Known so far are:
+
+* Wayland does not allow to grab keys at all. Magically the hotkey works on X11 windows but not on wayland windows. 
+* Sometimes crappy window managers (e.g. Unity) intercept the keypress event. The event is simply not delivered.
+
+For these use the workaround described below.
+
+###### General workaround for hotkey problems
+
+The workaround for the problems above is to let the desktop environment handle the registration of hotkeys and run the command `albert show` or `albert toggle` on activation. This implies that a process has to be run and is somewhat heavy. Try to get native hotkeys first.
 
 ##### Why are my icons are not displayed correctly?
 
@@ -44,7 +57,7 @@ The [Desktop Entry Specification](https://specifications.freedesktop.org/desktop
 
 Sorry, I can't help you with this. Waylands integration into the major DEs is far from mature. Wayland support needs a lot of time and hopefully these infancy problems vanish with time. I'd like to invest the little time I have to do things [essential](https://en.wikipedia.org/wiki/No_Silver_Bullet) to the development of albert. If you google a bit, you will find out that a lot of applications have problems with Wayland. However if you are willing I'd appreciate to get help with that problem.
 
-If you came here because setting the hotkey does not work under Wayland, note that you can let other applications, such as your desktop environment, handle the registration of hotkeys and run the command `albert show` or `albert toggle` on activation.
+If you came here because the hotkey does not work under Wayland see the section on hotkeys above.
 
 ##### HiDPI?
  
