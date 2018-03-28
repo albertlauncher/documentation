@@ -17,21 +17,23 @@ Mario Hros,
 Matthew Johnson,
 Max Lutterbeck,
 Norbert Fuksz,
+psymole,
 Robert Orzanna,
 Stefan Grosser,
 Tony Wu,
 Yan Doroshenko,
 Yaozhong Yan
 
-and especially my patrons
+and especially my active patrons
 
+Adam Brunnmeier
 Alexander Browne,
-Diego Pereyra,
 David Britt,
+Diego Pereyra,
+James Turnbull,
 M H,
 Marcus Baw,
 Mario Witte,
-Tamara Stefanovic,
-psymole
+Tamara Stefanovic
 
 Thank you so much ❤️
