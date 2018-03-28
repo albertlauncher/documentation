@@ -26,7 +26,7 @@ Yaozhong Yan
 
 and especially my active patrons
 
-Adam Brunnmeier
+Adam Brunnmeier,
 Alexander Browne,
 David Britt,
 Diego Pereyra,
