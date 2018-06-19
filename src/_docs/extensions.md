@@ -7,6 +7,11 @@ permalink: /docs/extensions/
 From the user perspective the application consists of the launcher, which is the main window, the settings window and the tray icon if you enabled it. However under the hood Albert has a plugin based architecture, which allows the user to modify or extend the functionality of the application.
 There are several extensions that get shipped together with the main albert core.
 
+## The frontends
+
+- QML Box Model
+- [Widgets Box Model](/docs/extensions/widgetboxmodel/)
+
 ## The extensions
 
 - [Applications](/docs/extensions/applications/)
@@ -24,8 +29,3 @@ There are several extensions that get shipped together with the main albert core
 - Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
 - [Websearch](/docs/extensions/websearch/)
-
-## The frontends
-
-- QML Box Model
-- [Widgets Box Model](/docs/extensions/widgetboxmodel/)
