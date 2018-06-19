@@ -21,10 +21,10 @@ There are several extensions that get shipped together with the main albert core
 - [Files](/docs/extensions/files/)
 - Firefox
 - Hash generator
-- Key value store
 - [MPRIS](/docs/extensions/mpris/)
 - [Python](/docs/extensions/python/)
 - [Secure Shell](/docs/extensions/ssh/)
+- Snippets
 - System
 - Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
