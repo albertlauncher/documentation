@@ -3,7 +3,7 @@
     - installing
     - using
     - extending
-    - theming
+    - extensions
     - faq
 
 #- title: Dev guide
@@ -17,4 +17,5 @@
 - title: Meta
   docs:
   - contributing
+  - donatiion
   - changelog

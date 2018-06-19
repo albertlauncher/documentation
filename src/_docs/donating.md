@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Donation
+title: Donating
 permalink: /docs/donation/
 ---
 
@@ -18,7 +18,5 @@ These are the services you can use to donate. I want to make it simple, so if yo
   [![Donate via Patreon](/img/patreon.png)](https://www.patreon.com/bePatron?u=4631163)
 
 * Crypto❤️:
-  
-  If you want to donate crypto, please [contact me](https://t.me/manuelschneider).
-  
 
+  If you want to donate crypto, please [contact me](https://t.me/manuelschneider).
