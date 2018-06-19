@@ -36,29 +36,3 @@ Key  | Action
 <kbd>⬆</kbd>,<kbd>⬇</kbd>,<br><kbd>PgUp</kbd>,<kbd>PgDn</kbd>,<br><kbd>Ctrl</kbd> + <kbd>Home</kbd>,<br><kbd>Ctrl</kbd> + <kbd>End</kbd> | Navigation in the results list. If the first item is selected, <kbd>⬆</kbd> iterates though the query history.
 <kbd>Ctrl</kbd> + <kbd>⬆</kbd><br><kbd>Ctrl</kbd> + <kbd>⬇</kbd> | Navigate in query history
 <kbd>Alt</kbd> + <kbd>F4</kbd> | Quit Albert
-
-## The extensions
-
-From the user perspective the application consists of the launcher, which is the main window, the settings window and the tray icon if you enabled it. However under the hood Albert has a plugin based architecture, which allows the user to modify or extend the functionality of the application.
-There are several extensions that get shipped together with the main albert core.
-
-- [Applications](/docs/extensions/applications/)
-- [Calculator](/docs/extensions/calculator/)
-- [Chromium](/docs/extensions/chromium/)
-- [External extensions](/docs/extensions/external/)
-- [Files](/docs/extensions/files/)
-- Firefox
-- Hash generator
-- Key value store
-- [MPRIS](/docs/extensions/mpris/)
-- [Python](/docs/extensions/python/)
-- [Secure Shell](/docs/extensions/ssh/)
-- System
-- Terminal
-- [VirtualBox](/docs/extensions/virtualbox/)
-- [Websearch](/docs/extensions/websearch/)
-
-## The frontends
-
-- QML BoxModel
-- Widgets BoxModel

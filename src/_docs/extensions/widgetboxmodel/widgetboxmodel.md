@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Theming Albert
-permalink: /docs/theming/
+permalink: /docs/extensions/widgetboxmodel/
 ---
 
 The main user interface can be customized using [QStyleSheets](http://doc.qt.io/qt-5/stylesheet.html). Qt Style Sheets are a powerful mechanism that allows you to customize the appearance of widgets. The concepts, terminology, and syntax of Qt Style Sheets are heavily inspired by HTML Cascading Style Sheets (CSS) but adapted to the world of widgets.
