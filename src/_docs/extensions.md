@@ -9,8 +9,8 @@ There are several extensions that get shipped together with the main albert core
 
 ## The frontends
 
-- QML Box Model
 - [Widgets Box Model](/docs/extensions/widgetboxmodel/)
+- [QML Box Model](/docs/extensions/qmlboxmodel/)
 
 ## The extensions
 
