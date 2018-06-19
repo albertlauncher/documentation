@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Theming Albert
+title: Widget Box Model
 permalink: /docs/extensions/widgetboxmodel/
 ---
 
