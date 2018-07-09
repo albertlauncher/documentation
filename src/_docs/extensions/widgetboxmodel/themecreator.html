@@ -20,7 +20,7 @@ permalink: /docs/theming/themecreator/
             </svg>
         </div>
 
-        <div id="proposalList">
+        <div id="resultsList">
             <ul>
                 <li class="item selected">
                     <div class="content">
@@ -263,18 +263,18 @@ QListView#actionList::item::selected{
   background: qlineargradient(x1:0, x2:1, stop:0.0 #40<span class="action_list_selected_color"></span>, stop:0.5 #20<span class="action_list_selected_color"></span>, stop:1.0 #40<span class="action_list_selected_color"></span> );
 }
 
-/********** proposalList **********/
-QListView#proposalList {
+/********** resultsList **********/
+QListView#resultsList {
   icon-size: <span class="item_icon_size"></span>px;
   font-size: <span class="item_font_size"></span>px;
   color: #<span class="foreground_color"></span>;
 }
 
-QListView#proposalList::item{
+QListView#resultsList::item{
   height: <span class="item_height"></span>px;
 }
 
-QListView#proposalList::item::selected{
+QListView#resultsList::item::selected{
   background: qlineargradient(x1:0, x2:1, stop:0.0 #40<span class="item_selected_color"></span>, stop:0.5 #20<span class="item_selected_color"></span>, stop:1.0 #40<span class="item_selected_color"></span> );
 }
       </pre>
