@@ -75,10 +75,10 @@ In general you should avoid compiling albert on your own and use package manager
 
 ##### Seems like I dont use the official repos
 
-You have to be one of every second person that got albert from **unofficial** sources somewhere in the internet. This _sucks_ because 1st **you** are at risk to run malicious code on your machine and 2nd **I** am made responisble for whatever is not working. So please use the official repositories hosted at OpenSuse Build System to be safe and up to date. If something is not working report the problem instead of using other sources. It is really as easy as that:
+You have to be one of every second person that got albert from **unofficial** sources somewhere in the internet. This _sucks_ because 1st **you** are at risk to run malicious code on your machine and 2nd **I** am made responsible for whatever is not working. Please use the official repositories hosted at OpenSuse Build System to be safe and up to date. If something is not working, report the problem instead of using other sources. It's really as easy as that:
 
-* Trust the key on your machine
-* Add the repository to your package manager
-* Install albert and update your system every now and then
+* Trust the key on your machine.
+* Add the repository to your package manager.
+* Install albert and update your system every now and then.
 
 This process is also explained a bit more elaborate in the [docs](https://albertlauncher.github.io/docs/installing/#using-package-managers).
