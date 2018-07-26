@@ -73,7 +73,7 @@ Check if you have installed the dependencies. A good way to check the current de
 
 In general you should avoid compiling albert on your own and use package managers.
 
-##### I got linked here because it seems like I dont use the official repos
+##### Seems like I dont use the official repos
 
 You have to be one of every second person that got albert from **unofficial** sources somewhere in the internet. This _sucks_ because 1st **you** are at risk to run malicious code on your machine and 2nd **I** am made responisble for whatever is not working. So please use the official repositories hosted at OpenSuse Build System to be safe and up to date. If something is not working report the problem instead of using other sources. It is really as easy as that:
 
