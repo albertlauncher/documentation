@@ -83,6 +83,6 @@ This process is also explained a bit more elaborate in the [docs](https://albert
 
 ##### I get a black border/background, i.e. no transparency
 
-Either you dont have hardware graphics acceleration or you are missing a [compositor](https://en.wikipedia.org/wiki/Compositing_window_manager). If there are other reasons for this symptom, please let me know.
+Either you dont have hardware graphics acceleration or you are missing a [compositor](https://en.wikipedia.org/wiki/Compositing_window_manager). These problems are not related to albert, but are a general desktop misconfiguration. Google will help you to solve it. If there are other reasons for this symptom, please let me know.
 
 
