@@ -24,8 +24,6 @@ Albert searches for theme files in the directory `albert/themes` in the [QStanda
 
 Create a file called `.albertignore` in the folder that contains the file you want to ignore. Fill it with the filenames you want to ignore. One per line. The ignores supports [wildcard matching](http://doc.qt.io/qt-5/qregexp.html#wildcard-matching). Global ignores like e.g. the `.gitignore` provides are currently not supported.
 
-##### Everything related to hotkeys
-
 ###### Error. Key-XYZ could not be registered.
 
 This is what Albert tells you, if the window system refused to register the key combination¹. This may have many reasons, but the most prominent is that another application already grabbed the key combo. If you really want to get exactly that combo, your best bet is to find out which application grabbed the key and disable the grab. In virtually every case this will be your desktop environment, respectively its window manager, e.g. Compiz (Unity), KWin (KDE), Mutter (Gnome), or Muffin (Cinnamon). If it is possible remove the desired key combination from the system's keyboard settings and try again to set it Albert. If the grab is hardcoded you're out of luck. Use the workaround below or use another key.
@@ -82,3 +80,9 @@ You have to be one of every second person that got albert from **unofficial** so
 * Install albert and update your system every now and then.
 
 This process is also explained a bit more elaborate in the [docs](https://albertlauncher.github.io/docs/installing/#using-package-managers).
+
+##### I get a solid black border or black background, i.e. no transparency
+
+Either you dont have hardware graphics acceleration or you are missing a [compositor](https://en.wikipedia.org/wiki/Compositing_window_manager). If there are other reasons for this symptom let me know.
+
+
