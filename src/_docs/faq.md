@@ -81,7 +81,7 @@ You have to be one of every second person that got albert from **unofficial** so
 
 This process is also explained a bit more elaborate in the [docs](https://albertlauncher.github.io/docs/installing/#using-package-managers).
 
-##### I get a solid black border or black background, i.e. no transparency
+##### I get a black border/background, i.e. no transparency
 
 Either you dont have hardware graphics acceleration or you are missing a [compositor](https://en.wikipedia.org/wiki/Compositing_window_manager). If there are other reasons for this symptom, please let me know.
 
