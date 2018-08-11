@@ -4,36 +4,39 @@ title: Supporters
 permalink: /docs/supporters/
 ---
 
-I would like to express my sincere gratitude to the supporters
+I would like to express my sincere gratitude to my supporters, especially to the recurring ones and my active patrons.
 
+Adam Brunnmeier,
+Alexander Brem,
+Alexander Browne,
+Andreas Kollmann,
 Andy Saini,
 Brooke Dukes,
+Christian Schubnell,
+David Britt,
+David R Jelinek,
+Diego Pereyra,
 Dmitry Sabani,
 Emanuele Aliverti,
 Georgios Tzanakis,
+Harsh Poddar,
+Jacob Lindgren,
+James Turnbull,
 Konstantin Vankov,
 Marcel Nageler,
+Marcus Baw :star:,
 Mario Hros,
+Mario Witte,
 Matthew Johnson,
 Max Lutterbeck,
 Norbert Fuksz,
-psymole,
+Psymole,
 Robert Orzanna,
+Ronny Becker,
 Stefan Grosser,
+Tamara Stefanovic :star:,
 Tony Wu,
 Yan Doroshenko,
-Yaozhong Yan
-
-and especially my active patrons
-
-Adam Brunnmeier,
-Alexander Browne,
-David Britt,
-Diego Pereyra,
-James Turnbull,
-M H,
-Marcus Baw :star:,
-Mario Witte,
-Tamara Stefanovic
+Yaozhong Yan …
 
 Thank you so much ❤️
