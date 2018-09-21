@@ -129,7 +129,7 @@ This is the constructor of the item.
 Note that the default icon path is ":python_module" which is an embedded resource icon depicting a Python script and the urgency defaults to normal.
 
 ##### `id`
-The identifier string of the item. It is used for ranking aloritms and should not be empty.
+The identifier string of the item. It is used for ranking algorithms and should not be empty.
 
 ##### `icon`
 The path of the icon displayed in the item.
@@ -180,6 +180,6 @@ Ids are guaranteed to be unique. This means that if several of those paths conta
 
 # Known issues
 
-Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Pyhton code.
+Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Python code.
 
-The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules can not be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.
+The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules cannot be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.
