@@ -29,3 +29,44 @@ There are several extensions that get shipped together with the main albert core
 - Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
 - [Websearch](/docs/extensions/websearch/)
+
+## Custom python extensions
+
+- Arch Wiki
+- Atom Projects
+- AUR
+- Base Converter
+- Binance
+- Bitfinex
+- CoinMarketCap
+- CopyQ
+- Currency converter
+- Dango Emoji
+- Dango Kaomoji
+- DateTime
+- Gnome Dictionary
+- Gnote
+- Golden Dictionary
+- Google Translate
+- IP Addresses
+- Jetbrains IDE Projects
+- Kill Process
+- Locate
+- Mathematica Expressions
+- Multi-lang Google Translate
+- NPM
+- Packagist
+- Pacman
+- Pass
+- Pidgin
+- Pomodoro
+- Python
+- Scrot
+- TeX to Unicode
+- Timer
+- Tomboy
+- Trash
+- Units
+- Wikipedia
+- Youtube
+- Zeal
