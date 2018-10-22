@@ -29,3 +29,7 @@ There are several extensions that get shipped together with the main albert core
 - Terminal
 - [VirtualBox](/docs/extensions/virtualbox/)
 - [Websearch](/docs/extensions/websearch/)
+
+## Python extensions
+
+The Python extension adds a lot of functionality via python modules. Most of the community effort goes into this part of the project. Check [the repo](https://github.com/albertlauncher/python) for an up to date list of extensions.
