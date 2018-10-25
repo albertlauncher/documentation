@@ -39,7 +39,7 @@ Building from sources is the least convenient, but most flexible way. The build 
 
 The goal is to be always compatible with the latest Ubuntu LTS release. To build Albert from sources you will need CMake, a C++ compiler supporting at least the C++14 standard, and the Qt toolkit. 
 
-Further the plugins may introduce optional dependencies, e.g the calculator plugin needs the [muparser](http://beltoforion.de/article.php?a=muparser/) library and the QMLBoxModel frontend needs the QtDeclarative library. Check the [docker file](https://github.com/albertlauncher/albert/blob/dev/Dockerfile) for an up to date list of dependencies.
+Further the plugins may introduce optional dependencies, e.g the calculator plugin needs the [muparser](http://beltoforion.de/article.php?a=muparser) library and the QMLBoxModel frontend needs the QtDeclarative library. Check the [docker file](https://github.com/albertlauncher/albert/blob/dev/Dockerfile) for an up to date list of dependencies.
 
 Problems may arise with distributions that split submodules into optional dependencies. Ubuntu is known to split the SQL driver submodules into separate packages. Additionally, Elementary OS - which builds on Ubuntu - does not install optional dependencies. Users may therefore encounter linkage errors and have to explicitly install the missing dependencies.
 
