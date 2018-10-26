@@ -85,4 +85,10 @@ This process is also explained a bit more elaborate in the [docs](https://albert
 
 Either you dont have hardware graphics acceleration or you are missing a [compositor](https://en.wikipedia.org/wiki/Compositing_window_manager). These problems are not related to albert, but are a general desktop misconfiguration. Google will help you to solve it. If there are other reasons for this symptom, please let me know.
 
+##### Launcher appears behind maximized windows
 
+Some window managers prioritize maximized windows over popups. The suggested way to fix this is to find an "Always on Top" option in your window manager. If such a thing doesn't exist however you can use [`wmctrl`](http://tripie.sweb.cz/utils/wmctrl/) to manually raise it by mapping a hotkey to the following command:
+
+```
+albert toggle && wmctrl -a "albert — Albert"
+```
