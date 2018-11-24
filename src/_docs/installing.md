@@ -8,11 +8,11 @@ There are two ways to get Albert: Using a package manager or building Albert fro
 
 ## Using package managers
 
-### Archlinux - [AUR](https://aur.archlinux.org/packages/albert/) (Official)
+### Archlinux - [AUR](https://aur.archlinux.org/packages/albert/)
 ```bash
 yaourt albert
 ```
-### Debian 9, Ubuntu 16.04+, Fedora 25+ and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) (Official) 
+### Debian, Ubuntu, Fedora and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
 These packages are built using the openSUSE Build Service. First you have to import the keyfile. How to do this depends on your package manager. 
 
 For rpm based package managers do:
