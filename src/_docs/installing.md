@@ -8,20 +8,21 @@ There are two ways to get Albert: Using a package manager or building Albert fro
 
 ## Using package managers
 
-### Archlinux - [AUR](https://aur.archlinux.org/packages/albert/)
-```bash
-yaourt albert
-```
-### Debian, Ubuntu, Fedora and openSuse - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
-These packages are built using the openSUSE Build Service. First you have to import the keyfile. How to do this depends on your package manager. 
+### Arch Linux (and derivatives) - [AUR](https://aur.archlinux.org/packages/albert/)
+There's a PKGBUILD for Arch Linux in the AUR. Explaing how to build and install packages from AUR goes beyond scope here. Refer to the related Arch Wiki sections. Note that this is an automated way to build the package from sources.
 
-For rpm based package managers do:
+### Prebuilt binary packages - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
+These packages are built and hosted using the openSUSE Build Service. Using these is the most convenient way to get albert and stay up to date. You have to add the repo to your package manager and import the keyfile which is used to verify the packages signatures. This has to be done only once. From then on you can install and update albert like any other package on you system.
+
+#### Importing the keyfile
+
+For RPM based package managers:
 ```bash
 sudo rpm --import \
   https://build.opensuse.org/projects/home:manuelschneid3r/public_key
 ```
 
-while for deb based package managers you have to:
+For DEB based package managers:
 ```bash
 wget -nv -O Release.key \
   https://build.opensuse.org/projects/home:manuelschneid3r/public_key
@@ -29,7 +30,9 @@ apt-key add - < Release.key
 apt-get update
 ```
 
-Now follow the instructions [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert).
+#### Adding the repo
+
+Adding the repo to the package managers of basic distributions (Arch, Debian, Ubuntu, Fedora and openSuse) is straight forward. Just visit [the OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert) and follow the instructions there. If you are using derivatives of these distributions you have to find out which repository they are based on and proceed using this repo. E.g. [Linux Mint 19 is based on Ubuntu 18.04 repositories](https://en.wikipedia.org/wiki/Linux_Mint_version_history#Release_history).
 
 ## Building from sources
 
