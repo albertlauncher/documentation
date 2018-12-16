@@ -6,7 +6,7 @@ permalink: /docs/extensions/widgetboxmodel/
 
 The main user interface can be customized using [QStyleSheets](http://doc.qt.io/qt-5/stylesheet.html). Qt Style Sheets are a powerful mechanism that allows you to customize the appearance of widgets. The concepts, terminology, and syntax of Qt Style Sheets are heavily inspired by HTML Cascading Style Sheets (CSS) but adapted to the world of widgets.
 
-Before handcrafting your own style sheet you might want to consider the convenient [theme creator](/docs/theming/themecreator/) written by Ricardo Fuhrmann. If you're not satisfied with the output, you can still customize the style sheet.
+Before handcrafting your own style sheet you might want to consider the convenient [theme creator](/docs/extensions/widgetboxmodel/themecreator/) written by Ricardo Fuhrmann. If you're not satisfied with the output, you can still customize the style sheet.
 
 ##### Writing style sheets
 
