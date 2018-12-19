@@ -24,10 +24,7 @@ sudo rpm --import \
 
 For DEB based package managers:
 ```bash
-wget -nv -O Release.key \
-  https://build.opensuse.org/projects/home:manuelschneid3r/public_key
-apt-key add - < Release.key
-apt-get update
+curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
 ```
 
 #### Adding the repo
