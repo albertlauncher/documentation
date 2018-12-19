@@ -1,4 +1,5 @@
 set -o errexit
+set -o xtrace
 cd ./site
 git init
 git config user.name "Travis CI"
