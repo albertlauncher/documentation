@@ -13,7 +13,7 @@ This article is about the native extension of the albert launcher.
 
 ### Overview
 
-A native albert extension is a [Qt Plugin](http://doc.qt.io/qt-5/plugins-howto.html#the-low-level-api-extending-qt-applications.) which is nothing else but a special shared library. A plugin has to have the correct interface id (IID) and of course to implement this interfaces to be loaded, e.g. `Core::Extension` or `Core::Frontend`. The best way to to get an overview is to read the [core library interface](https://github.com/albertlauncher/albert/tree/master/lib/albertcore/include) classes. The headers comments and the other plugins especially the [template extension](https://github.com/albertlauncher/plugins/tree/master/templateExtension) should get you started.
+A native albert extension is a [Qt Plugin](http://doc.qt.io/qt-5/plugins-howto.html#the-low-level-api-extending-qt-applications.) which is nothing else but a special shared library. A plugin has to have the correct interface id (IID) and of course to implement this interfaces to be loaded, e.g. `Core::Extension` or `Core::Frontend`. The best way to to get an overview is to read the [core library interface](https://github.com/albertlauncher/albert/tree/master/include/albert) classes. The headers comments and the other plugins especially the [template extension](https://github.com/albertlauncher/plugins/tree/master/templateExtension) should get you started.
 
 The internal API is still not final yet. If you want to write a plugin check the other extensions. There are some caveats and requirements you should know:
 
