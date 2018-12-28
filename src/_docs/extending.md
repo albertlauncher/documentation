@@ -44,7 +44,7 @@ Implement the `Core::Extension` and `Core::QueryHandler` interface. Especially `
 
 The `Core::Query` object contains all necessary information and accepts objects of abstract type `Core::Item`. Subclass it or use `Core::StandardItem`. The items interface has a getter for actions of abstract type `Core::Action`. Again subclass it or use `Core::StandardAction`. Furter there is the `Core::IndexableItem` interface with its standard implementation `Core::StandardIndexItem`. These items are for the use with the utility class `Core::OfflineIndex` which does basic offline indexing and searching for you.
 
-To get a detailed description of the interfaces read the header files of the [core library interface classes](https://github.com/albertlauncher/albert/tree/master/lib/albertcore/include).
+To get a detailed description of the interfaces read the header files of the core library interface classes.
 
 ### Frontend plugins
 
