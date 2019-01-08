@@ -32,7 +32,7 @@ This is what Albert tells you, if the window system refused to register the key 
 
 ###### Hotkey is set but does not work
 
-This is one of the weirdest and most annoying issue on linux. There may be several reasons. Known so far are:
+This is one of the weirdest and most annoying issues on linux. There may be several reasons. Known so far are:
 
 * Wayland does not allow to grab keys at all. Magically the hotkey works on X11 windows but not on wayland windows. 
 * Sometimes crappy window managers (e.g. Unity) intercept the keypress event. The event is simply not delivered.
