@@ -8,12 +8,8 @@ There are two ways to get Albert: Using a package manager or building Albert fro
 
 ## Using package managers
 
-### Arch Linux (and derivatives) - [AUR](https://aur.archlinux.org/packages/albert/)
-There's a PKGBUILD for Arch Linux in the AUR. Explaing how to build and install packages from AUR goes beyond scope here. Refer to the related Arch Wiki sections. Note that this is an automated way to build the package from sources.
-
-### Ubuntu 18.04
 Grab the .deb file from [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert)
-go to the download directory
+cd to the download directory and run
 
 ```
 sudo apt-get install gdebi
