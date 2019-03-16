@@ -7,11 +7,9 @@ permalink: /docs/installing/
 There are two ways to get Albert: Using a package manager or building Albert from the sources. Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
 
 ## Using package managers
+Arch Linux is the only distro maintaining a package in the [official repositories](https://www.archlinux.org/packages/community/x86_64/albert/) so far. For all other distros you have to use the prebuilt binaries hosted at openSUSE Build Service.
 
-### Arch Linux (and derivatives) - [AUR](https://aur.archlinux.org/packages/albert/)
-There's a PKGBUILD for Arch Linux in the AUR. Explaing how to build and install packages from AUR goes beyond scope here. Refer to the related Arch Wiki sections. Note that this is an automated way to build the package from sources.
-
-### Prebuilt binary packages - [OBS](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
+### Prebuilt binary packages - [openSUSE Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
 These packages are built and hosted using the openSUSE Build Service. Using these is the most convenient way to get albert and stay up to date. You have to add the repo to your package manager and import the keyfile which is used to verify the packages signatures. This has to be done only once. From then on you can install and update albert like any other package on you system.
 
 #### Importing the keyfile
