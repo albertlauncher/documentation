@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Work in progress
+title: ""
 ---
 
 Access everything with virtually zero effort. Run applications, open files or their paths,<br> open bookmarks in your browser, search the web, calculate things and a lot more ...
