@@ -45,7 +45,7 @@ The workaround for the problems above is to let the desktop environment handle t
 
 ##### Why are my icons are not displayed correctly?
 
-Make sure you have libqt5-svg (May be slightly different on some distributions) installed. Further make sure that Qt has the correct icon theme set. This is not a problem of Albert in particular, but of all Qt applications. This is a common problem and the internet provides solutions to the tons of possible reasons. Two mainstream options: Get Qt to [inherit the GTK icon theme](https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications#Using_a_GTK.2B_icon_theme_in_Qt_apps) or use qt5ct to [configure Qt](https://wiki.archlinux.org/index.php/qt#Configuration_of_Qt5_apps_under_environments_other_than_KDE_Plasma) (not recommended, qt5ct messes up other things).
+Make sure you have libqt5-svg (May be slightly different on some distributions) installed. Further make sure that Qt has the correct icon theme set. This is not a problem of Albert in particular, but of all Qt applications. This is a common problem and the internet provides solutions to the tons of possible reasons. Two mainstream options: Get Qt to [inherit the GTK icon theme](https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications#Using_a_GTK_icon_theme_in_Qt_apps) or use qt5ct to [configure Qt](https://wiki.archlinux.org/index.php/qt#Configuration_of_Qt5_apps_under_environments_other_than_KDE_Plasma) (not recommended, qt5ct messes up other things).
 
 ##### Why are some applications not shown?
 
