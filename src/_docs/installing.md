@@ -7,12 +7,20 @@ permalink: /docs/installing/
 There are two ways to get Albert: Using a package manager or building Albert from the sources. Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
 
 ## Using package managers
-Arch Linux has a package in the [official repositories](https://www.archlinux.org/packages/community/x86_64/albert/).
-[Void Linux](https://voidlinux.org/) has Albert in the standard repo: `sudo xbps-install albert`.
+
+### Official distribution repositories
+
+<!-- If you add items here please use the same format -->
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `sudo pacman -S albert` 
+* [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `sudo xbps-install albert`
+* [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
+* [Mageia](https://madb.mageia.org/package/show/name/albert) `# TODO`
+* [openSUSE]() `# TODO`
+* [Deepin](http://packages.deepin.com/deepin/pool/main/a/albert/) `# TODO` *Out of date, use the offical albert repos.*
 
 For all other distros you have to use the prebuilt binaries hosted at openSUSE Build Service.
 
-### Prebuilt binary packages - [openSUSE Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
+### Offical Albert repository @ [openSUSE Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
 
 *If there are packages missing for some recent distributions leave a note in the community chat.*
 
