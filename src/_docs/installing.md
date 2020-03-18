@@ -15,7 +15,7 @@ There are two ways to get Albert: Using a package manager or building Albert fro
 * [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `sudo xbps-install albert`
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
 * [Mageia](https://madb.mageia.org/package/show/name/albert) `# TODO`
-* [openSUSE]() `# TODO`
+* [openSUSE](https://software.opensuse.org/package/albert) `# TODO`
 * [Deepin](http://packages.deepin.com/deepin/pool/main/a/albert/) `# TODO` *Out of date, use the offical albert repos.*
 
 For all other distros you have to use the prebuilt binaries hosted at openSUSE Build Service.
