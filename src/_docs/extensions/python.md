@@ -191,7 +191,7 @@ In this example we'll create a python script to generate random UUIDs. The `init
 1. Create the folder `~/.local/share/albert/org.albert.extension.python/modules/uuid`
 2. Create a file `~/.local/share/albert/org.albert.extension.python/modules/uuid/__init__.py`
 3. In that file, place the UUID script from below
-4. Open albert settings and navigate to Extensions > Python
+4. Open Albert settings and navigate to Extensions > Python
 5. If the "UUID" option is not listed, fully quit and re-open Albert
 6. Check the checkbox next to UUID, the light should turn green
 7. Use the extension by triggering albert and typing 'uuid'
