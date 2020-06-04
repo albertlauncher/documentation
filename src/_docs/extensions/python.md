@@ -183,3 +183,88 @@ Ids are guaranteed to be unique. This means that if several of those paths conta
 Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Python code.
 
 The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules cannot be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.
+
+# Example
+
+In this example we'll create a python script to generate random UUIDs. The `initialize` method, `finalize` method, and `__dependencies__` checking can be removed if you do not need them. For more plugin examples, see the [albert python plugins repository](https://github.com/albertlauncher/python).
+
+1. Create the folder `~/.local/share/albert/org.albert.extension.python/modules/uuid`
+2. Create a file `~/.local/share/albert/org.albert.extension.python/modules/uuid/__init__.py`
+3. In that file, place the UUID script from below
+4. Open Albert settings and navigate to Extensions > Python
+5. If the "UUID" option is not listed, fully quit and re-open Albert
+6. Check the checkbox next to UUID, the light should turn green
+7. Use the extension by triggering albert and typing 'uuid'
+
+If the light turns red, there was an error loading your extension - hover over the name to view the details.
+
+It can be useful for debugging to run Albert from a terminal so that you can see the output from your script.
+
+Though reloading Albert is may be necessary to recognize that a python script is added, it is not required to detect changes to the script.
+
+## UUID script
+
+```py
+# -*- coding: utf-8 -*-
+
+"""Generate UUIDs
+
+Synopsis:
+  <trigger>
+  <trigger> v1
+  <trigger> v3 com.example.whatever
+  <trigger> v4"""
+
+from albertv0 import *
+import shutil
+import uuid
+
+__iid__ = "PythonInterface/v0.2"
+__prettyname__ = "UUID"
+__version__ = "1.0"
+__trigger__ = "uuid"
+__author__ = "Benjie Gillam"
+__dependencies__ = []
+
+for dep in __dependencies__:
+    if shutil.which(dep) is None:
+        raise Exception("'%s' is not in $PATH." % dep)
+
+def initialize():
+    return
+
+def finalize():
+    return
+
+def handleQuery(query):
+    if query.isValid and query.isTriggered:
+        items = []
+        query_tokens = query.string.lower().split()
+        uuid_type = query_tokens[0] if len(query_tokens) > 0 else 'v4'
+        if uuid_type == 'v1':
+            uuid_string = str(uuid.uuid1())
+            subtext = 'version 1'
+            subcommand = 'v1'
+        elif uuid_type == 'v3':
+            namespace = uuid.NAMESPACE_DNS
+            if len(query_tokens) > 1:
+                name = query_tokens[1]
+            else:
+                name = 'com.example'
+            uuid_string = str(uuid.uuid3(namespace, name))
+            subtext = "version 3, namespace DNS, name '%s'" % name
+            subcommand = 'v3 %s' % name
+        else:
+            uuid_string = str(uuid.uuid4())
+            subtext = 'version 4 (random)'
+            subcommand = 'v4'
+
+        if uuid_string:
+            items.append(Item(id = "%s%s" % (__name__, uuid_string),
+                              completion = "%s %s" % (query.trigger, subcommand),
+                              #icon = icon_path,
+                              text = uuid_string,
+                              subtext = subtext,
+                              actions = [ClipAction("Copy to clipboard", uuid_string)]))
+        return items
+```
