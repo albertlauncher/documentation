@@ -46,53 +46,47 @@ The built-in albert module exposes several functions and classes for use with Al
 
 The query class represents a query execution. It holds the necessary information to handle a Query. It is passed to the handleQuery function. It holds the following read-only properties.
 
-
 Attribute | Description
 --- | ---
 `string`|This is the actual query string without the trigger. If the query is not triggered this string equals rawstring.
 `rawString`|This is the full query string including the trigger. If the query is not triggered this string equals string.
 `trigger`|This is the trigger that has been used to start this extension.
 `isTriggered`|Indicates that this query has been triggered.
-`isValid`|This flag indicates if the query is valid. A query is valid as long as the core cancels it. You should regularly check this flag and abort the query handling if the flag is False to release threads in the threadpool for the next query.
+`isValid`|This flag indicates if the query is valid. A query is valid untill the query manager cancels it. You should regularly check this flag and abort the query handling if the flag is `False` to release threads in the threadpool for the next query.
 
 ### Abstract classes
 
 ##### The `ActionBase` class
 
-The base class for actions. This is a wrapper for the internal Action interface. You should not need it. If you think you do I‘d be interested why. Please contact me.
 
-##### The `ItemBase` class
+##### The  class
 
-The base class for items. This is a wrapper for the internal Item interface. You should not need this unless you need the Urgency enum.
+
 
 ###### The `Urgency` enum
+
 The urgency of an item. Note that this enum is defined in the scope of the ItemBase class.
 
-### Standard action classes
+### Action classes
 
-Standard actions are realizations of the Action interface from the core. They implement often used actions for Albert items.
+The base class for all actions is `ActionBase`. This is a wrapper for the internal Action interface. You should not need it ( If you think you do I‘d be interested why. Please contact me in this case.). There is also a set of standard actions subclassing `ActionBase` which should cover virtually every usecases.
 
-##### The `ClipAction` class
-This class copies the given text to the clipboard on activation.
-
-##### `UrlAction`
-This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.
-
-##### `ProcAction`
-This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.
-
-##### `TermAction`
-This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set.
-
-##### The `FuncAction` class
-This class is a general purpose action. On activation the callable is executed.
+Attribute | Description
+--- | ---
+`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`
+`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`
+`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`
+`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.
+<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`
+`FuncAction`|This class is a general purpose action. On activation the callable is executed.<br>`FuncAction(text:str, callable:callable)`{:.python}
 
 ### The `Item` class
 
-This class represents a result item. Objects of this class are intended to be returned by the handleQuery function.  
+The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the Urgency enum. This class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
 
-##### `Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])`
-This is the constructor of the item.
+```python
+Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])
+```
 
 Note that the default icon path is ":python_module" which is an embedded resource icon depicting a Python script and the urgency defaults to normal.
 
@@ -109,7 +103,7 @@ Attribute | Description
 ### Free functions
 
 Function | Description
---- | ---
+--- | --- 
 `debug(text)`|Log a debug message. Note that this is effectively a NOP in release builds.
 `info(text)`|Log an info message.
 `warning(text)`|Log a warning message.
