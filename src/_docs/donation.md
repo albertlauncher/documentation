@@ -18,7 +18,13 @@ These are the services you can use to donate. I want to make it simple, so if yo
 
 * Crypto (Transaction cost vary depending on the coin/token):
 
-  If you want to donate crypto, please [contact me](https://t.me/manuelschneider).
+  BTC: 1PttXhpwJsLPuy9sN5wD4sbGtefBx2APok
+  ETH: 0x8a45a06ec00343bcf0d4d0714ccfa17e36095bdc
+  XRP: rEb8TK3gBgk5auZkwc6sHnwrGVJH8DuaLh / 102150232
+  BCH: 1PttXhpwJsLPuy9sN5wD4sbGtefBx2APok
+  LTC: LVuBv6L9n9BHDyQdyjcwPPfhodQcrbyogD
+  
+  For others contact me. Preferably via [Telegram](https://t.me/manuelschneider).
 
 * PayPal (Caution: High fees for small amount):
 
