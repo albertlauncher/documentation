@@ -3,7 +3,7 @@ layout: docs
 title: Troubleshooting
 permalink: /docs/faq/
 ---
-<span style="color: red:">_**Note**: This page is deprecated. Please use [superuser.com](superuser.com) for Q&A and the [chats](/help/) for discussion._</span>
+<span style="color: red:">_**Note**: This page is deprecated. Please use [superuser.com](https://superuser.com) for Q&A and the [chats](/help/) for discussion._</span>
 
 ##### Why are items not sorted the way I prefer?
 
