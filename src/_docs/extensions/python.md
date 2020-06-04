@@ -17,17 +17,11 @@ The extension interface is a versioned protocol that describes how the Python ex
 
 Additions to PythonInterface/0.1:
 
-##### `cacheLocation()`
-
-Returns the writable cache location of the app. (E.g. $HOME/.cache/albert/ on Linux)
-
-##### `configLocation()`
-
-Returns the writable config location of the app. (E.g. $HOME/.config/albert/ on Linux)
-
-##### `dataLocation()`
-
-Returns the writable data location of the app. (E.g. $HOME/.local/share/albert/ on Linux)
+Attribute | Description
+--- | ---
+`cacheLocation()`|Returns the writable cache location of the app. (E.g. $HOME/.cache/albert/ on Linux)
+`configLocation()`|Returns the writable config location of the app. (E.g. $HOME/.config/albert/ on Linux)
+`dataLocation()`|Returns the writable data location of the app. (E.g. $HOME/.local/share/albert/ on Linux)
 
 ## Extension interface (0.1)
 
