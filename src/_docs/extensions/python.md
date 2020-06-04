@@ -54,19 +54,6 @@ Attribute | Description
 `isTriggered`|Indicates that this query has been triggered.
 `isValid`|This flag indicates if the query is valid. A query is valid untill the query manager cancels it. You should regularly check this flag and abort the query handling if the flag is `False` to release threads in the threadpool for the next query.
 
-### Abstract classes
-
-##### The `ActionBase` class
-
-
-##### The  class
-
-
-
-###### The `Urgency` enum
-
-The urgency of an item. Note that this enum is defined in the scope of the ItemBase class.
-
 ### Action classes
 
 The base class for all actions is `ActionBase`. This is a wrapper for the internal Action interface. You should not need it ( If you think you do I‘d be interested why. Please contact me in this case.). There is also a set of standard actions subclassing `ActionBase` which should cover virtually every usecases.
@@ -82,7 +69,7 @@ Attribute | Description
 
 ### The `Item` class
 
-The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the Urgency enum. This class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
+The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
 
 ```python
 Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])
