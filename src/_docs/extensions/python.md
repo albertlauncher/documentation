@@ -25,38 +25,18 @@ Attribute | Description
 
 ## Extension interface (0.1)
 
-##### `handleQuery(Query)`
-Mandatory function. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution.
-
-This function should return a list of Item objects. See the Item class section below.
-
-##### `initialize()`
-Optional function. This function is called when the extension is loaded.
-
-##### `finalize()`
-Optional function. This function is called when the extension is unloaded.
-
-##### The docstring of the module (`__doc__`)
-The docstring of the module is used as description of the extension. This string will be displayed to the user.
-
-##### `__iid__`
-Mandatory variable (string). This variable has to hold the interface version the extension implements.
-
-##### `__prettyname__`
-Optional variable (string). This variable should hold the pretty name of the extension. This string will be displayed to the user.
-
-##### `__version__`
-Optional variable (string). This variable should hold the version of the extension. This string will be displayed to the user. The versioning scheme should follow the [semantic versioning](http://semver.org).
-
-##### `__trigger__`
-Optional variable (string). If this extension should be run exclusively, this variable has to hold the trigger that causes the extension to be executed.
-
-##### `__author__`
-Optional variable (string). This variable should hold the name of the author of the extension.
-
-##### `__dependencies__`
-Optional variable (list of strings). This string should contain any dependencies the extension needs to be used.
-
+Attribute | Description
+--- | ---
+`handleQuery(Query)`|**Mandatory function**. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution. This function should return a list of Item objects. See the Item class section below.
+`initialize()`|Optional function. This function is called when the extension is loaded.
+`finalize()`|Optional function. This function is called when the extension is unloaded.
+`__doc__`|The docstring of the module is used as description of the extension. This string will be displayed to the user.
+`__iid__`|Mandatory variable (string). This variable has to hold the interface version the extension implements.
+`__prettyname__`|Optional variable (string). This variable should hold the pretty name of the extension. This string will be displayed to the user.
+`__version__`|Optional variable (string). This variable should hold the version of the extension. This string will be displayed to the user. The versioning scheme should follow the [semantic versioning](http://semver.org).
+`__trigger__`|Optional variable (string). If this extension should be run exclusively, this variable has to hold the trigger that causes the extension to be executed.
+`__author__`|Optional variable (string). This variable should hold the name of the author of the extension.
+`__dependencies__`|Optional variable (list of strings). This string should contain any dependencies the extension needs to be used.
 
 ## Api reference - The `albertv0` module
 
@@ -66,20 +46,14 @@ The built-in albert module exposes several functions and classes for use with Al
 
 The query class represents a query execution. It holds the necessary information to handle a Query. It is passed to the handleQuery function. It holds the following read-only properties.
 
-##### `string`
-This is the actual query string without the trigger. If the query is not triggered this string equals rawstring.
 
-##### `rawString`
-This is the full query string including the trigger. If the query is not triggered this string equals string.
-
-##### `trigger`
-This is the trigger that has been used to start this extension.
-
-##### `isTriggered`
-Indicates that this query has been triggered.
-
-##### `isValid`
-This flag indicates if the query is valid. A query is valid as long as the core cancels it. You should regularly check this flag and abort the query handling if the flag is False to release threads in the threadpool for the next query.
+Attribute | Description
+--- | ---
+`string`|This is the actual query string without the trigger. If the query is not triggered this string equals rawstring.
+`rawString`|This is the full query string including the trigger. If the query is not triggered this string equals string.
+`trigger`|This is the trigger that has been used to start this extension.
+`isTriggered`|Indicates that this query has been triggered.
+`isValid`|This flag indicates if the query is valid. A query is valid as long as the core cancels it. You should regularly check this flag and abort the query handling if the flag is False to release threads in the threadpool for the next query.
 
 ### Abstract classes
 
@@ -122,45 +96,25 @@ This is the constructor of the item.
 
 Note that the default icon path is ":python_module" which is an embedded resource icon depicting a Python script and the urgency defaults to normal.
 
-##### `id`
-The identifier string of the item. It is used for ranking algorithms and should not be empty.
-
-##### `icon`
-The path of the icon displayed in the item.
-
-##### `text`
-The primary text of the item.
-
-##### `subtext`
-The secondary text of the item. This text should have informative character.
-
-##### `completion`
-The completion string of the item. This string will be used to replace the input line when the user hits the Tab key on an item.
-
-Note that the semantics may vary depending in the context. Often evaluate semantics are more appropriate.
-
-##### `urgency`
-The urgency of the item. Note that the Urgency enum is defined in the ItemBase class. See the Urgency enum.
-
-##### `addAction(Action)`
-Add an action to the item.
+Attribute | Description
+--- | ---
+`id`|The identifier string of the item. It is used for ranking algorithms and should not be empty.
+`icon`|The path of the icon displayed in the item.
+`text`|The primary text of the item.
+`subtext`|The secondary text of the item. This text should have informative character.
+`completion`|The completion string of the item. This string will be used to replace the input line when the user hits the Tab key on an item. Note that the semantics may vary depending in the context. Often evaluate semantics are more appropriate.
+`urgency`|The urgency of the item. Note that the Urgency enum is defined in the ItemBase class. See the Urgency enum.
+`addAction(Action)`|Add an action to the item.
 
 ### Free functions
 
-##### `debug(text)`
-Log a debug message. Note that this is effectively a NOP in release builds.
-
-##### `info(text)`
-Log an info message.
-
-##### `warning(text)`
-Log a warning message.
-
-##### `critical(text)`
-Log a critical message.
-
-##### `iconLookup(iconName)`
-Perform xdg icon lookup and return a path. Empty if nothing found.
+Function | Description
+--- | ---
+`debug(text)`|Log a debug message. Note that this is effectively a NOP in release builds.
+`info(text)`|Log an info message.
+`warning(text)`|Log a warning message.
+`critical(text)`|Log a critical message.
+`iconLookup(iconName)`|Perform xdg icon lookup and return a path. Empty if nothing found.
 
 ## Deployment
 
