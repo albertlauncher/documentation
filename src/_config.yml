@@ -22,3 +22,7 @@ collections:
 gems:
 - jekyll-mermaid
 #- jemoji
+
+mermaid:
+  src: 'path/to/mermaid.js'
+  
