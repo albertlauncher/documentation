@@ -93,20 +93,6 @@ Attribute | Description
 `TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`{.python}
 `FuncAction`|This class is a general purpose action. On activation the callable is executed.<br>`FuncAction(text:str, callable:callable)`{:.python}
 
-## Walkthrough (TODO)
-
-In this example we'll create a python script to generate random UUIDs. For more plugin examples, see the [albert python plugins repository](https://github.com/albertlauncher/python).
-
-1. Create the folder `~/.local/share/albert/org.albert.extension.python/modules/uuid`
-2. Create a file `~/.local/share/albert/org.albert.extension.python/modules/uuid/__init__.py`
-3. In that file, place the UUID script from below
-4. Open Albert settings and navigate to Extensions > Python
-5. If the "UUID" option is not listed, fully quit and re-open Albert
-6. Check the checkbox next to UUID, the light should turn green
-7. Use the extension by triggering albert and typing 'uuid'
-
-Though reloading Albert is may be necessary to recognize that a python script is added, it is not required to detect changes to the script.
-
 ## Deployment
 
 The extension checks its data directories for a directory called `modules`. The name of a data directory is the id of the extension. I the case of the Python extension this is `org.albert.extension.python`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order):
@@ -117,11 +103,21 @@ The extension checks its data directories for a directory called `modules`. The 
 
 Ids are guaranteed to be unique. This means that if several of those paths contain a plugins with identical ids, the first plugin found will be used.
 
+## Getting started (on Linux)
+
+This example should get you started developing a python module to extend the functionality of Albert. For more extension examples, see the [albert python extensions repository](https://github.com/albertlauncher/python).
+
+1. Duplicate the folder `~/.local/share/albert/org.albert.extension.python/modules/api-test`
+1. Rename the module but stay consistent with the conventions.
+1. Open Albert settings and navigate to Extensions > Python
+1. If your module is not listed, reload the Python extension or restart Albert
+1. Enable your module (Check the checkbox) next to your extension
+1. Create your extension. The Python extension reloads modules on file changes.
+
+Before you code check the Pull Requests. Maybe somebody had your idea already. Finally dont hesitate to share your extension!
+
 ## Known issues
 
 Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Python code.
 
 The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules cannot be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.
-
-
-
