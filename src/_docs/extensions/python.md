@@ -87,10 +87,10 @@ The base class for all actions is `ActionBase`. This is a wrapper for the intern
 
 Attribute | Description
 --- | ---
-`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`{:.py}
-`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`{.py}
-`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`{:python}
-`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`{.python}
+`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`{:.python}
+`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`{:.python}
+`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`{:.python}
+`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`{:.python}
 `FuncAction`|This class is a general purpose action. On activation the callable is executed.<br>`FuncAction(text:str, callable:callable)`{:.python}
 
 ## Deployment
