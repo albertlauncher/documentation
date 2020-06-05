@@ -1,3 +1,5 @@
+os: linux
+dist: xenial
 language: ruby
 
 install: gem install jekyll html-proofer jekyll-mermaid
@@ -15,5 +17,3 @@ deploy:
   on:
     branch: master
   script: ./deploy.sh
-
-sudo: false
