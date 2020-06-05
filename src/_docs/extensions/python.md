@@ -6,13 +6,15 @@ permalink: /docs/extensions/python/
 
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.
 
+In the settings of the Python extension you can find a list of installes python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
+
 ## The extension interface specification v0
 
 How the python extension interacts with python modules is defined in the versioned interface specifiation. The Python extension also defines an embedded module `albertv0` (`albert` in future) which allows the Pyhton modules to interact with the core. The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
 
 ### The Python module interface
 
-This is how your python module has to look to be applicanble as extension:
+This is how your python module has to look to be applicable as extension:
 
 Attribute | Description
 --- | ---
@@ -63,10 +65,11 @@ Attribute | Description
 The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
 
 ```python
-Item(id="", icon=":python_module", text="", subtext="", completion="", urgency=Urgency::Normal, actions=[])
+Item(id="", icon=":python_module", text="", subtext="",
+     completion="", urgency=Urgency.Normal, actions=[])
 ```
 
-Note that the default icon path is ":python_module" which is an embedded resource icon depicting a Python script and the urgency defaults to normal.
+Note that the default icon path is `:python_module` which is an embedded resource icon depicting a Python script and the urgency defaults to normal.
 
 Attribute | Description
 --- | ---
@@ -84,16 +87,15 @@ The base class for all actions is `ActionBase`. This is a wrapper for the intern
 
 Attribute | Description
 --- | ---
-`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`
-`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`
-`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`
-`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.
-<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`
+`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`{:.py}
+`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`{.py}
+`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`{:python}
+`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`{.python}
 `FuncAction`|This class is a general purpose action. On activation the callable is executed.<br>`FuncAction(text:str, callable:callable)`{:.python}
 
 ## Walkthrough (TODO)
 
-In this example we'll create a python script to generate random UUIDs. The `initialize` method, `finalize` method, and `__dependencies__` checking can be removed if you do not need them. For more plugin examples, see the [albert python plugins repository](https://github.com/albertlauncher/python).
+In this example we'll create a python script to generate random UUIDs. For more plugin examples, see the [albert python plugins repository](https://github.com/albertlauncher/python).
 
 1. Create the folder `~/.local/share/albert/org.albert.extension.python/modules/uuid`
 2. Create a file `~/.local/share/albert/org.albert.extension.python/modules/uuid/__init__.py`
@@ -102,10 +104,6 @@ In this example we'll create a python script to generate random UUIDs. The `init
 5. If the "UUID" option is not listed, fully quit and re-open Albert
 6. Check the checkbox next to UUID, the light should turn green
 7. Use the extension by triggering albert and typing 'uuid'
-
-If the light turns red, there was an error loading your extension - hover over the name to view the details.
-
-It can be useful for debugging to run Albert from a terminal so that you can see the output from your script.
 
 Though reloading Albert is may be necessary to recognize that a python script is added, it is not required to detect changes to the script.
 
