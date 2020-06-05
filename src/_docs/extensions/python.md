@@ -4,6 +4,12 @@ title: Python extension
 permalink: /docs/extensions/python/
 ---
 
+
+
+
+
+
+
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.
 
 In the settings of the Python extension you can find a list of installes python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
@@ -11,6 +17,25 @@ In the settings of the Python extension you can find a list of installes python 
 ## The extension interface specification v0
 
 How the python extension interacts with python modules is defined in the versioned interface specifiation. The Python extension also defines an embedded module `albertv0` (`albert` in future) which allows the Pyhton modules to interact with the core. The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
+
+<!-- 
+See https://github.com/jasonbellamy/jekyll-mermaid
+Prototype here https://stackedit.io/
+-->
+```mermaid
+sequenceDiagram  
+participant C as Core
+participant E as PyExtension
+participant M as PyModule
+C ->> E: Extension::initialize()
+E ->> M: initialize()
+C ->> E: Extension::handleQuery(Query)
+E ->> M: handleQuery(Query)
+Note right of M: This is where your code runs
+M ->> E: albert.*()  
+C ->> E: Extension::finalize()
+E ->> M: finalize()
+```
 
 ### The Python module interface
 
@@ -87,11 +112,43 @@ The base class for all actions is `ActionBase`. This is a wrapper for the intern
 
 Attribute | Description
 --- | ---
-`ClipAction`|This class copies the given text to the clipboard on activation.<br>`ClipAction(text:str, clipboardText:str)`{:.python}
-`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.<br>`UrlAction(text:str, url:str)`{:.python}
-`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.<br>`ProcAction(text:str, commandline:list(str), cwd:str = '.')`{:.python}
-`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.<br>`TermAction(text:str, commandline:list(str), cwd:str = '.', shell:bool = True, behavior:CloseBehavior = CloseOnSuccess)`{:.python}
-`FuncAction`|This class is a general purpose action. On activation the callable is executed.<br>`FuncAction(text:str, callable:callable)`{:.python}
+`ClipAction`|This class copies the given text to the clipboard on activation.
+`UrlAction`|This class opens the given URL with the systems default URL handler for the scheme of the URL on activation.
+`ProcAction`|This class executes the given commandline as a detached process on activation. Optionally the working directory of the process can be set.
+`TermAction`|This class executes the given commandline in the terminal set in the preferences. Optionally the working directory of the process can be set. The namespace of the `TermAction` also contains an enum `CloseBehavior` with the enum members `CloseOnSucces`, `CloseOnExit` and `DoNotClose`, which can be used to specify the desired behavior on command termination.
+`FuncAction`|This class is a general purpose action. On activation the callable is executed.
+
+```python
+# Some action examples
+ClipAction(text='This action descripton', 
+           clipboardText='This goes to the cb')
+UrlAction(text='This simply opens google',
+          url='https://www.google.com/)
+ProcAction(text='This action runs sth.',
+           commandline=['jupyter', 'notebook'],
+           cwd='notebooks/nb1')
+TermAction(text='This action runs sth in terminal.',
+           commandline=['jupyter', 'notebook'],
+           cwd='~/notebooks/nb1',
+           shell=True,
+           behavior=CloseBehavior.DoNotClose)
+
+def do_sth():
+     albert.info("Hello on stdout!")
+
+FuncAction(text="Prints Hello on stdout!", callable=do_sth)
+
+# An item example
+Item(id='google',
+     text='Google the query',
+     subtext='Handy shortcut to google the query',
+     actions=[
+          UrlAction(text='This simply opens a google search',
+                    url='https://www.google.com/search?q=%s' % query.string)
+          ClipAction(text='Nifty action for annoying buddies assuming you are Google',
+                     clipboardText='Dude, GIYF > https://www.google.com/search?q=%s')
+     ])
+```
 
 ## Deployment
 
