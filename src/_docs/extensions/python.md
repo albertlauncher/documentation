@@ -6,7 +6,7 @@ permalink: /docs/extensions/python/
 
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.
 
-In the settings of the Python extension you can find a list of installes python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
+In the settings of the Python extension you can find a list of installed python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
 
 ## The extension interface specification v0
 
@@ -141,8 +141,8 @@ Item(id='google',
      actions=[
           UrlAction(text='This simply opens a google search',
                     url='https://www.google.com/search?q=%s' % query.string)
-          ClipAction(text='Nifty action for annoying buddies assuming you are Google',
-                     clipboardText='Dude, GIYF > https://www.google.com/search?q=%s')
+          ClipAction(text='Nifty for dudes assuming you are Google',
+                     clipboardText='Dude, https://www.google.com/search?q=%s')
      ])
 ```
 
