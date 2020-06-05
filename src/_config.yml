@@ -19,5 +19,6 @@ collections:
   docs:
     output: true
 
-#gems:
+gems:
+- jekyll-mermaid
 #- jemoji
