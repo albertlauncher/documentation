@@ -1,6 +1,6 @@
 language: ruby
 
-install: gem install jekyll  html-proofer 
+install: gem install jekyll html-proofer jekyll-mermaid
 
 addons:
   apt:
