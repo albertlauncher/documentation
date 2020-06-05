@@ -14,7 +14,7 @@ How the python extension interacts with python modules is defined in the version
 
 <!-- 
 See https://github.com/jasonbellamy/jekyll-mermaid
-Prototype here https://stackedit.io/
+Prototype here https://mermaid-js.github.io/mermaid-live-editor/
 -->
 ```mermaid
 sequenceDiagram  
@@ -25,26 +25,10 @@ C ->> E: Extension::initialize()
 E ->> M: initialize()
 C ->> E: Extension::handleQuery(Query)
 E ->> M: handleQuery(Query)
-Note right of M: This is where your code runs
 M ->> E: albert.*()  
 C ->> E: Extension::finalize()
 E ->> M: finalize()
 ```
-
-{% mermaid %}
-sequenceDiagram  
-participant C as Core
-participant E as PyExtension
-participant M as PyModule
-C ->> E: Extension::initialize()
-E ->> M: initialize()
-C ->> E: Extension::handleQuery(Query)
-E ->> M: handleQuery(Query)
-Note right of M: This is where your code runs
-M ->> E: albert.*()  
-C ->> E: Extension::finalize()
-E ->> M: finalize()
-{% endmermaid %}
 
 ### The Python module interface
 
