@@ -122,11 +122,14 @@ Attribute | Description
 # Some action examples
 ClipAction(text='This action descripton', 
            clipboardText='This goes to the cb')
+           
 UrlAction(text='This simply opens google',
-          url='https://www.google.com/)
+          url='https://www.google.com/')
+          
 ProcAction(text='This action runs sth.',
            commandline=['jupyter', 'notebook'],
            cwd='notebooks/nb1')
+           
 TermAction(text='This action runs sth in terminal.',
            commandline=['jupyter', 'notebook'],
            cwd='~/notebooks/nb1',
