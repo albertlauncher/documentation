@@ -18,7 +18,7 @@ These are the services you can use to donate. I want to make it simple, so if yo
 
 * Crypto (Transaction cost vary depending on the coin/token):
 
-  You can also dontate coins or tokens. Most of them are pretty cost effective. If you are into crypto currencies, I guess you know how much a transaction of a dedicated coin/token costs. Below is a list of wallets of popular coins. For others contact me. Preferably via [Telegram](https://t.me/manuelschneider).
+  You can also dontate coins or tokens. Most of them are pretty cost effective. If you are into crypto currencies, I guess you know how much a transaction of a particular coin/token costs. Below is a list of wallets of popular coins. For others contact me. Preferably via [Telegram](https://t.me/manuelschneider).
 
   Coin | Deposit address [*tag*]
   --- | ---
