@@ -30,9 +30,9 @@ These are the services you can use to donate. I want to make it simple, so if yo
   
 * PayPal (Caution: High fees for small donations):
 
-  Paypal charges [at least] .3$ fixed plus 2,49% of the total transferred amount. For small pledges fees can grow up to 30-40%. If you want to use PayPal anyway, [click here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC).
+  Paypal charges [at least](https://www.paypal.com/tc/webapps/mpp/paypal-fees) .3$ fixed plus 2,49% of the total transferred amount. For small pledges fees can grow up to 30-40%. If you want to use PayPal anyway, [click here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC).
 
 * Patreon (Caution: High fees for small donations, implicit VAT)
 
-  Patreon charges 6% (5 in the US) plus fixed fees (.1$/.15€ below 3$, .3$/.35€ above 3$). For small pledges fees can get over 20%. Including the VAT regulators enforce, around half of the amount does not even end on my side. If you want to use Patreon anyway, [click here](https://www.patreon.com/bePatron?u=4631163).
+  Patreon [charges](https://support.patreon.com/hc/en-us/articles/360027674431-My-earnings-fees) 6% (5 in the US) plus fixed fees (.1$/.15€ below 3$, .3$/.35€ above 3$). For small pledges fees can get over 20%. Including the VAT regulators enforce, around half of the amount does not even end on my side. If you want to use Patreon anyway, [click here](https://www.patreon.com/bePatron?u=4631163).
 
