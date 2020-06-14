@@ -3,49 +3,67 @@ layout: docs
 title: Installing Albert
 permalink: /docs/installing/
 ---
+**First and foremost a word of warning**: I have seen a lot of packages and repository source around. These sources are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
 
-There are two ways to get Albert: Using a package manager or building Albert from the sources. Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
+1. [Using your package manager and the official repositories of your distribution](#using-distribution-repositories)
+1. [Using your package manager and the official albert repositories ](#using-official-albert-repositories)
+1. [Using your package manager to install a package manually](#using-official-albert-packages)
+1. [Building and installing Albert from sources](#from-source)
 
-## Using package managers
+Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
 
-### Official distribution repositories
+## Using distribution repositories
 
 <!-- If you add items here please use the same format -->
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `sudo pacman -S albert` 
 * [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `sudo xbps-install albert`
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
 * [Mageia](https://madb.mageia.org/package/show/name/albert) `# TODO`
-* [openSUSE](https://software.opensuse.org/package/albert) `# TODO`
+* [openSUSE](https://software.opensuse.org/package/albert) `zypper install albert`
 * [Deepin](http://packages.deepin.com/deepin/pool/main/a/albert/) `# TODO` *Out of date, use the offical albert repos.*
 
-For all other distros you have to use the prebuilt binaries hosted at openSUSE Build Service.
+## Using official albert repositories
 
-### Offical Albert repository @ [openSUSE Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)
+For all other distros or simply if you want to receive updates as soon as they are pushed on github, you can use the prebuilt binaries hosted at [Open Build Service](https://de.wikipedia.org/wiki/Open_Build_Service). OBS is a platform designed to compile packages for multiple Linux distributions and simplifies the packaging process, so developers can more easily package a single program for many distributions. Whenever GitHub receives a tag, a webhook starts the compilation, packaging and publishing for several distributions on OBS. Finally the Albert package is public in the repos of OBS, and can be pulled by package managers. 
 
-*If there are packages missing for some recent distributions leave a note in the community chat.*
-
-These packages are built and hosted using the openSUSE Build Service. Using these is the most convenient way to get albert and stay up to date. You have to add the repo to your package manager and import the keyfile which is used to verify the packages signatures. This has to be done only once. From then on you can install and update albert like any other package on you system.
-
-#### Importing the keyfile
-
-For RPM based package managers:
+Before you can use this repo you have to add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. For details see [debian.org](https://wiki.debian.org/SecureApt#How_to_tell_apt_what_to_trust) and [redhat.com](https://access.redhat.com/documentation/en-us/red_hat_network/5.0.0/html/client_configuration_guide/ch-gpg-keys). Depending on your package manager this step varies:
 ```bash
-sudo rpm --import \
-  https://build.opensuse.org/projects/home:manuelschneid3r/public_key
+URL="https://build.opensuse.org/projects/home:manuelschneid3r/public_key"
+
+# For RPM based package managers
+sudo rpm --import "$URL"
+
+# for DEB based package managers
+curl "$URL" | sudo apt-key add -
 ```
 
-For DEB based package managers:
-```bash
+To tell your package manager to use the OBS repo, you have to give it a link to the correct repo matching your distribution. Note that, if you are using derived distributions, you have to use the distribution, which your OS is based on. I.e., using Linux Mint 20, you have to use the xUbuntu_20.04 repository, since [Linux Mint 20 is based on Ubuntu 20.04](https://en.wikipedia.org/wiki/Linux_Mint_version_history#Release_history).
+
+To find the link of the distribution you need visit [the OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert) and follow the instructions there. There you will find the remaining steps you have to run in your terminal to add the repo and install albert. If there are some popular distributions or recent versions of them missing, leave a note in the community chat. 
+
+These steps have to be done only once. From now on Albert will be updated like any other package on your system.
+
+```
+# Full example for Ubuntu 20.04
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+sudo apt update
+sudo apt install albert
+
+# Full example for Fedora 32
+sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_32/home:manuelschneid3r.repo
+dnf install albert
 ```
 
-#### Adding the repo
+## Using official albert packages
 
-Adding the repo to the package managers of basic distributions (Arch, Debian, Ubuntu, Fedora and openSuse) is straight forward. Just visit [the OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert) and follow the instructions there. If you are using derivatives of these distributions you have to find out which repository they are based on and proceed using this repo. E.g. [Linux Mint 19 is based on Ubuntu 18.04 repositories](https://en.wikipedia.org/wiki/Linux_Mint_version_history#Release_history).
+This is an option if you just want to test Albert or if you do not want to get rolling updates, but rather stay with a particular version instead. For all other cases use the methods above. You will find the precompiled packages [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert).
 
-## Building from sources
+## From source
 
-Building from sources is the least convenient, but most flexible way. The build process is trivial, but you have to manage the dependencies on your own. Before you can start building Albert you need some libraries.
+This way is usually for developers only. Building from sources is the least convenient, but most flexible way. The build process is trivial, but you have to manage the dependencies on your own. Before you can start building Albert you need some libraries.
 
 ### Prerequisites
 
