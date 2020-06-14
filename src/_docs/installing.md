@@ -57,23 +57,6 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/home:ma
 dnf install albert
 ```
 
-{% highlight bash %}
-# Full example for Ubuntu 20.04
-curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
-echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
-sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
-sudo apt update
-sudo apt install albert
-
-# Full example for Fedora 32
-sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_32/home:manuelschneid3r.repo
-{% endhighlight %}
-
-
-
-
-
 ## Using official albert packages
 
 This is an option if you just want to test Albert or if you do not want to get rolling updates, but rather stay with a particular version instead. For all other cases use the methods above. You will find the precompiled packages [here](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert).
