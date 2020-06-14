@@ -12,7 +12,7 @@ The documentation should cover everything you are concerned about. Users find a 
 
 ##### Troubleshooting and support
 
-If you have questions or problems using albert ask Google. Solutions are spread over GitHub, Blogs, Reddit, [superuser.com](https://superuser.com/questions/tagged/albert), etc. If you did not find the answer for your question, post it on superuser.com and tag it with [`#albert`](https://superuser.com/questions/tagged/albert). To get attention post the link in the chats.
+If you have questions or problems using albert ask Google. Solutions are spread over [GitHub](https://github.com/albertlauncher/albert/issues), Blogs, Reddit, [superuser.com](https://superuser.com/questions/tagged/albert), etc. If you did not find the answer for your question, post it on superuser.com and tag it with [`#albert`](https://superuser.com/questions/tagged/albert). To get attention post the link in the chats.
 
 ##### Chats
 
