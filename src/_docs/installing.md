@@ -43,7 +43,7 @@ To find the link of the distribution you need visit [the OBS software repo](http
 
 These steps have to be done only once. From now on Albert will be updated like any other package on your system.
 
-```
+```bash
 # Full example for Ubuntu 20.04
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
