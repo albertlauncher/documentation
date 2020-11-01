@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Applications extension
-permalink: /docs/extensions/applications/
+permalink: //extensions/applications/
 ---
 
 The applications extension makes desktop applications runnable by albert. The concept of desktop applications is described in the [freedesktop.org Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/).

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: MPRIS extension
-permalink: /docs/extensions/mpris/
+permalink: //extensions/mpris/
 ---
 
 **Note**: This extension depends on the [Qt D-Bus](http://doc.qt.io/qt-5/qtdbus-index.html) module.

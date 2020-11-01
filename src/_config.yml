@@ -19,6 +19,6 @@ collections:
   docs:
     output: true
 
-gems:
-- jekyll-mermaid
+#gems:
+#- jekyll-mermaid
   

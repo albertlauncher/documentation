@@ -1,18 +1,18 @@
 ---
 layout: docs
-title: Python extension
-permalink: /docs/extensions/python/
+title: Python
+permalink: /python/
 ---
 
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.
 
-In the settings of the Python extension you can find a list of installed python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
+In the settings of the Python extension you can find a list of installed Python extensions. This list with checkboxes works similar to the list of native extensions. Check the box of a Python module to automatically load it when the Python extension gets initialized. The icon represents the loading status. Dash means undloaded, the green checkmark stands for a successfully loaded module and a red cross indicates an error while loading the extension. In this case you can hover over the item to check its tooltip. There you find any errormessages. You can also run Albert from terminal to check for error output.
 
 ## The extension interface specification v0
 
-How the python extension interacts with python modules is defined in the versioned interface specifiation. The Python extension also defines an embedded module `albertv0` (`albert` in future) which allows the Pyhton modules to interact with the core. The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
+How the Python extension interacts with Python modules is defined in the versioned interface specifiation. The Python extension also defines an embedded module `albertv0` (`albert` in future) which allows the Pyhton modules to interact with the core. The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
 
-<!-- 
+<!--
 See https://github.com/jasonbellamy/jekyll-mermaid
 Prototype here https://mermaid-js.github.io/mermaid-live-editor/
 -->
@@ -32,12 +32,12 @@ E ->> M: finalize()
 
 ### The Python module interface
 
-This is how your python module has to look to be applicable as extension:
+This is how your Python module has to look to be applicable as extension:
 
 Attribute | Description
 --- | ---
 `handleQuery(Query)`|**Mandatory function**. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution. This function should return a list of Item objects. See the Item class section below.
-`initialize()`|Optional function. This function is called when the extension is loaded.
+`initialize()`|Optional function. This function is called when the extension is loaded. Although you could technically run your initialization code in global scope, it is recommended to initialize your extension in this function. If your extension fails to initialize you can raise exceptions here, which are displayed to the user.
 `finalize()`|Optional function. This function is called when the extension is unloaded.
 `__doc__`|The docstring of the module is used as description of the extension. This string will be displayed to the user.
 `__iid__`|**Mandatory variable** (string). This variable has to hold the interface version the extension implements.
@@ -80,7 +80,7 @@ Attribute | Description
 
 ##### The `Item` class
 
-The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
+The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows:
 
 ```python
 Item(id="", icon=":python_module", text="", subtext="",
@@ -113,21 +113,21 @@ Attribute | Description
 
 ```python
 # Some action examples
-ClipAction(text='This action descripton', 
+ClipAction(text='This action description',
            clipboardText='This goes to the cb')
-           
+
 UrlAction(text='This simply opens google',
           url='https://www.google.com/')
-          
+
 ProcAction(text='This action runs sth.',
            commandline=['jupyter', 'notebook'],
            cwd='notebooks/nb1')
-           
+
 TermAction(text='This action runs sth in terminal.',
            commandline=['jupyter', 'notebook'],
            cwd='~/notebooks/nb1',
            shell=True,
-           behavior=CloseBehavior.DoNotClose)
+           behavior=TermAction.CloseBehavior.DoNotClose)
 
 def do_sth():
      albert.info("Hello on stdout!")
@@ -148,7 +148,7 @@ Item(id='google',
 
 ## Deployment
 
-The extension checks its data directories for a directory called `modules`. The name of a data directory is the id of the extension. I the case of the Python extension this is `org.albert.extension.python`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order):
+The extension checks its data directories for a directory called `modules`. The name of a data directory is the id of the extension. In the case of the Python extension this is `org.albert.extension.python`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order):
 
 * ~/.local/share/albert/org.albert.extension.python/modules
 * /usr/local/share/albert/org.albert.extension.python/modules
@@ -158,7 +158,7 @@ Ids are guaranteed to be unique. This means that if several of those paths conta
 
 ## Getting started (on Linux)
 
-This example should get you started developing a python module to extend the functionality of Albert. For more extension examples, see the [albert python extensions repository](https://github.com/albertlauncher/python).
+This example should get you started developing a Python module to extend the functionality of Albert. For more extension examples, see the [albert Python extensions repository](https://github.com/albertlauncher/python).
 
 1. Duplicate the folder `~/.local/share/albert/org.albert.extension.python/modules/api-test`
 1. Rename the module but stay consistent with the conventions.
@@ -170,7 +170,5 @@ This example should get you started developing a python module to extend the fun
 Before you code check the Pull Requests. Maybe somebody had your idea already. Finally dont hesitate to share your extension!
 
 ## Known issues
-
-Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Python code.
 
 The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules cannot be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.

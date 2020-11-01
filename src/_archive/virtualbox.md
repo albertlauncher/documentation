@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: VirtualBox extension
-permalink: /docs/extensions/virtualbox/
+permalink: //extensions/virtualbox/
 ---
 
 This extension lets you control your VirtualBox VMs. It supports various states in which the VM can be:

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Changelog
-permalink: /docs/changelog/
+permalink: /changelog/
 ---
 This is the feature centric changelog. It may be a bit behind, since I update it in batches. For a complete changelog refer to the news and git log.
 
@@ -230,8 +230,8 @@ This is the feature centric changelog. It may be a bit behind, since I update it
 * Tab completion.
 * Hovering over the input box the mouse wheel can now be used to browse the history.
 * Spotlight themes (Bright, Dark and Space).
-* [MPRIS](/docs/extensions/mpris/) extension
-* [Secure Shell](/docs/extensions/ssh/) extension.
+* MPRIS extension
+* ssh extension.
 * The terminal extension now provides the shell aliases too.
 * File browse mode.
 * The application extension allows to ignore the `OnlyShowIn`/`NotShowIn` keys.

@@ -3,3 +3,5 @@ _site
 .gitmodules
 .idea
 .DS_Store
+.jekyll-cache
+*.lock

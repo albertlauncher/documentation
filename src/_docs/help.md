@@ -1,14 +1,14 @@
 ---
-layout: page
+layout: docs
 title: Help
 permalink: /help/
 ---
 
 Problems with Albert? Try these.
 
-##### [Documentation](/docs/)
+##### Documentation
 
-The documentation should cover everything you are concerned about. Users find a user guide, while devs can learn how to extend the app with plugins, scripts or executables.
+This documentation should cover everything you are concerned about. Users find a user guide, while devs can learn how to extend the app with plugins, scripts or executables.
 
 ##### Troubleshooting and support
 
@@ -16,10 +16,10 @@ If you have questions or problems using albert ask Google. Solutions are spread 
 
 ##### Chats
 
-These chats are for discussion around albert. Note that **these chats are no support chats**. Unless your problem is interesting or new you will probably get no answer. The chats are bridged using [MatterBridge](https://github.com/42wim/matterbridge) so it does not matter which chat you join. 
+These chats are for discussion around albert. The chats are bridged using [MatterBridge](https://github.com/42wim/matterbridge) so it does not matter which chat you join.
 
 - [Telegram](https://telegram.me/albert_launcher_community)
-- [Discord](https://discord.gg/enGMWUG)
+- [Discord](https://discord.gg/t8G2EkvRZh)
 - [IRC](irc://irc.freenode.net/albertlauncher) / [(Web Client)](http://webchat.freenode.net?channels=%23albertlauncher)
 
 ##### [Github repository]({{ site.repository }})

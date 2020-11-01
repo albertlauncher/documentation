@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Using Albert
-permalink: /docs/using/
+title: Using
+permalink: /using/
 ---
 
 As you would expect from a launcher, the main use case is to type a query into an input box and finally to interact with some sort of results. Actually there is not much more Albert allows you to do - triggering things. No more, no less.

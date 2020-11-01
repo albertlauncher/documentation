@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: External extensions communication protocol (v3)
-permalink: /docs/extensions/external/v3/
+permalink: /external/v3/
 ---
 
 #### `METADATA`
