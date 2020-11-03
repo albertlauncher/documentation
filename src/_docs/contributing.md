@@ -21,6 +21,7 @@ By contributing your code, you agree to license your contribution under the GPL 
 
 There is plenty of other things you can do aside from coding:
 
+- **We badly need reviewers for PRs.** Get in contact via the chats.
 - Star the [project. ![Issues](https://img.shields.io/github/stars/albertlauncher/albert.svg?style=social&label=Stars)](https://github.com/albertlauncher/albert)
 - Spread the word.
 - Join the community and help other users.
