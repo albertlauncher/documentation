@@ -127,7 +127,7 @@ TermAction(text='This action runs sth in terminal.',
            commandline=['jupyter', 'notebook'],
            cwd='~/notebooks/nb1',
            shell=True,
-           behavior=CloseBehavior.DoNotClose)
+           behavior=TermAction.CloseBehavior.DoNotClose)
 
 def do_sth():
      albert.info("Hello on stdout!")
