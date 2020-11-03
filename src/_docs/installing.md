@@ -26,7 +26,7 @@ Using a package manager is highly recommended, since it is less error prone and 
 
 For all other distros or simply if you want to receive updates as soon as they are pushed on github, you can use the prebuilt binaries hosted at [Open Build Service](https://de.wikipedia.org/wiki/Open_Build_Service). OBS is a platform designed to compile packages for multiple Linux distributions and simplifies the packaging process, so developers can more easily package a single program for many distributions. Whenever GitHub receives a tag, a webhook starts the compilation, packaging and publishing for several distributions on OBS. Finally the Albert package is public in the repos of OBS, and can be pulled by package managers. 
 
-Before you can use this repo you have to add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. For details see [debian.org](https://wiki.debian.org/SecureApt#How_to_tell_apt_what_to_trust) and [redhat.com](https://access.redhat.com/documentation/en-us/red_hat_network/5.0.0/html/client_configuration_guide/ch-gpg-keys). Depending on your package manager this step varies:
+Before you can use this repo you have to add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. For details see [debian.org](https://wiki.debian.org/SecureApt#How_to_tell_apt_what_to_trust) and [redhat.com](https://access.redhat.com/documentation/en-us/red_hat_network/5.0.0/html/client_configuration_guide/ch-gpg-keys). Keep in mind that the key has an expiration date and you have to repeat this process every few years. Depending on your package manager this step varies:
 ```bash
 URL="https://build.opensuse.org/projects/home:manuelschneid3r/public_key"
 
