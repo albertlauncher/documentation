@@ -37,7 +37,7 @@ This is how your python module has to look to be applicable as extension:
 Attribute | Description
 --- | ---
 `handleQuery(Query)`|**Mandatory function**. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution. This function should return a list of Item objects. See the Item class section below.
-`initialize()`|Optional function. This function is called when the extension is loaded.
+`initialize()`|Optional function. This function is called when the extension is loaded. Although you could technically run your initialization code in global scope, it is recommended to initialize your extension this function. If your extension fails to initialize you can raise exceptions here, which are displayed to the user.
 `finalize()`|Optional function. This function is called when the extension is unloaded.
 `__doc__`|The docstring of the module is used as description of the extension. This string will be displayed to the user.
 `__iid__`|**Mandatory variable** (string). This variable has to hold the interface version the extension implements.
@@ -170,7 +170,5 @@ This example should get you started developing a python module to extend the fun
 Before you code check the Pull Requests. Maybe somebody had your idea already. Finally dont hesitate to share your extension!
 
 ## Known issues
-
-Python exceptions thrown at the core application are not handled well and may introduce a lot of weird errors. Ensure that you catch _all_ exceptions in the Python code.
 
 The Python interpreter shuts down when the Python extension is unloaded. After this, enabling the extension will restart the interpreter. Some modules cannot be re-initialized safely and may cause segfaults after the interpreter has been restarted (numpy!). The issue is that Python itself cannot completely unload extension modules and there are several caveats with regard to interpreter restarting. In short, not all memory may be freed, either due to Python reference cycles or user-created global data. All the details can be found in the CPython documentation.
