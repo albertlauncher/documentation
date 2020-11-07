@@ -37,7 +37,7 @@ This is how your python module has to look to be applicable as extension:
 Attribute | Description
 --- | ---
 `handleQuery(Query)`|**Mandatory function**. This is the crucial part of a Python module. When the user types a query, this function is called with a query object representing the current query execution. This function should return a list of Item objects. See the Item class section below.
-`initialize()`|Optional function. This function is called when the extension is loaded. Although you could technically run your initialization code in global scope, it is recommended to initialize your extension this function. If your extension fails to initialize you can raise exceptions here, which are displayed to the user.
+`initialize()`|Optional function. This function is called when the extension is loaded. Although you could technically run your initialization code in global scope, it is recommended to initialize your extension in this function. If your extension fails to initialize you can raise exceptions here, which are displayed to the user.
 `finalize()`|Optional function. This function is called when the extension is unloaded.
 `__doc__`|The docstring of the module is used as description of the extension. This string will be displayed to the user.
 `__iid__`|**Mandatory variable** (string). This variable has to hold the interface version the extension implements.
