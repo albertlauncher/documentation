@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Python extension
-permalink: /docs/extensions/python/
+title: Extending Albert with native plugins
+permalink: /docs/extending/python/
 ---
 
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.
@@ -12,7 +12,7 @@ In the settings of the Python extension you can find a list of installed python 
 
 How the python extension interacts with python modules is defined in the versioned interface specifiation. The Python extension also defines an embedded module `albertv0` (`albert` in future) which allows the Pyhton modules to interact with the core. The extension interface and the built-in albert module are _not_ final. They are prototypes and intended to be improved on user feedback.
 
-<!-- 
+<!--
 See https://github.com/jasonbellamy/jekyll-mermaid
 Prototype here https://mermaid-js.github.io/mermaid-live-editor/
 -->
@@ -80,7 +80,7 @@ Attribute | Description
 
 ##### The `Item` class
 
-The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows: 
+The base class for all items is `ItemBase`. This is a wrapper for the internal Item interface. You should not need this unless you need the `Urgency` enum. The `Urgency` enum is defined in the `ItemBase` namespace and has the following enum members: `Alert`, `Notification` and `Normal`. The `Item` class represents a result item. Objects of this class are intended to be returned by the handleQuery function. The signature of the constructor is as follows:
 
 ```python
 Item(id="", icon=":python_module", text="", subtext="",
@@ -113,16 +113,16 @@ Attribute | Description
 
 ```python
 # Some action examples
-ClipAction(text='This action descripton', 
+ClipAction(text='This action descripton',
            clipboardText='This goes to the cb')
-           
+
 UrlAction(text='This simply opens google',
           url='https://www.google.com/')
-          
+
 ProcAction(text='This action runs sth.',
            commandline=['jupyter', 'notebook'],
            cwd='notebooks/nb1')
-           
+
 TermAction(text='This action runs sth in terminal.',
            commandline=['jupyter', 'notebook'],
            cwd='~/notebooks/nb1',

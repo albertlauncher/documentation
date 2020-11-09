@@ -2,8 +2,8 @@
   docs:
     - installing
     - using
-    - extending
     - extensions
+    - extending
 
 #- title: Dev guide
 #  docs:

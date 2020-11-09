@@ -1,11 +1,10 @@
 ---
 layout: docs
-title: External extension
-permalink: /docs/extensions/external/
+title: Extending Albert with executables
+permalink: /docs/extending/external/
 ---
 
 ***Note: This scripting extension is deprecated as of v0.14.0. Use the python extension instead***
-
 
 Albert can be extended using regular executables. They are used like plugins, however the executables are separate processes which have separate address spaces. Therefore these executables are called _external plugins_. This documentation refers to the extension shipped with v0.13.
 
