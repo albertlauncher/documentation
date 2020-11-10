@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Chromium extension
-permalink: /docs/extensions/chromium/
+permalink: //extensions/chromium/
 ---
 
 The chromium/chrome extension makes your chromium/chrome bookmarks accessible via albert.

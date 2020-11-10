@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Extending Albert
-permalink: /docs/extending/
+permalink: //extending/
 ---
 
 Albert has a flexible nested extension system, which gives users and developers the ability to extend its functionality.
@@ -16,18 +16,18 @@ A more flexible but less performant and convenient way to extend Albert are exte
 
 ## Native extensions
 
-If you want to write a native extension, check the docs on [native extension](/docs/extending/native/).
+If you want to write a native extension, check the docs on [native extension](//extending/native/).
 
 Check [the plugins repo](https://github.com/albertlauncher/plugins) for an up to date list of extensions.
 
 ## Python extensions
 
-If you want to write a Python extension, check the docs of the [Python plugin](/docs/extending/python/).
+If you want to write a Python extension, check the docs of the [Python plugin](//extending/python/).
 
 Check [the python repo](https://github.com/albertlauncher/python) for an up to date list of extensions.
 
 ## External extensions
 
-If you want to write an external extension though, check the docs of the [external extension plugin](/docs/extending/external/).
+If you want to write an external extension though, check the docs of the [external extension plugin](//extending/external/).
 
 Check [the external repo](https://github.com/albertlauncher/external) for a template extension.

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Secure shell extension
-permalink: /docs/extensions/ssh/
+permalink: //extensions/ssh/
 ---
 
 This extension scans your `/etc/ssh/config` and `~/.ssh/config` and makes your ssh hosts accessible by Albert.

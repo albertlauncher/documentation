@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: QML Box Model
-permalink: /docs/extensions/qmlboxmodel/
+permalink: //extensions/qmlboxmodel/
 ---
 
 QML is a user interface markup language. It is a JSON-like declarative language for designing user interface–centric applications. Inline JavaScript code handles imperative aspects. This allows extremely flexible, flashy and animated interfaces, without coding imperative lines for hours and hours.

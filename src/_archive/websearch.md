@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Websearch extension
-permalink: /docs/extensions/websearch/
+permalink: //extensions/websearch/
 ---
 
 This extension lets you define web search engines that you can fire up in your browser with a query string. The web search item shows up when prefixing the query with the trigger string of the search engine, e.g. `gg foobar` shows an item that launches a google search for foobar in your browser. Special about the web search entries is that they can serve as fallback items when the current query did not yield any results too.

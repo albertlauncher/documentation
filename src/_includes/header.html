@@ -5,7 +5,20 @@
             <span class="title">{{site.title}}</span>
         </a>
         <nav class="navigation float-right">
-            {% include primary-nav-items.html %}
+            <ul>
+            <!--    <li class="{% if page.url contains '//' %}current{% endif %}">
+                    <a href="//">Docs</a>
+                </li>
+                <li class="{% if page.author %}current{% endif %}">
+                    <a href="/news/">News</a>
+                </li>
+                <li class="{% if page.url contains '/help/' %}current{% endif %}">
+                    <a href="/help/">Help</a>
+                </li>-->
+                <li>
+                    <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
+                </li>
+            </ul>
         </nav>
     </div>
 </nav>

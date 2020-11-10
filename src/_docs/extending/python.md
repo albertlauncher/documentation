@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Extending Albert with native plugins
-permalink: /docs/extending/python/
+permalink: //extending/python/
 ---
 
 The Python extension makes the application extendable by embedding Python modules. Since the name of the native extension providing this functionality is *Python extension* and a Python module in this context is called *Python extension* too, this article refers to the Python extensions by using the term *Python modules*.

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Installing Albert
-permalink: /docs/installing/
+permalink: //installing/
 ---
 **A word of warning**: There are a lot of inofficial packages and repository sources around. These are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
 

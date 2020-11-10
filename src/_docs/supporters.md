@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Supporters
-permalink: /docs/supporters/
+permalink: /supporters/
 ---
 
 I would like to express my sincere gratitude to my supporters, especially to the recurring ones and my active patrons.

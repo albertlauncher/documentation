@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Contributing
-permalink: /docs/contributing/
+permalink: //contributing/
 ---
 
 I'd like like to invite anyone to be part of the project. Generally this is pretty straight forward: Fork the repository, push your changes to the fork and finally send a pull request. However due to problems in the past there are some rules on ***how*** you should contribute:
@@ -28,9 +28,9 @@ There is plenty of other things you can do aside from coding:
 - Use the application and report issues.
 - Check the [issues](https://github.com/albertlauncher/albert/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20sort%3Areactions-%2B1-desc) and try to help debugging. [![Issues](https://img.shields.io/github/issues/albertlauncher/albert.svg)](https://github.com/albertlauncher/albert/issues)
 - Improve the documentation (Link on top of the pages).
-- Support me as a creator by [donating some bucks](/docs/donation/).
+- Support me as a creator by [donating some bucks](//donation/).
 
 
 ## Supporters
 
-The list [moved](/docs/supporters).
+The list [moved](//supporters).

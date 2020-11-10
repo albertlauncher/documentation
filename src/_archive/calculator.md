@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Calculator extension
-permalink: /docs/extensions/calculator/
+permalink: //extensions/calculator/
 ---
 
 **Note**: This extension depends on [muparser](http://beltoforion.de/article.php?a=muparser).

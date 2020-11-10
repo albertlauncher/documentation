@@ -6,16 +6,17 @@
     - extensions
     - extending
 
-#- title: Dev guide
-#  docs:
-#    - extending/native
-#    - extending/external
-#    - extending/python
-#    - extending/javascript
-#    - extending/lua
+- title: extending
+ docs:
+    - extending
+    - native
+    - python
+    - external
 
 - title: Meta
   docs:
-  - contributing
-  - donation
-  - changelog
+    - news
+    - help
+    - contributing
+    - donation
+    - changelog
