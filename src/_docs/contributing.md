@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Contributing
-permalink: //contributing/
+permalink: /contributing/
 ---
 
 I'd like like to invite anyone to be part of the project. Generally this is pretty straight forward: Fork the repository, push your changes to the fork and finally send a pull request. However due to problems in the past there are some rules on ***how*** you should contribute:

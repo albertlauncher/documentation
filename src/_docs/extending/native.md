@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Extending Albert with native plugins
-permalink: //extending/native/
+permalink: /extending/native/
 ---
 
 ### Overview

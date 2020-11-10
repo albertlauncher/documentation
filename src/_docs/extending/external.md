@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Extending Albert with executables
-permalink: //extending/external/
+permalink: /extending/external/
 ---
 
 ***Note: This scripting extension is deprecated as of v0.14.0. Use the python extension instead***

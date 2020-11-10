@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Changelog
-permalink: //changelog/
+permalink: /changelog/
 ---
 This is the feature centric changelog. It may be a bit behind, since I update it in batches. For a complete changelog refer to the news and git log.
 

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Installing Albert
-permalink: //installing/
+permalink: /installing/
 ---
 **A word of warning**: There are a lot of inofficial packages and repository sources around. These are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
 
@@ -15,7 +15,7 @@ Using a package manager is highly recommended, since it is less error prone and 
 ## Using distribution repositories
 
 <!-- If you add items here please use the same format -->
-* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `sudo pacman -S albert` 
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `sudo pacman -S albert`
 * [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `sudo xbps-install albert`
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
 * [Mageia](https://madb.mageia.org/package/show/name/albert) `# TODO`
@@ -24,7 +24,7 @@ Using a package manager is highly recommended, since it is less error prone and 
 
 ## Using official albert repositories
 
-For all other distros or simply if you want to receive updates as soon as they are pushed on github, you can use the prebuilt binaries hosted at [Open Build Service](https://de.wikipedia.org/wiki/Open_Build_Service). OBS is a platform designed to compile packages for multiple Linux distributions and simplifies the packaging process, so developers can more easily package a single program for many distributions. Whenever GitHub receives a tag, a webhook starts the compilation, packaging and publishing for several distributions on OBS. Finally the Albert package is public in the repos of OBS, and can be pulled by package managers. 
+For all other distros or simply if you want to receive updates as soon as they are pushed on github, you can use the prebuilt binaries hosted at [Open Build Service](https://de.wikipedia.org/wiki/Open_Build_Service). OBS is a platform designed to compile packages for multiple Linux distributions and simplifies the packaging process, so developers can more easily package a single program for many distributions. Whenever GitHub receives a tag, a webhook starts the compilation, packaging and publishing for several distributions on OBS. Finally the Albert package is public in the repos of OBS, and can be pulled by package managers.
 
 Before you can use this repo you have to add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. For details see [debian.org](https://wiki.debian.org/SecureApt#How_to_tell_apt_what_to_trust) and [redhat.com](https://access.redhat.com/documentation/en-us/red_hat_network/5.0.0/html/client_configuration_guide/ch-gpg-keys). Keep in mind that the key has an expiration date and you have to repeat this process every few years. Depending on your package manager this step varies:
 ```bash
@@ -39,7 +39,7 @@ curl "$URL" | sudo apt-key add -
 
 To tell your package manager to use the OBS repo, you have to give it a link to the correct repo matching your distribution. Note that, if you are using derived distributions, you have to use the distribution, which your OS is based on. I.e., using Linux Mint 20, you have to use the xUbuntu_20.04 repository, since [Linux Mint 20 is based on Ubuntu 20.04](https://en.wikipedia.org/wiki/Linux_Mint_version_history#Release_history).
 
-To find the link of the distribution you need visit [the OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert) and follow the instructions there. There you will find the remaining steps you have to run in your terminal to add the repo and install albert. If there are some popular distributions or recent versions of them missing, leave a note in the community chat. 
+To find the link of the distribution you need visit [the OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert) and follow the instructions there. There you will find the remaining steps you have to run in your terminal to add the repo and install albert. If there are some popular distributions or recent versions of them missing, leave a note in the community chat.
 
 These steps have to be done only once. From now on Albert will be updated like any other package on your system.
 

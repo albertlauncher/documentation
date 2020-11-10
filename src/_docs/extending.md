@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Extending Albert
-permalink: //extending/
+permalink: /extending/
 ---
 
 Albert has a flexible nested extension system, which gives users and developers the ability to extend its functionality.
