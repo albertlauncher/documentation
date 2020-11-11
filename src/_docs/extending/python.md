@@ -113,7 +113,7 @@ Attribute | Description
 
 ```python
 # Some action examples
-ClipAction(text='This action descripton',
+ClipAction(text='This action description',
            clipboardText='This goes to the cb')
 
 UrlAction(text='This simply opens google',
@@ -148,7 +148,7 @@ Item(id='google',
 
 ## Deployment
 
-The extension checks its data directories for a directory called `modules`. The name of a data directory is the id of the extension. I the case of the Python extension this is `org.albert.extension.python`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order):
+The extension checks its data directories for a directory called `modules`. The name of a data directory is the id of the extension. In the case of the Python extension this is `org.albert.extension.python`. The data directories reside in the data directories of the application defined by [Qt](http://doc.qt.io/qt-5/qstandardpaths.html#StandardLocation-enum). Hence the external extensions would be looked up in the following directories (in this order):
 
 * ~/.local/share/albert/org.albert.extension.python/modules
 * /usr/local/share/albert/org.albert.extension.python/modules
