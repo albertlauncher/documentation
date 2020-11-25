@@ -12,11 +12,9 @@ Access everything with virtually zero effort. Run applications, open files or th
 
 <img style="width:80%; margin:auto; display:block;" alt="albert" src="{{site.url}}/img/v0.10.jpg">
 
-
-![Albert v0.14.18](https://www.youtube.com/watch?v=HexFFkZMM9g)
-![Albert v0.13.0 theming](https://www.youtube.com/watch?v=aCyB3ZngbLk)
-![Albert Gource 2017](https://www.youtube.com/watch?v=crsZ4ZeCc0I)
-
+<p align="center">![Albert v0.14.18](https://www.youtube.com/watch?v=HexFFkZMM9g)</p>
+<p align="center">![Albert v0.13.0 theming](https://www.youtube.com/watch?v=aCyB3ZngbLk)</p>
+<p align="center">![Albert Gource 2017](https://www.youtube.com/watch?v=crsZ4ZeCc0I)</p>
 
 <!--
 <h5>doc.title</h5>
