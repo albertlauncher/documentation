@@ -2,7 +2,7 @@ os: linux
 dist: xenial
 language: ruby
 
-install: gem install jekyll html-proofer jekyll-mermaid
+install: gem install jekyll html-proofer jekyll-spaceship
 
 addons:
   apt:
