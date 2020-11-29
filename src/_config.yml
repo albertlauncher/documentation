@@ -16,7 +16,7 @@ repository: https://github.com/albertlauncher/albert.git
 exclude: [vendor]
 
 collections:
-  docs:
+  pages:
     output: true
 
 plugins:

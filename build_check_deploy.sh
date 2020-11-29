@@ -1,9 +1,13 @@
-#! /bin/bash
+#! /bin/sh
 
 set -o errexit
 set -o xtrace
+
+# Build
 docker run -it --rm --name jekyll -v "$(pwd)/src:/srv/jekyll" jekyll/jekyll jekyll build
 docker run -it --rm -v $(pwd)/src/_site:/src  klakegg/html-proofer:3.17.0 --allow-hash-href --check-html --empty-alt-ignore
+
+# Deploy
 cd ./src/_site
 git init
 git add .

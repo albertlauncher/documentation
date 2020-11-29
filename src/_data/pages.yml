@@ -1,15 +1,10 @@
 - title: User guide
-  docs:
+  pages:
     - installing
     - using
     - extending
-- title: Extending
-  docs:
-    - native
-    - python
-    - external
 - title: Meta
-  docs:
+  pages:
     - news
     - help
     - contributing
