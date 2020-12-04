@@ -14,7 +14,8 @@
         {% assign p = site.pages | where:"url", item_url | first %}
         <li class="{% if item_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
+        <li><a href="{{ site.repository }}/master/CHANGELOG.md">Changelog</a></li>
+        <li><a href="{{ site.repository }}">GitHub</a></li>
     </ul>
     {% endfor %}
-    <a href="{{ site.repository }}">GitHub</a>
 </aside>
