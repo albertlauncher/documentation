@@ -10,6 +10,7 @@ url: https://albertlauncher.github.io
 github_username:  manuelschneid3r
 repository: https://github.com/albertlauncher/albert.git
 exclude: [vendor]
+future: true
 
 collections:
   pages:
