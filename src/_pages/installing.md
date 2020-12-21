@@ -15,8 +15,8 @@ Using a package manager is highly recommended, since it is less error prone and 
 ## Using distribution repositories
 
 <!-- If you add items here please use the same format -->
-* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `sudo pacman -S albert`
-* [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `sudo xbps-install albert`
+* [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `pacman -S albert`
+* [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `xbps-install albert`
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
 * [openSUSE](https://software.opensuse.org/package/albert) `zypper install albert`
 * [Gentoo](https://packages.gentoo.org/packages/x11-misc/albert) `emerge --ask x11-misc/albert`
