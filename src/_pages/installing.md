@@ -3,7 +3,7 @@ layout: docs
 title: Installing
 permalink: /installing/
 ---
-**A word of warning**: There are a lot of inofficial packages and repository sources around. These are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
+**A word of warning**: There are a lot of unofficial packages and repository sources around. These are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
 
 1. [Using your package manager and the official repositories of your distribution](#using-distribution-repositories)
 1. [Using your package manager and the official albert repositories ](#using-official-albert-repositories)
