@@ -5,21 +5,20 @@ permalink: /installing/
 ---
 **A word of warning**: There are a lot of unofficial packages and repository sources around. These are build by third parties and may contain malicious code! Please make sure to use only the sources mentioned here to install albert.
 
-1. [Using your package manager and the official repositories of your distribution](#using-distribution-repositories)
+<!--1. [Using your package manager and the official repositories of your distribution](#using-distribution-repositories)-->
 1. [Using your package manager and the official albert repositories ](#using-official-albert-repositories)
 1. [Using your package manager to install a package manually](#using-official-albert-packages)
 1. [Building and installing Albert from sources](#from-source)
 
 Using a package manager is highly recommended, since it is less error prone and the necessary dependencies are pulled automatically.
 
-## Using distribution repositories
-
-<!-- If you add items here please use the same format -->
+<!--## Using distribution repositories
 * [Arch Linux](https://www.archlinux.org/packages/community/x86_64/albert/) `pacman -S albert`
 * [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/albert) `xbps-install albert`
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/x11/albert/) `# TODO`
 * [openSUSE](https://software.opensuse.org/package/albert) `zypper install albert`
 * [Gentoo](https://packages.gentoo.org/packages/x11-misc/albert) `emerge --ask x11-misc/albert`
+-->
 
 ## Using official albert repositories
 
