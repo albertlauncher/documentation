@@ -50,9 +50,9 @@ sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xU
 sudo apt update
 sudo apt install albert
 
-# Full example for Fedora 32
+# Full example for Fedora 33
 sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_32/home:manuelschneid3r.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_33/home:manuelschneid3r.repo
 dnf install albert
 ```
 
