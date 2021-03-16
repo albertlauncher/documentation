@@ -13,7 +13,7 @@ script: jekyll build -s src -d ./site  && htmlproofer ./site
 
 deploy:
   provider: script
-  cleanup: true
+  skip_cleanup: true
   on:
     branch: master
   script: ./deploy.sh
