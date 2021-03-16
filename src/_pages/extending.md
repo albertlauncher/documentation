@@ -21,22 +21,8 @@ The primary way to script albert is the Python extension. The Python extension a
 A more flexible but less performant and convenient way to extend Albert **were** external extensions. Since they are basically CGI executables you can use *any* language that can be used to build executable files. If you plan to write an extension now it is recommended to use the native or Python approach.
 Check the docs of the [external extension plugin](https://github.com/albertlauncher/plugins/tree/master/.archive/externalextensions).
 
+<!--
 ## Concepts
-
-```mermaid!
-graph TD
-    START[Query entered];
-    END[Return results];
-    START --> B{{Is any trigger prefix of the query?}};
-      B -->|Yes| C[Run the triggered extension];
-      C --> END;
-      B -->|No| D[Run all extensions];
-      D --> E{{Results empty?}};
-        E -->|Yes| F[Get fallbacks];
-        F --> END;
-        E -->|No| END;
-```
-
 ## Official extensions
 
 <ul>
@@ -44,3 +30,4 @@ graph TD
     <li><a href="{{ plugin.url }}">{{ plugin.title }}</a></li>
   {% endfor %}
 </ul>
+-->
