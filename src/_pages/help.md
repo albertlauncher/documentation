@@ -20,7 +20,7 @@ These chats are for discussion around albert. The chats are bridged using [Matte
 
 - [Telegram](https://telegram.me/albert_launcher_community)
 - [Discord](https://discord.gg/t8G2EkvRZh)
-- [IRC](irc://irc.freenode.net/albertlauncher) / [(Web Client)](http://webchat.freenode.net?channels=%23albertlauncher)
+- [IRC](irc://irc.libera.chat/albertlauncher) / [(Web Client)](https://web.libera.chat/#albertlauncher)
 
 ##### [Github repository]({{ site.repository }})
 
