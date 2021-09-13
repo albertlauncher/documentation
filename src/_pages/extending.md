@@ -14,7 +14,7 @@ C++ knowledge is not that widespread therefore there are (native) extensions whi
 
 ## Python extensions
 
-The primary way to script albert is the Python extension. The Python extension adds functionality via Python modules. Most of the community effort goes into this part of the project. It supports a good fraction of the internal API, is in memory and pretty fast. If you want to write a Python extension, check the docs of the [Python plugin](https://github.com/albertlauncher/plugins/blob/master/python/README.md). Check the [`python`](https://github.com/albertlauncher/plugins/) repo for an up to date list of extensions.
+The primary way to script albert is the Python extension. The Python extension adds functionality via Python modules. Most of the community effort goes into this part of the project. It supports a good fraction of the internal API, is in memory and pretty fast. If you want to write a Python extension, check the docs of the [Python plugin](https://github.com/albertlauncher/plugins/blob/master/python/README.md). Check the [`python`](https://github.com/albertlauncher/python) repo for an up to date list of extensions.
 
 ## External extensions [Archived]
 
