@@ -1,6 +1,8 @@
 os: linux
 dist: xenial
 language: ruby
+rvm:
+  - 2.6.3  # html-proofer requires Ruby version >= 2.6.0
 
 install: gem install jekyll html-proofer jekyll-spaceship
 
