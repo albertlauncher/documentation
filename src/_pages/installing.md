@@ -43,16 +43,16 @@ To find the link of the distribution you need visit [the OBS software repo](http
 These steps have to be done only once. From now on Albert will be updated like any other package on your system.
 
 ```bash
-# Full example for Ubuntu 20.04
+# Full example for Ubuntu 21.10
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
-echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
-sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_21.10/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_21.10/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
 sudo apt update
 sudo apt install albert
 
-# Full example for Fedora 33
+# Full example for Fedora 34
 sudo rpm --import https://build.opensuse.org/projects/home:manuelschneid3r/public_key
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_33/home:manuelschneid3r.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_34/home:manuelschneid3r.repo
 dnf install albert
 ```
 
