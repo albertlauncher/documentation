@@ -4,8 +4,6 @@ title: Help
 permalink: /help/
 ---
 
-Problems with Albert? Try these.
-
 ##### Documentation
 
 This documentation should cover everything you are concerned about. Users find a user guide, while devs can learn how to extend the app with plugins, scripts or executables.
