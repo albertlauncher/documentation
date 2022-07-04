@@ -13,9 +13,20 @@ addons:
 
 script: jekyll build -s src -d ./site  && htmlproofer ./site  --disable-external
 
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  on:
+#    branch: master
+#  script: ./deploy.sh
+
 deploy:
-  provider: script
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
   on:
-    branch: master
-  script: ./deploy.sh
+    branch: main
+
+
+
