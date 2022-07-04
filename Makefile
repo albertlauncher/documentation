@@ -10,7 +10,7 @@ build:
 check:
 	docker run -it --rm -v $(shell pwd)/src/_site:/src klakegg/html-proofer:3.17.0 --allow-hash-href --check-html --empty-alt-ignore || true
 
-deploy:
+deploy: build check
 	cd ./src/_site
 	git init
 	git add .
