@@ -8,7 +8,7 @@ If you found here, you are probably thinking about donating some bucks for the d
 
 * SEPA wire transfer:
 
-  Regular wire transfer in the euro area is free of any fees. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert donation).
+  Regular wire transfer in the euro area is free of any fees. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert SEPA donation).
 
 * GitHub sponsorship (No fees, implicit VAT):
 
@@ -16,7 +16,7 @@ If you found here, you are probably thinking about donating some bucks for the d
 
 * Crypto (Transaction cost vary depending on the coin/token):
 
-  You can also donate coins or tokens. Most of them are pretty cost effective. If you are into crypto currencies, I guess you know how much a transaction of a particular coin/token costs. Below is a list of wallets of popular coins. For others contact me. Preferably via [Telegram](https://t.me/manuelschneider).
+  You can also donate coins or tokens. Most of them are pretty cost effective. If you are into crypto currencies, I guess you know how much a transaction of a particular coin/token costs. Below is a list of wallets of popular coins. For others please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert crypto donation).
 
   Coin | Deposit address [*tag*]
   --- | ---
@@ -32,7 +32,7 @@ If you found here, you are probably thinking about donating some bucks for the d
 
 * Patreon (Caution: High fees for small donations, implicit VAT)
 
-  Patreon [charges](https://support.patreon.com/hc/en-us/articles/360027674431-My-earnings-fees) 6% (5 in the US) plus fixed fees (.1<span>$</span>/.15€ below 3<span>$</span>, .3<span>$</span>/.35€ above 3<span>$</span>). For small pledges fees can get over 20%. Including the VAT regulators enforce, around half of the amount does not even end on my side. If you want to use Patreon anyway, [click here](https://www.patreon.com/bePatron?u=4631163).
+  Patreon [charges](https://support.patreon.com/hc/en-us/articles/360027674431-My-earnings-fees) 6% (5 in the US) plus fixed fees (.1<span>$</span>/.15€ below 3<span>$</span>, .3<span>$</span>/.35€ above 3<span>$</span>). For small pledges fees can get over 20%. If you want to use Patreon anyway, [click here](https://www.patreon.com/bePatron?u=4631163).
 
 ## Supporters
 

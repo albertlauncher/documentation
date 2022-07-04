@@ -7,7 +7,7 @@ permalink: /installing/
 
 ## Using official albert repositories
 
-Prebuilt binaries are hosted at Open Build Service ([OBS](https://openbuildservice.org/), [Downloads/Repos](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), [OBS Project](https://build.opensuse.org/package/show/home:manuelschneid3r/albert)). Add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. Keep in mind that the key has an expiration date.
+Prebuilt binaries are [hosted at Open Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert). Add a keyfile to your package manager, which is used to verify the integrity of the packages it later receives. Keep in mind that the key has an expiration date.
 
 ```bash
 # For RPM based package managers

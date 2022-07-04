@@ -11,18 +11,9 @@ check:
 	docker run -it --rm -v $(shell pwd)/src/_site:/src klakegg/html-proofer:3.17.0 --allow-hash-href --check-html --empty-alt-ignore || true
 
 deploy: build check
-	cd ./src/_site
-	git init
-	git add .
-	git commit -m "Build `date`"
-	git push --force "https://github.com/albertlauncher/albertlauncher.github.io.git" master
-	cd -
+	git -C ./src/_site init
+	git -C ./src/_site add .
+	git -C ./src/_site commit -m "Build `date`"
+	git -C ./src/_site push --force "https://github.com/albertlauncher/albertlauncher.github.io.git" master
 
-# set -x -e
-# cd ./site
-# git init
-# git config user.name "Travis CI"
-# git config user.email "deploy@travis-ci.org"
-# git add .
-# git commit -m "Automated Travis CI deployment"
-# git push --force "https://${GITHUB_TOKEN}@github.com/albertlauncher/albertlauncher.github.io.git" master # &> /dev/null
+
