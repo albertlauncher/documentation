@@ -21,6 +21,7 @@ script: jekyll build -s src -d ./site  && htmlproofer ./site  --disable-external
 #  script: ./deploy.sh
 
 deploy:
+  repo: albertlauncher/albertlauncher.github.io
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
