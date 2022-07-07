@@ -13,22 +13,13 @@ addons:
 
 script: jekyll build -s src -d ./site  && htmlproofer ./site  --disable-external
 
-#deploy:
-#  provider: pages
-#  skip_cleanup: true
-#  on:
-#    branch: master
-#  script: ./deploy.sh
-
 deploy:
   provider: pages
   repo: albertlauncher/albertlauncher.github.io
-  target_branch: master
-  skip_cleanup: true
+  target_branch: master  # on github.io
+  cleanup: true
   keep_history: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
     branch: master
-
-
 
