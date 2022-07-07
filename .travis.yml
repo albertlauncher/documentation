@@ -17,8 +17,8 @@ deploy:
   provider: pages
   repo: albertlauncher/albertlauncher.github.io
   target_branch: master  # on github.io
-  local_dir: src/_site
-  cleanup: true
+  local_dir: site
+  skip_cleanup: true
   keep_history: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
