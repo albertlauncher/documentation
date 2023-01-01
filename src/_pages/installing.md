@@ -21,9 +21,7 @@ Building from sources is the least convenient, but most flexible way. This way i
 
 ```bash
 git clone --recursive https://github.com/albertlauncher/albert.git
-mkdir albert-build
-cd albert-build
-cmake ../albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
-make
-sudo make install
+cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+cmake --install build
 ```
