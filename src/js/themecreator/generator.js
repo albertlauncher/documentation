@@ -46,7 +46,7 @@ function initClipboard() {
 function loadThemes(callback) {
     var XmlHttpRequest = new XMLHttpRequest();
     XmlHttpRequest.overrideMimeType("application/json");
-    XmlHttpRequest.open('GET', '../themes.json', true);
+    XmlHttpRequest.open('GET', './themes.json', true);
     XmlHttpRequest.onreadystatechange = function () {
         if (XmlHttpRequest.readyState == 4 && XmlHttpRequest.status == "200") {
             themes = JSON.parse(XmlHttpRequest.responseText);

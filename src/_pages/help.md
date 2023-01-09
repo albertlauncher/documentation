@@ -10,16 +10,16 @@ This documentation should cover everything you are concerned about. Users find a
 
 ##### Troubleshooting and support
 
-If you have questions or problems using albert ask Google. Solutions are spread over [GitHub](https://github.com/albertlauncher/albert/issues), Blogs, Reddit, [superuser.com](https://superuser.com/questions/tagged/albert), etc. If you did not find the answer for your question, post it on superuser.com and tag it with [`#albert`](https://superuser.com/questions/tagged/albert). To get attention post the link in the chats.
+If you have questions or problems please Google first. Solutions are spread over GitHub, Blogs, Reddit, StackExchange, etc. If you did not find an answer, please use GitHub discussions and post the link in our community chat. 
 
 ##### Chats
 
-These chats are for discussion around albert. The chats are bridged using [MatterBridge](https://github.com/42wim/matterbridge) so it does not matter which chat you join.
+These chats are for discussion around albert. The chats are bridged using [MatterBridge](https://github.com/42wim/matterbridge) so it does not matter which one you join.
 
 - [Telegram](https://telegram.me/albert_launcher_community)
 - [Discord](https://discord.gg/t8G2EkvRZh)
 - [IRC](irc://irc.libera.chat/albertlauncher) / [(Web Client)](https://web.libera.chat/#albertlauncher)
 
-##### [Github repository]({{ site.repository }})
+##### Github repository
 
-If you wonder why Albert does this and that check out the source code to see how things work under the hood.
+If you wonder why Albert does this and that check out the [source code]({{ site.repository }}) to see how things work under the hood.
