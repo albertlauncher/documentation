@@ -28,14 +28,10 @@ Access everything with virtually zero effort. Run applications, open files or th
 <img style="width:80%; margin:auto; display:block;" alt="rootbrowser" src="https://i.imgur.com/Ur5PQMO.png">
 <img style="width:80%; margin:auto; display:block;" alt="term" src="https://i.imgur.com/tSp8nlN.png">
 <img style="width:80%; margin:auto; display:block;" alt="hash" src="https://i.imgur.com/N58PHAH.png">
-
-
 <!--<img style="width:80%; margin:auto; display:block;" alt="base" src="https://i.imgur.com/OCmAYGP.jpg">
 <img style="width:80%; margin:auto; display:block;" alt="vm" src="https://i.imgur.com/eKSRbDC.jpg">
 <img style="width:80%; margin:auto; display:block;" alt="units" src="https://i.imgur.com/jBywwko.jpg">-->
 
-
-<span style="width:80%; margin:auto; display:block;">![Albert v0.14.18](https://www.youtube.com/watch?v=HexFFkZMM9g)</span>
-<span style="width:80%; margin:auto; display:block;">![Albert Gource 2017](https://www.youtube.com/watch?v=crsZ4ZeCc0I)</span>
+<span style="width:80%; margin:auto; display:block;">![Albert Gource 2023](https://youtu.be/QlopqGarStw)</span>
 
 
