@@ -15,7 +15,7 @@ Prebuilt binaries are hosted at Open Build Service. Visit the [OBS software repo
 
 ## Building from source
 
-Building from sources is the least convenient, but most flexible way. This way is usually for developers only. If you are able you probably know what you have to do. The build process is trivial, but you have to manage the dependencies on your own. See the [docker images](https://github.com/albertlauncher/albert/tree/master/.docker) for reference.
+Building from sources is the least convenient, but most flexible way. This way is usually for developers only. If you are able you probably know what you have to do. The build process is trivial, but you have to manage the dependencies on your own. See the [OBS package specs](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) for up to date build and runtime dependencies.
 
 ```bash
 git clone --recursive https://github.com/albertlauncher/albert.git
