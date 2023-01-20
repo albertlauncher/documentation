@@ -11,7 +11,7 @@ For reference the following table lists all keys you can use to control Albert (
 Key  | Action
 ------------- | -------------
 <kbd>Esc</kbd> | Hide Albert.
-<kbd>Ctrl/⌘</kbd> | Command mode. <kbd>H</kbd>,<kbd>J</kbd>,<kbd>K</kbd>,<kbd>L</kbd>,<kbd>N</kbd>,<kbd>P</kbd> to navigate.
+<kbd>Ctrl/⌘</kbd> | Command mode. <kbd>H</kbd>,<kbd>J</kbd>,<kbd>K</kbd>,<kbd>L</kbd>,<kbd>N</kbd>,<kbd>P</kbd> to navigate. <kbd>O</kbd> to activate.
 <kbd>Alt/⌥</kbd>  | Action mode. Hold to activate alternative actions.
 <kbd>Meta/⌃</kbd>  | Fallback mode. Hold to use fallback items.
 <kbd>Shift</kbd> | History search mode. Note that unsing only <kbd>⬆</kbd> works as well if the first item is selected. Comamnd mode applies in this mode too. 
