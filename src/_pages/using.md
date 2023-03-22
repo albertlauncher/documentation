@@ -14,7 +14,7 @@ Key  | Action
 <kbd>Ctrl/⌘</kbd> | Command mode. <kbd>H</kbd>,<kbd>J</kbd>,<kbd>K</kbd>,<kbd>L</kbd>,<kbd>N</kbd>,<kbd>P</kbd> to navigate. <kbd>O</kbd> to activate.
 <kbd>Alt/⌥</kbd>  | Action mode. Hold to activate alternative actions.
 <kbd>Meta/⌃</kbd>  | Fallback mode. Hold to use fallback items.
-<kbd>Shift</kbd> | History search mode. Note that unsing only <kbd>⬆</kbd> works as well if the first item is selected. Comamnd mode applies in this mode too. 
+<kbd>Shift</kbd> | History search mode. Note that unsing only <kbd>⬆</kbd> works as well if the first item is selected. Command mode applies in this mode too.
 <kbd>Tab</kbd> | Activate input action of the selected item (evaluation, completion, etc).
 <kbd>⏎</kbd>,<kbd>Enter</kbd> | Activate item.
 <kbd>Ctrl/⌘</kbd>+<kbd>,</kbd>,<br><kbd>Alt/⌥</kbd>+<kbd>,</kbd>| Open settings window.
