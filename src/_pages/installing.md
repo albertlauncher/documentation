@@ -11,7 +11,7 @@ Please make sure to use the sources mentioned here to install albert.
 
 ## Using official Albert repositories
 
-Prebuilt binaries are hosted at Open Build Service. Visit the [OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), choose your distribution and follow the instructions to add the official repository.
+Prebuilt binaries are hosted at Open Build Service. Visit the [OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), choose your distribution and follow the instructions to add the official repository. If the list is lacking one of the latest distributions join the chats and let us know. 
 
 ## Building from source
 
