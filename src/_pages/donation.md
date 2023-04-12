@@ -16,7 +16,7 @@ If you found here, you are probably thinking about donating some bucks for the d
 
 * Crypto (Transaction cost vary depending on the coin/token):
 
-  If you are into crypto currencies, you probably know how much a transaction of a particular coin/token costs. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert crypto donation).
+  If you are into crypto currencies, you probably know how much a transaction of a particular coin/token costs. Since I have an account at Binance, you can  probably send any reasonable coin/token out there. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert crypto donation).
 
 * PayPal (Caution: High fees for small donations):
 
