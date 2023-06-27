@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 title:  "Repository moved to organization page"
 date: 2017-01-11 20:09 +0100
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 title:  "Prebuilt master branch packages available"
 date: 2023-06-19 12:00 +0100
 ---

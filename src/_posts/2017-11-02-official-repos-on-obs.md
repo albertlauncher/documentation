@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 title:  "Official repositories at openSUSE Build Service"
 date: 2017-11-02 12:00 +0100
 ---

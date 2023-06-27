@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 title:  "Albert finally has a website"
 date: 2017-01-09 18:17 +0100
 ---
