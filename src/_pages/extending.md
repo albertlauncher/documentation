@@ -8,7 +8,7 @@ Albert has a flexible, nested plugin system, which gives users and developers th
 
 ## Native plugins
 
-The native way is to use C++/Qt to write a QPlugin. This gives you the performance of C++ and a host of other advantages. Check the docs on [native plugins](https://github.com/albertlauncher/plugins/blob/master/README.md). Check the [`plugins`](https://github.com/albertlauncher/plugins) repo for an up to date list of plugins.
+The native way is to use C++/Qt to write a QPlugin. This gives you the performance of C++ and a host of other advantages. Check the docs on [native plugins](https://github.com/albertlauncher/plugins/blob/master/README.md) and the [reference]({{ site.baseurl }}/reference/). Check the [`plugins`](https://github.com/albertlauncher/plugins) repo for an up to date list of plugins.
 
 ## Python plugins
 
