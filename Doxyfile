@@ -1,0 +1,25 @@
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Albert"
+PROJECT_LOGO           = "resources/albert.svg"
+OUTPUT_DIRECTORY       = "/output"
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = YES
+INPUT                  = include
+RECURSIVE              = YES
+EXCLUDE                =
+INLINE_SOURCES         = YES
+GENERATE_LATEX         = NO
+GENERATE_DOCSET        = YES
+UML_LOOK               = YES
+DOT_IMAGE_FORMAT       = svg
+DOT_TRANSPARENT        = YES
+
+#Style
+GENERATE_TREEVIEW      = YES # required!
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css \
+                         doxygen-awesome-css/doxygen-awesome-sidebar-only.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5

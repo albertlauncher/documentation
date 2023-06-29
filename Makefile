@@ -1,5 +1,7 @@
 build:	
 	docker run -t --rm -v "$(shell pwd)/src:/srv/jekyll" jekyll/jekyll jekyll build
+	git clone https://github.com/jothepro/doxygen-awesome-css.git
+	docker run --rm -v $(pwd):/data -v $(pwd)/src/_site/reference:/output -it hrektts/doxygen doxygen
 
 serve:
 	docker run -t --rm -v "$(shell pwd)/src:/srv/jekyll" -p "4000:4000" jekyll/jekyll jekyll serve --host 0.0.0.0
