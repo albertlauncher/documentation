@@ -11,11 +11,18 @@ Please make sure to use the sources mentioned here to install albert.
 
 ## Using official Albert repositories
 
-Prebuilt binaries are hosted at Open Build Service. Visit the [OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), choose your distribution and follow the instructions to add the official repository. If the list is lacking one of the latest distributions join the chats and let us know. There are also bleeding edge [master branch packages](https://software.opensuse.org//download.html?project=home%3Amanuelschneid3r%3Adevel&package=albert) available.
+Prebuilt binaries are hosted at Open Build Service.
+Visit the [OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), choose your distribution and follow the instructions to add the official repository.
+If the list is lacking one of the latest distributions join the chats and let us know.
+There is a also bleeding edge [master branch package](https://software.opensuse.org//download.html?project=home%3Amanuelschneid3r&package=albert-master) available.
 
 ## Building from source
 
-Building from sources is the least convenient, but most flexible way. This way is usually for developers only. If you are able you probably know what you have to do. The build process is trivial, but you have to manage the dependencies on your own. See the [OBS package specs](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) for up to date build and runtime dependencies.
+Building from sources is the least convenient, but most flexible way.
+This way is usually for developers only.
+If you are able you probably know what you have to do.
+The build process is trivial, but you have to manage the dependencies on your own.
+See the [OBS package specs](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) for up to date build and runtime dependencies.
 
 ```bash
 git clone --recursive https://github.com/albertlauncher/albert.git

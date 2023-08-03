@@ -1,11 +1,11 @@
-all: doxygen-build jekyll-build jekyll-deploy
+all: doxygen jekyll-build jekyll-deploy
 
-doxygen-build:
-	[ -d albert ] || git clone --depth 1 https://github.com/albertlauncher/albert.git
-	[ -d albert/doxygen-awesome-css ] || git clone --depth 1 https://github.com/jothepro/doxygen-awesome-css.git albert/doxygen-awesome-css
-	cp Doxyfile albert
-	docker run --rm -v $(shell pwd)/albert:/data -v $(shell pwd)/output:/output -it hrektts/doxygen doxygen
-	mv output/html src/reference
+doxygen:
+	rm -rf albert
+	git clone --depth 1 https://github.com/albertlauncher/albert.git
+	doxygen
+	rm -rf src/reference
+	mv albert/output/html src/reference
 
 jekyll-build:
 	docker run -t --rm -v "$(shell pwd)/src:/srv/jekyll" jekyll/jekyll jekyll build
@@ -24,3 +24,5 @@ jekyll-deploy:
 
 clean:
 	rm -rf output albert
+
+.PHONY: doxygen

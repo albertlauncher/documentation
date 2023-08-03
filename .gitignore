@@ -1,7 +1,10 @@
-.sass-cache
-_site
+*.lock
+.DS_Store
 .gitmodules
 .idea
-.DS_Store
 .jekyll-cache
-*.lock
+.sass-cache
+/src/reference
+_site
+albert
+doxygen
