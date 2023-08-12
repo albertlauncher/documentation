@@ -1,5 +1,7 @@
 all: doxygen jekyll-build jekyll-deploy
 
+release: all
+
 doxygen:
 	rm -rf albert
 	git clone --depth 1 https://github.com/albertlauncher/albert.git
@@ -24,5 +26,7 @@ jekyll-deploy:
 
 clean:
 	rm -rf output albert
+
+
 
 .PHONY: doxygen
