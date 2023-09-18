@@ -15,8 +15,8 @@ EXTRACT_ALL            = YES
 GENERATE_LATEX         = NO
 INPUT                  = albert/include albert/README.md
 JAVADOC_AUTOBRIEF      = YES
-LAYOUT_FILE            = doxygen/DoxygenLayout.xml
-OUTPUT_DIRECTORY       = albert/output
+LAYOUT_FILE            = DoxygenLayout.xml
+#OUTPUT_DIRECTORY       = src/reference
 PREDEFINED             = ALBERT_PLUGIN_ID
 PROJECT_LOGO           = "resources/albert.svg"
 PROJECT_NAME           = "Albert"
@@ -35,5 +35,5 @@ USE_MDFILE_AS_MAINPAGE = "README.md"
 GENERATE_TREEVIEW      = YES # required!
 DISABLE_INDEX          = NO
 FULL_SIDEBAR           = NO
-HTML_EXTRA_STYLESHEET  = doxygen/doxygen-awesome.css doxygen/doxygen-awesome-sidebar-only.css
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css doxygen-awesome-css/doxygen-awesome-sidebar-only.css
 HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5

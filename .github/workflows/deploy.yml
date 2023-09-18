@@ -1,0 +1,48 @@
+name: Deploy website
+
+on:
+  push:
+    branches: "master"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  Deyploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout source code
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: Fetch the albert repo
+      run: git clone --depth 1 https://github.com/albertlauncher/albert.git
+
+    - name: Run doxygen
+      uses: mattnotmitt/doxygen-action@v1.9.5
+
+    - name: Build site
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: "src"
+        destination: "src/_site"
+
+    - run: find .
+
+    - name: Deploy
+      run: |
+        sudo chown -R runner:docker .
+        mv html src/_site/reference
+        cd src/_site
+        git init
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Auto-commit from GitHub Action"
+        git remote add origin "https://${{ secrets.PAT }}@github.com/albertlauncher/albertlauncher.github.io"
+        git branch -M master
+        git push --force origin master
+
