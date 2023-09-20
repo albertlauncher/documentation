@@ -19,7 +19,7 @@ jobs:
         submodules: recursive
 
     - name: Fetch the albert repo
-      run: git clone --depth 1 https://github.com/albertlauncher/albert.git
+      run: git clone --recursive --depth 1 https://github.com/albertlauncher/albert.git
 
     - name: Run doxygen
       uses: mattnotmitt/doxygen-action@v1.9.5
