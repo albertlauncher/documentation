@@ -22,7 +22,7 @@ PROJECT_LOGO           = "resources/albert.svg"
 PROJECT_NAME           = "Albert"
 QT_AUTOBRIEF           = YES
 RECURSIVE              = YES
-USE_MDFILE_AS_MAINPAGE = "README.md"
+USE_MDFILE_AS_MAINPAGE = "plugins/README.md"
 
 # BASE THEME
 #GENERATE_TREEVIEW      = YES # optional. Also works without treeview
