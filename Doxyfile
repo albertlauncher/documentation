@@ -16,13 +16,12 @@ GENERATE_LATEX         = NO
 INPUT                  = albert/include albert/plugins/README.md
 JAVADOC_AUTOBRIEF      = YES
 LAYOUT_FILE            = DoxygenLayout.xml
-#OUTPUT_DIRECTORY       = src/reference
 PREDEFINED             = ALBERT_PLUGIN_ID
-PROJECT_LOGO           = "resources/albert.svg"
+PROJECT_LOGO           = "albert/resources/albert.svg"
 PROJECT_NAME           = "Albert"
 QT_AUTOBRIEF           = YES
 RECURSIVE              = YES
-USE_MDFILE_AS_MAINPAGE = "plugins/README.md"
+USE_MDFILE_AS_MAINPAGE = "albert/plugins/README.md"
 
 # BASE THEME
 #GENERATE_TREEVIEW      = YES # optional. Also works without treeview
