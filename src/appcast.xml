@@ -4,6 +4,22 @@
     <language>en</language>
 
     <item>
+      <title>Version 0.22.13</title>
+      <pubDate>Thu, 05 Oct 2023 09:36:47 +0000</pubDate>
+      <link>https://albertlauncher.github.io/</link>
+      <sparkle:version>2.0</sparkle:version>
+      <sparkle:minimumSystemVersion>11.0.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://albertlauncher.github.io/news/</sparkle:releaseNotesLink>
+      <enclosure
+        url="https://github.com/albertlauncher/albert/releases/download/v0.22.13/Albert-v0.22.13.dmg"
+        sparkle:version="0.22.13"
+        sparkle:shortVersionString="0.22.13"
+        sparkle:edSignature="Zi7qJn/E4OrVAdctAJf6+Hdp9mXsyfnpL3rSdg6O9DK/J+KdYnW1WoZvFhzXbvBeiigVozmEOVDCngXxupCJAg==" length="84743487"
+        type="application/octet-stream"/>
+    </item>
+
+
+    <item>
       <title>Version 0.22.12</title>
       <pubDate>Tue, 03 Oct 2023 20:45:02 +0000</pubDate>
       <link>https://albertlauncher.github.io/</link>
