@@ -6,24 +6,30 @@ permalink: /donation/
  
 If you found here, you are probably thinking about donating some bucks for the development of your favorite keyboard launcher 😉. That's great! It makes me happy to know that people are grateful for what I do and I highly appreciate that you are thinking about a donation. Thank you ❤️
 
+## Recommended services
+
 * SEPA wire transfer:
 
-  Regular wire transfer in the euro area is free of any fees. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert SEPA donation).
+  Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert SEPA donation&body=Please%20send%20me%20your%20IBAN.). Regular wire transfer in the euro area is free of any fees. 
 
-* GitHub sponsorship (No fees, implicit VAT):
+* GitHub sponsorship:
 
-  Visit [my GitHub Sponsors page](https://github.com/sponsors/ManuelSchneid3r).
+  Visit [my GitHub Sponsors page](https://github.com/sponsors/ManuelSchneid3r). GitHub Sponsors does not charge any fees [ℹ️](https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors#about-github-sponsors).
 
-* Crypto (Transaction cost vary depending on the coin/token):
+* Liberapay:
 
-  If you are into crypto currencies, you probably know how much a transaction of a particular coin/token costs. Since I have an account at Binance, you can  probably send any reasonable coin/token out there. Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert crypto donation).
+  Visit the [Liberapay donation page](https://liberapay.com/manuelschneid3r/donate). Liberapay does not take a cut of payments [ℹ️](https://liberapay.com/about/faq#how-funded).
 
-* PayPal (Caution: High fees for small donations):
+* Crypto currency:
 
-  Paypal charges at least .3$ fixed plus 2,49% of the total transferred amount. For small pledges fees can grow up to 30-40%. If you want to use PayPal anyway, [click here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W74BQPKPGNSNC).
+  Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert crypto donation). Crypto currency transaction fees vary but are usually low.
 
-* Patreon (Caution: High fees for small donations, implicit VAT)
+## Other services
 
-  Patreon charges 6% (5 in the US) plus fixed fees (.1<span>$</span>/.15€ below 3<span>$</span>, .3<span>$</span>/.35€ above 3<span>$</span>). For small pledges fees can get over 20%. If you want to use Patreon anyway, [click here](https://www.patreon.com/bePatron?u=4631163).
+* PayPal:
 
+  High fixed fees of 0.35€ make small transactions expensive (e.g. 1€ has a 0.38€ fee) [ℹ️](https://www.paypal.com/webapps/mpp/paypal-fees). If you want to use PayPal, [click here](https://www.paypal.com/donate/?hosted_button_id=W74BQPKPGNSNC).
 
+* Patreon:
+
+  High relative fee: 5% platform, 5% payment, ~4% PayPal conversion fees. If you want to use Patreon, [click here](https://www.patreon.com/bePatron?u=4631163).
