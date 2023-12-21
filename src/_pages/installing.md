@@ -20,7 +20,6 @@ There is a also bleeding edge [master branch package](https://software.opensuse.
 
 Building from sources is the least convenient, but most flexible way.
 This way is usually for developers only.
-If you are able you probably know what you have to do.
 The build process is trivial, but you have to manage the dependencies on your own.
 See the [OBS package specs](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) for up to date build and runtime dependencies.
 
