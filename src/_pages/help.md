@@ -10,7 +10,7 @@ If you have questions or problems please google first and check the existing iss
 
 - [Chat on Telegram](https://telegram.me/albert_launcher_community)
 - [Chat on Discord](https://discord.gg/t8G2EkvRZh)
-- [Chat on IRC](irc://irc.libera.chat/albertlauncher) / [(Web Client)](https://web.libera.chat/#albertlauncher)
+<!-- [Chat on IRC](irc://irc.libera.chat/albertlauncher) / [(Web Client)](https://web.libera.chat/#albertlauncher)-->
 - [Discuss on Github](https://github.com/orgs/albertlauncher/discussions)
 
 ##### Issue trackers
