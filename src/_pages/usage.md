@@ -25,6 +25,8 @@ Some plugins offer more detailed usage information there.
 Each plugin can provide various [extensions](https://albertlauncher.github.io/reference/classalbert_1_1Extension.html), like frontends, plugin providers, fallback providers or query handlers. 
 While frontends and plugin providers are advanced topics, fallback providers, global- and triggered query handlers are central to the app's functionality.
 
+There are two built-in handlers: The app and plugin query handler. They provide items for app control (quit, restart, settings, config, data, cache), plugins (config, load, enable) and boolean properties of any plugins.
+
 ### Queries
 
 The core of the app is the query engine which parses user input and decides the mode of a query.
