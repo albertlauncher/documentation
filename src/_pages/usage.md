@@ -29,15 +29,10 @@ While frontends and plugin providers are advanced topics, fallback providers, gl
 ### Queries
 
 The core of the app is the query engine which parses user input and decides the mode of a query.
-
 If the query is prefixed by a trigger defined by any of the trigger query handlers the coresponding handler will handle the query exclusively.
 This allows the handler to display matches as soon as they are available. 
-This is a remarkable technical advantage of triggered queries, but there are other reasons why plugins may provide only triggered handlers as well, such as:
-Ecology, economy, runtime, amount of output, order more important than content, etc.
-
 Queries without triggers are delegated to all global query handlers (multithreaded).
 As soon as the handlers finished the matches are sorted by match score and usage history and displayed.
-
 Additionally, fallback handlers offer a separate set of results: the fallback items.
 
 ## The user interface
@@ -51,10 +46,8 @@ Since both interfaces have the same design concept this guide applies to both of
 ### The input line 
 
 Besides its primary function, the input line provides an input hint and contains the settings button.
-
 The input hint, displayed after the entered text, varies based on the context.
 For empty triggered queries, it shows the query handler's synopsis, if available, otherwhise it shows the input action text of the selected item, if available, or is empty.
-
 The settings button, located in the top right corner, appears on hover or when the current query is processing.
 
 ### The results list
