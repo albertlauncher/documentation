@@ -11,7 +11,6 @@ As you would expect from a launcher, the main use case is to type a query into a
 
 ### Plugins
 
-Albert is an plugin based keyboard launcher. 
 A plugin is a module that can be loaded/unloaded while the launcher is running.
 They could be native plugins (shared libraries) or provided by plugin providers, such as Python modules from the Python plugin provider.
 Nested plugins are only accessible if their provider is loaded.
