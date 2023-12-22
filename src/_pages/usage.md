@@ -75,7 +75,7 @@ Any vertical navigation is handled by the results list or the actions list if ac
 The content entered into the input line is stored in the input history when the window is hidden. 
 This input history can be used to search former queries.
 When the input has been manually altered, it functions as a pattern for substring matching within the history entries.
-Note that the empty pattern matches any former query (browsing instead of search).
+Note that the empty pattern matches any entry (browsing instead of search).
 When the results list is hidden or the first item is selected <kbd>⬆</kbd> searches the input history.
 When holding <kbd>Shift</kbd> this condition is not required and <kbd>⬇</kbd> can be used too for bidirectional iteration. 
 
