@@ -14,7 +14,7 @@ Please make sure to use the sources mentioned here to install albert.
 Prebuilt binaries are hosted at Open Build Service.
 Visit the [OBS software repo](https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert), choose your distribution and follow the instructions to add the official repository.
 
-<iframe src='https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert'></iframe>
+<iframe frameborder="0" scrolling="no" height="100%" width="100%" src='https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert'></iframe>
 
 If the list is lacking one of the latest distributions join the chats and let us know.
 There is a also bleeding edge [master branch package](https://software.opensuse.org//download.html?project=home%3Amanuelschneid3r&package=albert-master) available.
