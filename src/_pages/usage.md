@@ -91,7 +91,7 @@ Hold <kbd>Meta/⌃</kbd> | Activate Fallback mode.
 Hold <kbd>Shift</kbd> | Activate history search mode.
 <kbd>Tab</kbd> | Activate input action of the selected item (evaluation, completion, etc).
 <kbd>⏎</kbd><br><kbd>Enter</kbd><br><kbd>⌘</kbd>+<kbd>O</kbd> | Activate item.
-<kbd>Ctrl/⌘</kbd>+<kbd>,</kbd><br><kbd>Alt/⌥</kbd>+<kbd>,</kbd>| Open settings window.
+<kbd>Ctrl/⌘</kbd>+<kbd>,</kbd> | Open settings window.
 <kbd>⬆</kbd>,<kbd>⬇</kbd>,<br><kbd>PgUp</kbd>,<kbd>PgDn</kbd> | Navigation in item lists.
 <kbd>⌘</kbd>+<kbd>Q</kbd><br><kbd>Alt</kbd>+<kbd>F4</kbd> | Quit Albert (Depends on settings).
 <kbd>Ctrl/⌘</kbd>+<kbd>H</kbd><br><kbd>Ctrl/⌘</kbd>+<kbd>J</kbd><br><kbd>Ctrl/⌘</kbd>+<kbd>K</kbd><br><kbd>Ctrl/⌘</kbd>+<kbd>L</kbd> | Vim bindings. Synthesize to arrows.
