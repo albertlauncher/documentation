@@ -38,12 +38,8 @@ This allows the handler to display matches as soon as they are available.
 This is a remarkable technical advantage of triggered queries, but there are other reasons why plugins may provide only triggered handlers as well, such as:
 Ecology, economy, runtime, amount of output, order more important than content, etc.
 If there is no such trigger the query will be delegated to all global query handlers (multithreaded).
-As soon as the handlers finished the matches are sorted by match score and usage history and displayed .
+As soon as the handlers finished the matches are sorted by match score and usage history and displayed.
 In any case a separate set of results, the fallbacks, is provided by fallback handlers.
-
-### Items and actions
-
-TODO…
 
 ## The user interface
 
@@ -71,6 +67,9 @@ The results list displays results of a query.
 Each item has an icon, a title and a description. 
 Almost all items have at least one action associated, which can be activated.
 Most items provide several actions that can be activated using the action list.
+Items may also provide an input action text that can be used to replace the input text. 
+Its semantic is loosely defined. 
+It may be a completion but also an evaluation or something else.
 
 The results list has three states: Hidden, show matches and show fallbacks.
 If a query yields matches it shows the matches.
