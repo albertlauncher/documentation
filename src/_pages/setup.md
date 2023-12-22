@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Installing
-permalink: /installing/
+title: Setup
+permalink: /setup/
 ---
 **A word of warning**:
 <br>
