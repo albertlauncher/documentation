@@ -46,16 +46,11 @@ There are currently two official interfaces:
 The 'Widgets Box Modeland the 'QML Box Model'.
 The former uses the Qt Widgets Toolkit, prioritizing resource efficiency and low-latency UIs but has limitations considering customization.
 The latter, built on QML, provides rich customization features, but suffers glitches on some systems.
-Since both interfacea have the same design concept this guide applies to both of them (Please report a bug if not).
+Since both interfaces have the same design concept this guide applies to both of them (Please report a bug if not).
 
 ### The input line 
 
 Besides its primary function, the input line provides an input hint and contains the settings button.
-
-The input hint is displayed after the text you entered.
-On empty triggered queries the input hint displays the synopsis of the query handler if it provides any.
-Else it displays the text of the input action of the selected item if it provides any.
-In all other cases the input hint remains empty.
 
 The input hint, displayed after the entered text, varies based on the context.
 For empty triggered queries, it shows the query handler's synopsis, if available, otherwhise it shows the input action text of the selected item, if available, or is empty.
