@@ -36,6 +36,18 @@ Queries without triggers are delegated to all global query handlers (multithread
 As soon as the handlers finished the matches are sorted by match score and usage history and displayed.
 Additionally, fallback handlers offer a separate set of results: the fallback items.
 
+#### Tiggered queries
+
+[TODO]
+
+#### Global query ranking algorithm
+
+[TODO] activation history, usage history weight
+
+#### Fallbacks
+
+[TODO]
+
 ## The user interface
 
 There are currently two official interfaces: 
