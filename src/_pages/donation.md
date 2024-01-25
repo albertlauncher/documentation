@@ -29,6 +29,7 @@ Thank you ❤️
 * Crypto currency:
 
   BTC: [bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3](bitcoin:bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3?amount=0.001)
+  
   Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert%20crypto%20donation) for others.
   Crypto currency transaction fees vary but are usually low.
 
