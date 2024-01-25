@@ -67,7 +67,7 @@ The settings button, located in the top right corner, appears on hover or when t
 
 The results list displays results of a query. 
 Each item has an icon, a title and a description. 
-Almost all items have at least one action associated, which can be activated.
+Almost all items have at least one action associated, which can be directly activated.
 Most items provide several actions that can be activated using the action list.
 Items may also provide an input action text that can be used to replace the input text. 
 Its semantic is loosely defined. 
