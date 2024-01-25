@@ -29,10 +29,18 @@ Thank you ❤️
 * Crypto currency:
 
   BTC: [bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3](bitcoin:bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3?amount=0.001)
+
+  ETH: 0xb4c2ed5ee122341a7f271342c5c2a61263d37357
   
   Please leave a [mail](mailto:manuelschneid3r@gmail.com?subject=Albert%20crypto%20donation) for others.
   Crypto currency transaction fees vary but are usually low.
 
+* Binance Pay:
+
+  Pay ID: 182308541
+
+  Binance does not charge any fees.
+  
 ## Other services
 
 * PayPal:
