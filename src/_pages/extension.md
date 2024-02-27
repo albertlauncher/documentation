@@ -12,4 +12,4 @@ The native way is to use C++/Qt to write a QPlugin. This gives you the performan
 
 ## Python plugins
 
-The Python plugin adds plugins via Python modules. Check the docs of the [Python plugin](https://github.com/albertlauncher/plugins/blob/master/python/README.md) and the [`python`](https://github.com/albertlauncher/python) repo for an up to date list of plugins.
+The Python plugin adds plugins via Python modules. Check the docs of the [Python plugin](https://github.com/albertlauncher/python) and the [`python`](https://github.com/albertlauncher/python) repo for an up to date list of plugins.
