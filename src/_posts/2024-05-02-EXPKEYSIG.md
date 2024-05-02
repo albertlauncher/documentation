@@ -31,16 +31,14 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 The per repository key of most repos expired recently:
 
 ```
-curl -fsSL "https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_22.04/Release.key" | gpg --dearmor | gpg --show-keys
+# curl -fsSL "https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_22.04/Release.key" | gpg --dearmor | gpg --show-keys
 pub   rsa2048 2017-10-27 [SC] [expired: 2024-04-29]
       A4B83CD05FDF5C5178482D4A1488EB46E192A257
 uid                      home:manuelschneid3r OBS Project <home:manuelschneid3r@build.opensuse.org>
 ```
 
 Open Build Service updates this key only on publish and only if the key is expired.
-That's unfortunate because I would have to publish a release as soon as the key expired.
-And even if I did, DEB users have to manually add the new key.
-I started a discussion with the people of OBS.
+That's unfortunate because a relase would have to be published as soon as the key expires and users would have to manually add the new key.
 One solution would be to ship a dedicated package containing an up to date key.
 However that's quite some maintenance work.
 Fortunately the guys at OBS offered an alternative solution.
@@ -50,7 +48,7 @@ Until the mentioned PR has been merged and the key is still valid for around two
 Everything should be fine until 2026-07-11 then.
 
 ```
-curl -fsSL "https://build.opensuse.org/projects/home:manuelschneid3r/signing_keys/download?kind=gpg" | gpg --dearmor | gpg --show-keys
+# curl -fsSL "https://build.opensuse.org/projects/home:manuelschneid3r/signing_keys/download?kind=gpg" | gpg --dearmor | gpg --show-keys
 pub   rsa2048 2017-10-27 [SC] [expires: 2026-07-11]
       A4B83CD05FDF5C5178482D4A1488EB46E192A257
 uid                      home:manuelschneid3r OBS Project <home:manuelschneid3r@build.opensuse.org>
