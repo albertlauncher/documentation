@@ -1,5 +1,4 @@
 ---
-layout: page
 title:  "Albert __version__ released"
 date: __YAML_DATE__
 ---

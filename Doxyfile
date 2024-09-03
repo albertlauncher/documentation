@@ -13,15 +13,24 @@ DOT_IMAGE_FORMAT       = svg
 DOXYFILE_ENCODING      = UTF-8
 EXTRACT_ALL            = YES
 GENERATE_LATEX         = NO
-INPUT                  = albert/include albert/plugins/README.md
+INPUT                  = albert/include
+
+
 JAVADOC_AUTOBRIEF      = YES
 LAYOUT_FILE            = DoxygenLayout.xml
+
+# Hide ALBERT_EXPORT
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
 PREDEFINED             = ALBERT_PLUGIN_ID
+PREDEFINED             = ALBERT_EXPORT=
+
 PROJECT_LOGO           = "src/img/albert.svg"
 PROJECT_NAME           = "Albert"
 QT_AUTOBRIEF           = YES
 RECURSIVE              = YES
-USE_MDFILE_AS_MAINPAGE = "albert/plugins/README.md"
+#USE_MDFILE_AS_MAINPAGE = "albert/plugins/README.md"
 
 # BASE THEME
 #GENERATE_TREEVIEW      = YES # optional. Also works without treeview
@@ -36,3 +45,4 @@ DISABLE_INDEX          = NO
 FULL_SIDEBAR           = NO
 HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css doxygen-awesome-css/doxygen-awesome-sidebar-only.css
 HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
+HTML_OUTPUT            = src/reference

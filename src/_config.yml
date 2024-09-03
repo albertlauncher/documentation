@@ -1,20 +1,86 @@
+
+
+# https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+
 title: Albert
-email: manuelschneid3r@gmail.com
+
 description: > # this means to ignore newlines until "baseurl:"
   Albert is a unified and efficient access to your machine. Technically it is a keyboard launcher
   written in C++/Qt. The plugin based architecture makes it extremely flexible and powerful. Plugins
   can be used to create frontends or functional extensions. Extensions can also be implemented
   using embedded Python modules or via a CGI approach in any language you want.
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://albertlauncher.github.io
-github_username:  manuelschneid3r
-repository: https://github.com/albertlauncher
-exclude: [vendor]
-future: true
+url: "https://albertlauncher.github.io"
+repository: "https://github.com/albertlauncher"
 
-collections:
-  pages:
-    output: true
+theme: just-the-docs
+color_scheme: custom
 
-plugins:
-  - jekyll-spaceship
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
+favicon_ico: "/img/favicon.ico"
+#aux_links:
+#  Albert on GitHub:
+#    - "https://github.com/albertlauncher/albert"
+#aux_links_new_tab: true
+last_edit_timestamp: true
+heading_anchors: true
+
+enable_copy_code_button: true
+
+permalink: pretty  # no html extension
+
+nav_external_links:
+  - title: API reference
+    url: /reference/namespacealbert.html
+  - title: GitHub
+    url: https://github.com/albertlauncher/albert
+
+callouts:
+  callout-blue:
+    color: blue
+  callout-yellow:
+    color: yellow
+  callout-red:
+    color: red
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+
+## Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/albertlauncher/documentation" # the github URL for your repo
+gh_edit_source: src # the source that your files originate from
+gh_edit_branch: "master" # the branch that your docs is served from
+gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+  #
+
+#email: manuelschneid3r@gmail.com
+#github_username:  manuelschneid3r
+#exclude: [vendor]
+#future: true
+
+
+
+
+
+#plugins:
+  #- jekyll-spaceship
+  #  - jekyll-default-layout
+
+

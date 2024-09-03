@@ -13,36 +13,63 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Checkout source code
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       with:
         submodules: recursive
 
-    - name: Fetch the albert repo
-      run: git clone --recursive --depth 1 https://github.com/albertlauncher/albert.git
+    - run: git clone --depth 1 https://github.com/albertlauncher/albert.git
 
-    - name: Run doxygen
-      uses: mattnotmitt/doxygen-action@v1.9.5
-
-    - name: Build site
-      uses: actions/jekyll-build-pages@v1
-      with:
-        source: "src"
-        destination: "src/_site"
+    - uses: mattnotmitt/doxygen-action@v1.9.8
 
     - run: find .
 
+#    - run: make build
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3' # Not needed with a `.ruby-version` or `.tool-versions`
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        working-directory: ./src
+
+    #- run: gem install bundler
+
+    #- run: bundle install
+
+    - run: cd src && JEKYLL_ENV=production bundle exec jekyll build
+
+    - run: find .
+    
+#    - uses: ruby/setup-ruby@v1
+#      with:
+#        ruby-version: '3.3'
+#        bundler-cache: true
+#
+#    - run: bundle install
+#
+#    - name: Build site
+#      uses: actions/jekyll-build-pages@v1
+#      with:
+#        source: "src"
+#        destination: "src/_site"
+
     - name: Deploy
-      run: |
-        sudo chown -R runner:docker .
-        mv html src/_site/reference
-        cd src/_site
-        git init
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "Auto-commit from GitHub Action"
-        git remote add origin "https://${{ secrets.PAT }}@github.com/albertlauncher/albertlauncher.github.io"
-        git branch -M master
-        git push --force origin master
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        personal_token: ${{ secrets.PAT }}
+        external_repository: albertlauncher/albertlauncher.github.io
+        publish_branch: master
+        publish_dir: ./src/_site
+
+   # - name: Deploy
+   #   run: |
+   #     sudo chown -R runner:docker .
+   #     cd src/_site
+   #     git init
+   #     git config --local user.email "action@github.com"
+   #     git config --local user.name "GitHub Action"
+   #     git add .
+   #     git commit -m "Auto-commit from GitHub Action"
+   #     git remote add origin "https://${{ secrets.PAT }}@github.com/albertlauncher/albertlauncher.github.io"
+   #     git branch -M master
+   #     git push --force origin master
 

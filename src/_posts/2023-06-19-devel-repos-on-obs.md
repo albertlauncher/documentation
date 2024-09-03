@@ -1,8 +1,9 @@
 ---
-layout: docs
 title:  "Prebuilt master branch packages available"
 date: 2023-06-19 12:00 +0100
 ---
+
+# {{ page.title }}
 
 Albert master branch is now available as packages on OBS.
 

@@ -1,8 +1,9 @@
 ---
-layout: docs
 title:  "GPG error: Signatures invalid: EXPKEYSIG"
 date: 2024-05-02 18:00
 ---
+
+# {{ page.title }}
 
 *tl;dr* (But keep in mind that that the key will expire again in future)
 

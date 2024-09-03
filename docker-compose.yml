@@ -1,0 +1,31 @@
+version: "3.5"
+
+services:
+
+  jekyll: &jekyll
+    build:
+      dockerfile: Dockerfile
+    image: jekyll
+    volumes:
+      - ./src:/srv/jekyll
+    stdin_open: true
+    tty: true
+    entrypoint: bundle exec jekyll
+    command: --version
+
+  jekyll-build:
+    <<: *jekyll
+    command: build
+
+  jekyll-serve:
+    <<: *jekyll
+    ports:
+      - 4000:4000
+    command: serve --host 0.0.0.0 --trace
+
+  html-proofer:
+    image: klakegg/html-proofer:3.17.0
+    volumes:
+      - ./src/_site:/src
+    command: --allow-hash-href --check-html --empty-alt-ignore
+
