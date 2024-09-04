@@ -11,7 +11,7 @@ nav_order: 1
 
 {: .warning }
 Unofficial packages may contain malicious code!
-Please make sure to use trusted or official repositories.
+Please make sure to use official or trusted repositories.
 
 ## Official packages
 
