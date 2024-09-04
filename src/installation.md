@@ -35,7 +35,7 @@ The Several other distribution can be used with the correct package base:
 | PopOS! 20.04    | Ubuntu 20.04 [ℹ️](https://en.wikipedia.org/wiki/Pop!_OS#Release_table)         |
 
 {: .note }
-Feel free to add missing entries to this list by using the link on the bottom of this page.
+Feel free to add missing mappings to this table.
 
 
 ## Unofficial packages
@@ -44,7 +44,7 @@ Feel free to add missing entries to this list by using the link on the bottom of
 - [nixOS](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=albert)
 
 {: .note }
-Feel free to add other packages to this list by using the link on the bottom of this page.
+Feel free to add trusted repositories to this list.
 
 ## From source
 
