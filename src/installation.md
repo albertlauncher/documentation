@@ -20,7 +20,7 @@ Downloads and installation instructions for the base distributions can be found 
 
 [Visit OBS software center](https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert&acolor=00cccc&hcolor=00aaaa){: .btn .fs-5}
 
-The Several other distribution can be used with the correct package base:
+Several other distributions are supported when used with the correct package base:
 
 | Distribution    | Package base                                                                 |
 |-----------------|------------------------------------------------------------------------------|
