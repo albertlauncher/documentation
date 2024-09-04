@@ -10,7 +10,7 @@ nav_order: 1
 {:toc}
 
 {: .warning }
-Unofficial packages and repository sources may contain malicious code!
+Unofficial packages may contain malicious code!
 Please make sure to use trusted or official repositories.
 
 ## Official packages
