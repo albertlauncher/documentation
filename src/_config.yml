@@ -73,7 +73,7 @@ mermaid:
 #email: manuelschneid3r@gmail.com
 #github_username:  manuelschneid3r
 #exclude: [vendor]
-#future: true
+future: true
 
 
 
