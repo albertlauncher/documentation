@@ -46,10 +46,7 @@ albert toggle
 - [KDE documentation](https://docs.kde.org/stable5/en/khelpcenter/fundamentals/shortcuts.html)
 - You are welcome to improve this list. 
 
-
-## How to make hotkeys have less latency?
-
-Note that the above runs a new app instance, which is relatively heavy.
+The above runs a new app instance, which is relatively heavy.
 Another approach is to pipe the command you want to send directly into the albert IPC socket.
 
 ```bash
@@ -113,11 +110,3 @@ QT_LOGGING_RULES='*=true' QT_DEBUG_PLUGINS=1 albert
 # Debug DBus
 QT_LOGGING_RULES='default*=true' QDBUS_DEBUG=1 
 ```
-
-
-## How to version plugins?
-
-If it has a public API `major.minor.patch` else `minor.patch`.
-Increase major if the API breaks.
-Increase minor if the API got some backward compatible additions or the user experiences noticable changes.
-In all other cases increase patch.

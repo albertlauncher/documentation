@@ -17,9 +17,7 @@ A native plugin is a [Qt Plugin](https://doc.qt.io/qt-6/plugins-howto.html#the-l
 ## CMake
 
 Having a standardized plugin project structure the `albert_plugin` macro takes care of most of the CMake boilerplate code.
-Read the documentation header of the [CMake module](https://raw.githubusercontent.com/albertlauncher/albert/main/cmake/albert-macros.cmake) before you proceed.
-Its just a few lines. 
-Do not skip this!
+Read its documentation in the header of the [CMake module](https://raw.githubusercontent.com/albertlauncher/albert/main/cmake/albert-macros.cmake) before you proceed.
 This is the standard plugin directory structure of a plugin:
 
 ```
@@ -32,7 +30,7 @@ This is the standard plugin directory structure of a plugin:
    └──  …       
 ```
 
-A basic metadata file looks like this (See also the [metadata.json files](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2Fmetadata.json&type=code) of the official plugins):
+A basic metadata file looks like this (See also the [metadata.json files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2Fmetadata.json&type=code)):
 
 ```json
 {
@@ -44,7 +42,7 @@ A basic metadata file looks like this (See also the [metadata.json files](https:
 }
 ```
 
-A minimal working CMakeLists.txt (See also the [CMakeLists.txt files](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FCMakeLists.txt&type=code) of the official plugins):
+A minimal working CMakeLists.txt (See also the [CMakeLists.txt files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FCMakeLists.txt&type=code)):
 
 ```cmake
 cmake_minimum_required(VERSION 3.16)
@@ -61,8 +59,7 @@ The relevant base classes and the `ALBERT_PLUGIN` macro takes care of this.
 Albert plugins have to inherit the [`PluginInstance`](https://albertlauncher.github.io/reference/classalbert_1_1PluginInstance.html) class.
 Usually you dont want to subclass `PluginInstance` directly but rather [`ExtensionPlugin`](https://albertlauncher.github.io/reference/classalbert_1_1ExtensionPlugin.html) which implements the [`Extension`](https://albertlauncher.github.io/reference/classalbert_1_1Extension.html) interface using the metadata of the plugin instance.
 
-
-A basic plugin looks like this (Check the [plugin header files](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FPlugin.h&type=code) of the official plugins for reference):
+A basic plugin looks like this (See also the [plugin header files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FPlugin.h&type=code)):
 
 ```cpp
 #pragma once
