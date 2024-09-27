@@ -110,3 +110,9 @@ QT_LOGGING_RULES='*=true' QT_DEBUG_PLUGINS=1 albert
 # Debug DBus
 QT_LOGGING_RULES='default*=true' QDBUS_DEBUG=1 
 ```
+
+
+## How's it going?
+
+- [Star history compared](https://star-history.com/#albertlauncher/albert&cerebroapp/cerebro&Ulauncher/Ulauncher&Date)
+- [GitHub Release Stats](https://tooomm.github.io/github-release-stats/?username=albertlauncher&repository=albert)
