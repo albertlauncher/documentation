@@ -11,11 +11,11 @@ has_toc: false
 Albert can be extended by writing native C++/Qt plugins or Python plugins.
 A quick comparison:
 
-- [Native plugins](/docs/gettingstarted/extension/cplusplus):
+- [Native plugins](/gettingstarted/extension/cplusplus):
   - Performance and power of C++.
   - Access to Qt and its eventloop.
   - Dynamic config widgets.
-- [Python plugins](/docs/gettingstarted/extension/python):
+- [Python plugins](/gettingstarted/extension/python):
   - Simplicity of Python.
   - Rapid prototyping.
   - Easy to distribute/share.
