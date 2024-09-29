@@ -35,7 +35,7 @@ See [XDG Base Directory Specification](https://specifications.freedesktop.org/ba
 ## How to make hotkeys work on Wayland?
 
 Wayland hotkey adoption is still in its [infancy](https://dec05eba.com/2024/03/29/wayland-global-hotkeys-shortcut-is-mostly-useless/).
-A generic solution is to let your desktop environment handle the hotkey registration.
+A general solution is to let your desktop environment handle the hotkey registration.
 Bind the hotkey to the command you want it to run, e.g. 
 
 ```bash 

@@ -28,7 +28,7 @@ A quick comparison:
 
 If it has a public API `major.minor.patch` else `minor.patch`.
 Increase major if the API breaks.
-Increase minor if the API got some backward compatible additions or the user experiences noticable changes.
+Increase minor if the API got some backward compatible additions or the user experiences noticeable changes.
 In all other cases increase patch.
 
 ### Avoiding name conflicts of extension identifiers
