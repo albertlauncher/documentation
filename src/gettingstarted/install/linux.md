@@ -1,22 +1,13 @@
 ---
-title: Installation
+title: Linux
+parent: Install
+grand_parent: Getting started
 nav_order: 1
 ---
 
-# {{ page.title }}
-{: .no_toc }
+# Linux
 
-- TOC
-{:toc}
-
-{: .warning }
-Unofficial packages may contain malicious code!
-Please make sure to use official or trusted repositories.
-
-## Official packages
-
-Official packages are built and hosted at [Open Build Service](https://build.opensuse.org/package/show/home:manuelschneid3r/albert).
-Downloads and installation instructions for the base distributions can be found in the OBS software center.
+Supported distributions, downloads and installation instructions for the base distributions can be found in the Open Build Service software center.
 
 [Visit OBS software center](https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert&acolor=00cccc&hcolor=00aaaa){: .btn .fs-5}
 
@@ -34,28 +25,14 @@ Several other distributions are supported when used with the correct package bas
 | PopOS! 22.04    | Ubuntu 22.04 [ℹ️](https://en.wikipedia.org/wiki/Pop!_OS#Release_table)         |
 | PopOS! 20.04    | Ubuntu 20.04 [ℹ️](https://en.wikipedia.org/wiki/Pop!_OS#Release_table)         |
 
-{: .note }
 Feel free to add missing mappings to this table.
 
+The packages are [built](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) and
+[hosted](http://download.opensuse.org/repositories/home:/manuelschneid3r/) at Open Build Service.
 
 ## Unofficial packages
 
+Feel free to add repositories to this list.
+
 - [ArchLinux AUR](https://aur.archlinux.org/packages/albert)
 - [nixOS](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=albert)
-
-{: .note }
-Feel free to add trusted repositories to this list.
-
-## From source
-
-Building and installing from sources is the least convenient, but most flexible way.
-This way is usually for developers only.
-The build process is trivial, but you have to manage the dependencies on your own.
-See the [OBS package specs](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) for up to date build and runtime dependencies.
-
-```bash
-git clone --recursive https://github.com/albertlauncher/albert.git
-cmake -B build -S albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
-cmake --build build
-cmake --install build
-```

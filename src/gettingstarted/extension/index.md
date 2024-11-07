@@ -24,14 +24,14 @@ A quick comparison:
 
 ## General considerations and best practices
 
-### How to version plugins
+### Semantic versioning
 
 If it has a public API `major.minor.patch` else `minor.patch`.
 Increase major if the API breaks.
 Increase minor if the API got some backward compatible additions or the user experiences noticeable changes.
 In all other cases increase patch.
 
-### Avoiding name conflicts of extension identifiers
+### Avoid extension identifier conflicts 
 
 If your plugin provides multiple extensions it's a good idea to prepend the plugin id to the extension id to avoid name conflicts of extensions, e.g. `files.root_browser`.
 The root extension is fine to match the plugin id.

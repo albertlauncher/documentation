@@ -1,5 +1,3 @@
-version: "3.5"
-
 services:
 
   jekyll: &jekyll
@@ -16,16 +14,19 @@ services:
   jekyll-build:
     <<: *jekyll
     command: build
+    container_name: jekyll-build
 
   jekyll-serve:
     <<: *jekyll
     ports:
       - 4000:4000
     command: serve --host 0.0.0.0 --trace
+    container_name: jekyll-serve
 
   html-proofer:
     image: klakegg/html-proofer:3.17.0
     volumes:
       - ./src/_site:/src
     command: --allow-hash-href --check-html --empty-alt-ignore
+    container_name: html-proofer
 

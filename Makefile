@@ -1,13 +1,17 @@
 info:
 	less Makefile
 
+clean:
+	rm src/Gemfile.lock
+	docker container rm jekyll
+
 doxygen:
 	rm -rf albert src/reference
 	git clone --depth 1 https://github.com/albertlauncher/albert.git
 	doxygen
 
 build:
-	docker-compose up jekyll-build
+	docker-compose up --build jekyll-build
 
 serve:
 	docker-compose up jekyll-serve
