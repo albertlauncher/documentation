@@ -10,13 +10,13 @@ doxygen:
 	git clone --depth 1 https://github.com/albertlauncher/albert.git
 	doxygen
 
-build:
+build: doxygen
 	docker-compose up --build jekyll-build
 
-serve:
-	docker-compose up jekyll-serve
+serve: doxygen
+	docker-compose up --build jekyll-serve
 
-html-proofer:
+html-proofer: build
 	docker-compose up html-proofer
 
 deploy: doxygen html-proofer build
