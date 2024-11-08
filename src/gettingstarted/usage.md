@@ -94,11 +94,9 @@ or using the built-in plugin query handler.
 Enabled plugins load automatically at launch.
 Plugins with graphical interfaces for configuration can be accessed via the plugins tab in the settings.
 
-An **extensions** is a logical module that can be provided by a plugin to add functionality.
-Each plugin can provide multiple extensions.
-While query and fallback handlers are central to the app's functionality,
-there are other extension interfaces that plugins can provide.
-More on this topic can be found in the [Extension](/gettingstarted/extension/) section.
+An **extension** is a logical module that can be used to add functionality to the app.
+Each plugin can provide multiple *extension implementations* or even expose its own *extension interfaces*.
+More on this topic can be found in the [Extension](/gettingstarted/extension/) section
 
 
 ## Queries
