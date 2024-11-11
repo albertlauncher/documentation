@@ -11,8 +11,8 @@ DOT_IMAGE_FORMAT       = svg
 DOXYFILE_ENCODING      = UTF-8
 EXTRACT_ALL            = YES
 GENERATE_LATEX         = NO
-#INPUT                  = albert/include
-INPUT                  = ../include
+INPUT                  = albert/include
+#INPUT                  = ../include
 STRIP_FROM_INC_PATH    = albert/include            # relative include paths
 
 
