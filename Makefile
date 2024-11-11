@@ -2,8 +2,8 @@ info:
 	less Makefile
 
 clean:
-	rm src/Gemfile.lock
-	docker container rm jekyll
+	rm src/Gemfile.lock || true
+	docker container rm jekyll-build jekyll-serve
 
 doxygen:
 	rm -rf albert src/reference
