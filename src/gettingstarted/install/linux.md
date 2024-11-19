@@ -11,6 +11,8 @@ Supported distributions, downloads and installation instructions for the base di
 
 [Visit OBS software center](https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert&acolor=00cccc&hcolor=00aaaa){: .btn .fs-5}
 
+The packages are [built](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) and
+[hosted](http://download.opensuse.org/repositories/home:/manuelschneid3r/) at Open Build Service.
 Several other distributions are supported when used with the correct package base:
 
 | Distribution    | Package base                                                                 |
@@ -27,8 +29,6 @@ Several other distributions are supported when used with the correct package bas
 
 Feel free to add missing mappings to this table.
 
-The packages are [built](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) and
-[hosted](http://download.opensuse.org/repositories/home:/manuelschneid3r/) at Open Build Service.
 
 ## Unofficial packages
 
