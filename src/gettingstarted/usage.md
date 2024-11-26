@@ -40,7 +40,7 @@ This input history can be used to search and browse your past input.
 When the results list is hidden or the first item is selected <kbd>⬆</kbd> iterates the input history in reverse order.
 
 Holding <kbd>Shift</kbd> enables the **input history navigation** mode.
-In this mode the mentioned conditions for <kbd>⬆</kbd> to iterate the history are not required.
+In this mode the mentioned conditions for <kbd>⬆</kbd> to iterate the history are not required
 and <kbd>⬇</kbd> can be used for bidirectional iteration as well. 
 
 If enabled, the (manually set) input text is used for **input history search**.
