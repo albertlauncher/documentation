@@ -17,6 +17,10 @@ Thank you ❤️
         <col>
     </colgroup>
     <tr>
+      <td>Stripe</td>
+      <td><a href="https://donate.stripe.com/14keYl0Et8Sb1mU4gg"><button type="button" name="button" class="btn">Donate</button></a></td>
+    </tr>
+    <tr>
       <td>GitHub</td>
       <td><a href="https://github.com/sponsors/ManuelSchneid3r"><button type="button" name="button" class="btn">Become a sponsor</button></a></td>
     </tr>
