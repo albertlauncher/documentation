@@ -59,7 +59,7 @@ Thank you ❤️
         <td>PayPal</td>
         <td colspan="2">
             <p><a href="https://www.paypal.com/donate/?hosted_button_id=W74BQPKPGNSNC"><button type="button" name="button" class="btn">Donate</button></a></p>
-            <p>⛔️ High fixed fees make small transactions expensive.</p>
+            <p>⚠️ High fixed fees make small transactions expensive.</p>
         </td>
     </tr>
 </table>
