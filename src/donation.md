@@ -47,7 +47,7 @@ Thank you ❤️
     </tr>
     <tr>
       <td>Binance pay</td>
-      <td>ID: 15381738 <a href="https://www.binance.com/en/support/faq/how-to-send-cryptocurrency-to-an-individual-with-binance-pay-b3fa3ae045b9429084203c3a4ff1362f">ℹ️</a></td>
+      <td>ID: 15381738 <a href="https://www.binance.com/en/support/faq/how-to-send-crypt7ocurrency-to-an-individual-with-binance-pay-b3fa3ae045b9429084203c3a4ff1362f">ℹ️</a><br><img src="img/binance.png"></td>
     </tr>
     <tr>
       <td>PayPal</td>
