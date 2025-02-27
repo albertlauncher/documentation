@@ -44,7 +44,7 @@ class Plugin(albert.PluginInstance):
 
 {: .note}
 Due to the different type systems, multiple inheritance of extension interfaces is not supported.
-However, multiple extensions can be added using `albert.PluginInstance.(de)registerExtension`.
+However, multiple extensions can be added by reimplementing `albert.PluginInstance.extensions() `.
 
 ## What's next?
 
