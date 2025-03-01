@@ -7,9 +7,6 @@ nav_order: 0
 
 # macOS
 
-{: .note }
-The macOS version is experimental 🚧
-
 Albert is available via [homebrew](https://brew.sh/) tap.
 The package is [built](https://github.com/albertlauncher/albert/actions/workflows/ci.yml)
 and [hosted](https://github.com/albertlauncher/albert/releases) on GitHub.
