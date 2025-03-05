@@ -9,7 +9,7 @@ nav_order: 0
 {: .no_toc }
 
 {: .note }
-This page provides an overview of general concepts. For details of any particular extension interface refer to the respective page.
+This page provides an overview of general concepts. For details of any particular interface refer to the respective page.
     
 - TOC
 {:toc}
