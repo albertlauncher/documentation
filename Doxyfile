@@ -5,41 +5,41 @@ AUTOLINK_SUPPORT        = NO                      # do not autlink names in text
 #EXTRACT_LOCAL_CLASSES  = YES
 #EXTRACT_PRIVATE        = NO
 #EXTRACT_STATIC         = YES
-GENERATE_DOCSET        = YES
+GENERATE_DOCSET         = YES
 #MACRO_EXPANSION        = NO
 #SKIP_FUNCTION_MACROS   = NO
-DOT_IMAGE_FORMAT       = svg
-DOXYFILE_ENCODING      = UTF-8
-EXTRACT_ALL            = YES
-GENERATE_LATEX         = NO
-INPUT                  = albert/include
+DOT_IMAGE_FORMAT        = svg
+DOXYFILE_ENCODING       = UTF-8
+EXTRACT_ALL             = YES
+GENERATE_LATEX          = NO
+INPUT                   = albert/include
 #INPUT                  = ../include
-STRIP_FROM_INC_PATH    = albert/include            # relative include paths
-FULL_PATH_NAMES        = YES                       # Relative paths in include graph
-STRIP_FROM_PATH        = ..
+STRIP_FROM_INC_PATH     = albert/include            # relative include paths
+FULL_PATH_NAMES         = YES                       # Relative paths in include graph
+STRIP_FROM_PATH         = ..
 
-HAVE_DOT               = YES
+HAVE_DOT                = YES
 
 # hide undoc stuff
-HIDE_UNDOC_MEMBERS     = YES
-HIDE_UNDOC_CLASSES     = YES
-HIDE_FRIEND_COMPOUNDS  = YES
-HIDE_IN_BODY_DOCS      = YES
+HIDE_UNDOC_MEMBERS      = YES
+HIDE_UNDOC_CLASSES      = YES
+HIDE_FRIEND_COMPOUNDS   = YES
+HIDE_IN_BODY_DOCS       = YES
 
-JAVADOC_AUTOBRIEF      = YES
-LAYOUT_FILE            = DoxygenLayout.xml
+JAVADOC_AUTOBRIEF       = YES
+LAYOUT_FILE             = DoxygenLayout.xml
 
 # Hide ALBERT_EXPORT
-ENABLE_PREPROCESSING   = YES
-MACRO_EXPANSION        = YES
-EXPAND_ONLY_PREDEF     = YES
-PREDEFINED             = ALBERT_PLUGIN_ID
-PREDEFINED             = ALBERT_EXPORT=
+ENABLE_PREPROCESSING    = YES
+MACRO_EXPANSION         = YES
+EXPAND_ONLY_PREDEF      = YES
+PREDEFINED              = ALBERT_PLUGIN_ID
+PREDEFINED              = ALBERT_EXPORT=
 
-PROJECT_LOGO           = "src/img/albert.svg"
-PROJECT_NAME           = "Albert"
-QT_AUTOBRIEF           = YES
-RECURSIVE              = YES
+PROJECT_LOGO            = "src/img/albert.svg"
+PROJECT_NAME            = "Albert"
+QT_AUTOBRIEF            = YES
+RECURSIVE               = YES
 #USE_MDFILE_AS_MAINPAGE = "albert/plugins/README.md"
 
 # BASE THEME
@@ -50,17 +50,20 @@ RECURSIVE              = YES
 #HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
 
 # SIDEBAR THEME
-GENERATE_TREEVIEW      = YES # required!
-DISABLE_INDEX          = NO
-FULL_SIDEBAR           = NO
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css doxygen-awesome-css/doxygen-awesome-sidebar-only.css custom.css
-HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
-HTML_OUTPUT            = src/reference
+GENERATE_TREEVIEW       = YES # required!
+DISABLE_INDEX           = NO
+FULL_SIDEBAR            = NO
+HTML_EXTRA_STYLESHEET   = doxygen-awesome-css/doxygen-awesome.css doxygen-awesome-css/doxygen-awesome-sidebar-only.css custom.css
+HTML_COLORSTYLE         = LIGHT # required with Doxygen >= 1.9.5
+HTML_OUTPUT             = src/reference
 
+# predictable links
+HTML_FILE_EXTENSION     = .html
+CASE_SENSE_NAMES        = YES
 
 #OUTPUT_DIRECTORY       = doxy_out
-COLLABORATION_GRAPH   = NO
-#CLASS_GRAPH          = YES
+COLLABORATION_GRAPH     = NO
+#CLASS_GRAPH            = YES
 
 # Class diagram
 #INPUT                  = ../include ../src
