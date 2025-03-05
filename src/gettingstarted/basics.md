@@ -1,5 +1,5 @@
 ---
-title: Usage
+title: Basics
 parent: Getting started
 nav_order: 1
 ---
@@ -12,7 +12,7 @@ nav_order: 1
 
 ## User interface
 
-Note: The following uses [Qt terminology](https://doc.qt.io/qt-6/qt.html#KeyboardModifier-enum) for modifier key names.
+The following uses [Qt terminology](https://doc.qt.io/qt-6/qt.html#KeyboardModifier-enum) for modifier key names.
 The following table shows the mapping of modifier keys on different keyboards:
 
 | Qt              | Linux/Win       | MacOS                              |
