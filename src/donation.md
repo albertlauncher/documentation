@@ -5,9 +5,10 @@ nav_order: 6
 
 # {{ page.title }}
  
-If you found here, you are probably thinking about supporting the development of your favorite keyboard launcher 😉.
-That's great!
-Thank you ❤️
+If you found here, you are probably thinking about supporting the development of your favorite keyboard launcher.
+Thank you! ❤️
+<br>    
+Here are some ways to do so:
 
 <table style="text-align: center;">
     <tr>
