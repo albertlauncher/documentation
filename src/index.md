@@ -34,6 +34,7 @@ Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
 ![emoji](https://d4.alternativeto.net/vTvGqR8hXeu32UL8RmfaKVCCUhU5IcQfe_UjyJR4NvQ/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF81NjQ3NjVfZnVsbC5wbmc.jpg)
 ![wiki](https://d4.alternativeto.net/CktRYyQqH6D4bjgpXCGbt2WnpyJLxPrmMr9gNCQvJnI/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF83OTQ5ODNfZnVsbC5wbmc.jpg)
 ![snip](https://d4.alternativeto.net/paT4GZnhqrluxAKq1EnGM9aH_Jkbbhfkl_gc0qca4MY/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF84NTgyNjZfZnVsbC5wbmc.jpg)
+![ssh](https://d4.alternativeto.net/vzYa1-6HAv6RrtDgmljaWfqfwHFVEObJULTp1r--jZ4/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8zOTkzNjJfZnVsbC5wbmc.jpg)
 ![ssh](https://d4.alternativeto.net/lbop7nypu-Cn8KE3luiSB_W-FlA3t5bs8vJyyUWjxkk/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8zNjgzNjBfZnVsbC5wbmc.jpg)
 ![ssh](https://d4.alternativeto.net/xPps9qFV4U7cZMoNeTo5i9tOfd7BeK3AMBLYTfuidwY/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF82NDE1MDZfZnVsbC5wbmc.jpg)
 ![docs](https://d4.alternativeto.net/3aMhmXca1dFsfrA32jAntBwJkNxapsIjV9nXUXvs1q4/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8zMjE3MzZfZnVsbC5wbmc.jpg)
