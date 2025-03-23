@@ -27,7 +27,8 @@ Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
 ![files](https://d4.alternativeto.net/kYbl2rbEoXd0Tce6w7lT5KidQIphO8JVePGxH6eohEA/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8zNDE1NzVfZnVsbC5wbmc.jpg)
 ![files](https://d4.alternativeto.net/aZbCs2gUk7_gqav2sj7Q7Ugf2Bxvz_XHQXNcZlDLIgw/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF85ODIzNTlfZnVsbC5wbmc.jpg)
 ![system](https://d4.alternativeto.net/4hhKZbQGSQqvZkk2rhYzy6X3xFr7eK_d_cUXMUWU3qQ/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF85MTM0NTdfZnVsbC5wbmc.jpg)
-<!-- CHROMIUM! -->
+![chromium triggered](https://d4.alternativeto.net/E9kjwEUh7E5lBNKtzABqqpZ_dzQrdc6bY9Wy2uO3-tk/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF83Nzk5MzFfZnVsbC5wbmc.jpg)
+![chromium global](https://d4.alternativeto.net/Rk7WxyCkhnk14gVHij07Vys9AdSZ_TkVifkBCfq2yCk/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8yOTA4ODRfZnVsbC5wbmc.jpg)
 ![calculator](https://d4.alternativeto.net/EdhmF1brJJI4cwMfP7XyB2Vli37kXU2tZO_OrLFGvqw/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8xMTk5MDNfZnVsbC5wbmc.jpg)
 ![clipboard](https://d4.alternativeto.net/JKeI1xpvzgFqXKXYxr4MyfItCo22FZTH01yau1-frKM/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8yMDU2NjJfZnVsbC5wbmc.jpg)
 ![jetbrains](https://d4.alternativeto.net/mCn-tnenAadm51iKhEG9NhhRsN6Z0kzJFyrlQcEekLI/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF84NDU5MTlfZnVsbC5wbmc.jpg)
