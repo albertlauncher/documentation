@@ -78,6 +78,8 @@ future: true
 
 
 
+plugins:
+  - jekyll-loading-lazy
 
 #plugins:
   #- jekyll-spaceship

@@ -10,7 +10,7 @@ nav_exclude: true
 
 Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
 {: .fs-5 .fw-300 .text-center }
-…and an [egoistic-altruistic](https://www.youtube.com/watch?v=rvskMHn0sqQ) project you should be [sponsoring](/donation)❤️. 
+…and an [egoistic-altruistic](https://www.youtube.com/watch?v=rvskMHn0sqQ) project worth [sponsoring](/donation)❤️. 
 {: .fs-2 .fw-300 .text-center }
 
 <div class="text-center">
@@ -53,5 +53,3 @@ Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
 ![timer](https://d4.alternativeto.net/FR6Jg6XfCqdth1_ru4MftpYgYcRT1e_eN7Hw8keIj4M/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF81Njc5NzZfZnVsbC5wbmc.jpg)
 ![aur](https://d4.alternativeto.net/M7GzRTbZD1Me5JQ8wns6C7uILsbZKAkIZOMaagp_APU/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF8yNjA4ODVfZnVsbC5wbmc.jpg)
 ![ddg](https://d4.alternativeto.net/MvOvaR5fwQuiPQCq3kwQICIgTKLj3cQwufTw4BLw66Q/rs:fit:2400:2400:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2FsYmVydF80ODE3OTBfZnVsbC5wbmc.jpg)
-
-
