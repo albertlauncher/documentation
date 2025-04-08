@@ -16,7 +16,7 @@ should understand the [basics](/gettingstarted/basics) and have read the
 [general](/gettingstarted/extension/general) concepts of Albert extension.
 
 - [Native plugins](/gettingstarted/extension/cplusplus):
-  - Performance and power of C++.
+  - Performance and power of C/C++/ObjC(++).
   - Benefits of the native access to Qt:
     - Asynchronous operation.
     - Built-in internationalization.
