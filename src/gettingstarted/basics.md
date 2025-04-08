@@ -58,9 +58,9 @@ As a reference the following table lists the keys you can use to control Albert:
 
 | Key                                                                                                 | Action                                                                    |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <kbd>Esc</kbd>                                                                                      | Hide Albert.                                                              |
-| Hold <kbd>Alt</kbd><br><kbd>Ctrl</kbd>+<kbd>Return</kbd>                                            | Show actions.                                                             |
-| Hold <kbd>Meta</kbd>                                                                                | Show fallbacks.                                                           |
+| <kbd>Esc</kbd>                                                                                      | Hide the window.                                                          |
+| <kbd>Alt (Hold)</kbd><br><kbd>Ctrl</kbd>+<kbd>Return</kbd>                                          | Show actions.                                                             |
+| <kbd>Meta (Hold)</kbd>                                                                              | Show fallbacks.                                                           |
 | <kbd>Shift</kbd>+<kbd>⬆</kbd>                                                                       | Next entry in input history.                                              |
 | <kbd>Shift</kbd>+<kbd>⬇</kbd>                                                                       | Previous entry in input history.                                          |
 | <kbd>Tab</kbd>                                                                                      | Activate input action of the selected item (evaluation, completion, etc). |
