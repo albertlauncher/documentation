@@ -9,7 +9,7 @@ nav_order: 1
 
 Supported distributions, downloads and installation instructions for the base distributions can be found in the Open Build Service software center.
 
-[Visit OBS software center](https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert&acolor=00cccc&hcolor=00aaaa){: .btn .fs-5}
+[Visit OBS software center](https://software.opensuse.org/download/package.iframe?project=home:manuelschneid3r&package=albert&acolor=00cccc&hcolor=00aaaa&locale=en){: .btn .fs-5}
 
 The packages are [built](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) and
 [hosted](http://download.opensuse.org/repositories/home:/manuelschneid3r/) at Open Build Service.
