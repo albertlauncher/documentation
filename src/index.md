@@ -10,13 +10,11 @@ nav_exclude: true
 
 Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
 {: .fs-5 .fw-300 .text-center }
-…and an [egoistic-altruistic](https://www.youtube.com/watch?v=rvskMHn0sqQ) project worth [sponsoring](/donation)❤️. 
-{: .fs-2 .fw-300 .text-center }
 
 <div class="text-center">
     <a href="/gettingstarted"><button type="button" name="button" class="btn btn-primary">Get started</button></a>
     <a href="{{site.repository}}"><button type="button" name="button" class="btn ml-2">View on GitHub</button></a>
-    <a href="/donation"><button type="button" name="button" class="btn btn-yellow ml-2">Donate</button></a>
+    <a href="/donation"><button type="button" name="button" class="btn btn-yellow ml-2">Donate 💛</button></a>
 </div>
 
 <!--{: .text-center }-->
