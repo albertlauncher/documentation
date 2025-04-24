@@ -1,5 +1,6 @@
 ---
 title: Albert Privacy Notice
+nav_exclude: true
 ---
 
 # {{ page.title }}
