@@ -21,7 +21,6 @@ Several other distributions are supported when used with the correct package bas
 |--------------|--------------------------------------------------|
 | Ubuntu 24.04 | Elementary OS 8<br>Linux Mint 22<br>PopOS! 24.04 |
 | Ubuntu 22.04 | Elementary OS 7<br>Linux Mint 21<br>PopOS! 22.04 |    
-| Ubuntu 20.04 | Elementary OS 6<br>Linux Mint 20<br>PopOS! 20.04 |
 | Debian 12.0  | Linux Mint DE 6                                  |
 | Arch Linux   | CachyOS<br>EndeavourOS<br>Garuda<br>Manjaro      |
 
