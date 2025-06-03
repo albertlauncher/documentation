@@ -50,11 +50,15 @@ The above runs a new app instance, which is relatively heavy.
 Another approach is to pipe the command you want to send directly into the albert IPC socket.
 
 ```bash
+# Before 0.28.0 the string to send was "toggle".
+
 # Using netcat-openbsd
-echo -n toggle | nc -U ~/.cache/albert/ipc_socket
+echo -n '["toggle"]' | nc -U ~/.cache/albert/ipc_socket
 
 # Using socat
-echo -n toggle | socat - ~/.cache/albert/ipc_socket
+echo -n '["toggle"]' | socat - ~/.cache/albert/ipc_socket
+
+
 ```
 
 {: .note }
