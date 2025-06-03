@@ -1,57 +1,96 @@
 ---
-title: Albert Privacy Notice
+title: Albert Design
 nav_exclude: true
 ---
 
 # {{ page.title }}
-Version 1.0-beta, last updated: 24 April, 2025
 
-### **tl;dr**
+## Frontend state machine
 
-- No personal data is collected.
-- No profiling, tracking, or commercial use takes place.
-- No data shared with third parties.
-- All data serves the purpose of improving the app.
+```mermaid
+%%{init: {'theme': 'default', 'themeVariables': { 'fontSize': '9px', 'fontFamily': 'Inter' }}}%%
 
-### Who is responsible?
+stateDiagram-v2
 
-This application (“Albert”) is developed and maintained by Manuel Schneider ([@manuelschneid3r](https://github.com/ManuelSchneid3r)).
-For inquiries, post an issue on [Github](https://github.com/albertlauncher/albert/issues).
+state StateMachine {
+    direction LR
+    state Results {
+        direction LR
+        state "None" as ResultsHidden
+        state "Matches" as ResultsMatches
+        state "Fallbacks" as ResultsFallbacks
+        state "Disabled" as ResultsDisabled
 
-### What data is processed?
+        [*] --> ResultsHidden
+        
+        ResultsHidden --> ResultsMatches: ⚡️haveMatches
+        ResultsHidden --> ResultsFallbacks: ⚡️showFallbacks && fallbacks
+        ResultsHidden --> ResultsFallbacks: ⚡️!busy && fallbacks && !triggered
 
-When the app sends a report, the following data is processed:
+        ResultsMatches --> ResultsHidden: ⚡️!query
+        ResultsMatches --> ResultsDisabled: ⚡️query
+        ResultsMatches --> ResultsFallbacks: ⚡️showFallbacks && fallbacks
 
-- Hashed device ID (Pseudonym)
-- Local time (To properly map a report to a "human date")
+        ResultsFallbacks --> ResultsHidden: ⚡️!query
+        ResultsFallbacks --> ResultsDisabled: ⚡️query
+        ResultsFallbacks --> ResultsMatches: ⚡️hideFallbacks && matches
+        ResultsFallbacks --> ResultsHidden: ⚡️hideFallbacks && !matches && busy
 
-Depending on the users choice to send telemetry data, the following data is processed:
+        ResultsDisabled --> ResultsHidden: ⚡️!query
+        ResultsDisabled --> ResultsHidden: ⚡️timeout
+        ResultsDisabled --> ResultsHidden: ⚡️!busy && (!fallbacks || triggered)
+        ResultsDisabled --> ResultsFallbacks: ⚡️!busy && fallbacks && !triggered
+        ResultsDisabled --> ResultsMatches: ⚡️haveMatches
+    }
 
-- Country code (derived from the IP address, the IP address itself is not stored)
-- App and Qt version
-- Operation system type and version
-- Platform type (macOS, Wayland, etc.)
-- Enabled plugins
-- Activated extensions
+    state Actions {
+        direction LR
+        [*] --> ActionsHidden
+        ActionsHidden --> ActionsVisible: ⚡️showActions AND actions AND (ResultsMatches||ResultsFallbacks)
+        ActionsVisible --> ActionsHidden: ⚡️hideActions
+        ActionsVisible --> ActionsHidden: ⚡️ResultsMatches.exit
+        ActionsVisible --> ActionsHidden: ⚡️ResultsFallbacks.exit
+        ActionsVisible --> ActionsHidden: ⚡️currentItemChanged
+    }
 
-### Why is this data used?
+    state KeyboardNavigation {
+        direction LR
+        [*] --> NavigateResults
+        NavigateResults --> NavigateTextEdit: ⚡️multiline
+        NavigateActions --> NavigateTextEdit: ⚡️multiline
 
-Basic data is used exclusively for:
+        NavigateTextEdit --> NavigateResults: ⚡️!multiline && !ActionsVisible.active
+        NavigateTextEdit --> NavigateActions: ⚡️!multiline && ActionsVisible.active
 
-- Computing aggregated users counts.
+        NavigateResults --> NavigateActions: ⚡️ActionsVisible.enter
+        NavigateActions --> NavigateResults: ⚡️ActionsVisible.exit
+    }
 
-Optional data is used exclusively for:
+    state SettingsButtonSpin {
+        direction LR
+        [*] --> Slow
+        Slow --> Fast: busy
+        Fast --> Slow: !busy
+    }   
 
-- Understanding the distribution of releases.
-- Triaging issues.
-- Prioritizing plugin development efforts.
-- Prioritizing localization efforts.
-- Determine when to increase the minimum required versions of dependencies.
-
-### Legal basis
-
-Processing is based on *legitimate interest* under *Article 6(1)(f) GDPR*. 
-
-### Retention period
-
-180 days.
+    state SettingsButtonAppearance {
+        direction LR
+        [*] --> SettingsButtonHidden
+        SettingsButtonHidden --> SettingsButtonVisible: ⚡️hoverInput
+        SettingsButtonHidden --> SettingsButtonHighlight: ⚡️hoverButton
+        SettingsButtonHidden --> SettingsButtonHighlightDelay: ⚡️busy
+        
+        SettingsButtonVisible --> SettingsButtonHidden: ⚡️!hoverInput
+        SettingsButtonVisible --> SettingsButtonHighlight: ⚡️busy
+        SettingsButtonVisible --> SettingsButtonHighlight: ⚡️hoverButton
+        
+        SettingsButtonHighlight --> SettingsButtonHidden: ⚡️!busy && !hover
+        SettingsButtonHighlight --> SettingsButtonVisible: ⚡️!busy && inputHover
+        SettingsButtonHighlight --> SettingsButtonVisible: ⚡️!hoverButton
+        
+        SettingsButtonHighlightDelay --> SettingsButtonHighlight: ⚡️timer
+        SettingsButtonHighlightDelay --> SettingsButtonHighlight: ⚡️hoverButton 
+        SettingsButtonHighlightDelay --> SettingsButtonHidden: ⚡️!busy
+    }
+}
+```  
