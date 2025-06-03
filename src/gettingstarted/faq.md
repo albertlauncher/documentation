@@ -57,8 +57,6 @@ echo -n '["toggle"]' | nc -U ~/.cache/albert/ipc_socket
 
 # Using socat
 echo -n '["toggle"]' | socat - ~/.cache/albert/ipc_socket
-
-
 ```
 
 {: .note }

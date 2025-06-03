@@ -8,22 +8,8 @@ nav_order: 6
 If you found here, you are probably thinking about supporting the development of your favorite keyboard launcher.
 Thank you! ❤️
 <br>    
-Here are some ways to do so:
 
 <table style="text-align: center;">
-    <tr>
-        <td>
-            Stripe<br><span style="font-size:0.5rem">Credit cards 💳, GPay, SEPA direct debit</span>
-        </td>
-        <td>
-            <p><a href="https://donate.stripe.com/28o17v3QF4BVghO289"><button type="button" name="button" class="btn">Donate $</button></a></p>
-            <p><img src="/img/stripe_usd.png" style="max-height: 6rem;"></p>
-        </td>
-        <td>
-            <p><a href="https://donate.stripe.com/14keYl0Et8Sb1mU4gg"><button type="button" name="button" class="btn">Donate €</button></a></p>
-            <p><img src="/img/stripe_eur.png" style="max-height: 6rem;"></p>
-        </td>
-    </tr>
     <tr>
         <td>GitHub</td>
         <td colspan="2">
@@ -37,7 +23,10 @@ Here are some ways to do so:
         </td>
     </tr>
     <tr>
-        <td>SEPA 🇪🇺</td>
+        <td>
+            SEPA wire transfer<br>
+            <span style="font-size:0.5rem">Recommended for users in the eurozone 🇪🇺💳</span>
+        </td>
         <td colspan="2">Send a <a href="mailto:manuelschneid3r@gmail.com?subject=Albert%20donation&body=IBAN%20please.">mail</a> to get the IBAN.</td>
     </tr>
     <tr>
@@ -45,8 +34,8 @@ Here are some ways to do so:
             Crypto currencies<br><font style="font-size:0.5rem">Leave a <a href="mailto:manuelschneid3r@gmail.com?subject=Albert%20crypto%20donation">mail</a> for others</font>
         </td>
         <td colspan="2">
-            BTC <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=040" style="max-height: 1rem; margin-bottom: -0.15rem;"> <a href="bitcoin:bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3?amount=0.001">bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3</a><br>
-            ETH <img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=040" style="max-height: 1rem; margin-bottom: -0.15rem;"> 0xb4c2ed5ee122341a7f271342c5c2a61263d37357<br>
+            BTC <img src="/img/btc.svg" style="max-height: 1rem; margin-bottom: -0.15rem;"> <a href="bitcoin:bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3?amount=0.001">bc1qr4jl6jwwhuv6gtu5e0lg2r5wq45y75ulw2sfr3</a><br>
+            ETH <img src="/img/eth.svg" style="max-height: 1rem; margin-bottom: -0.15rem;"> 0xb4c2ed5ee122341a7f271342c5c2a61263d37357<br>
         </td>
     </tr>
     <tr>
@@ -57,10 +46,28 @@ Here are some ways to do so:
         </td>
     </tr>
     <tr>
-        <td>PayPal</td>
+        <td>
+            Stripe<br>
+            <span style="font-size:0.5rem">⚠️ High fees</span><br>
+            <span style="font-size:0.5rem">Credit cards 💳, GPay, SEPA direct debit</span>
+        </td>
+        <td>
+            <p><a href="https://donate.stripe.com/28o17v3QF4BVghO289"><button type="button" name="button" class="btn">Donate $</button></a></p>
+            <p><img src="/img/stripe_usd.png" style="max-height: 6rem;"></p>
+        </td>
+        <td>
+            <p><a href="https://donate.stripe.com/14keYl0Et8Sb1mU4gg"><button type="button" name="button" class="btn">Donate €</button></a></p>
+            <p><img src="/img/stripe_eur.png" style="max-height: 6rem;"></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            PayPal<br>
+            <span style="font-size:0.5rem">⚠️ High fees</span><br>
+        </td>
         <td colspan="2">
             <p><a href="https://www.paypal.com/donate/?hosted_button_id=W74BQPKPGNSNC"><button type="button" name="button" class="btn">Donate</button></a></p>
-            <p>⚠️ High fixed fees make small transactions expensive.</p>
+            <p>⚠️ High fees</p>
         </td>
     </tr>
 </table>
