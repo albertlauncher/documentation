@@ -8,7 +8,7 @@ nav_exclude: true
 # Focus on the essence.
 {: .fs-9 .text-center}
 
-Albert is a lightning-fast, plugin-based keyboard launcher written in C++.
+Albert is a lightning-fast, plugin-based keyboard launcher.
 {: .fs-5 .fw-300 .text-center }
 
 <div class="text-center">
