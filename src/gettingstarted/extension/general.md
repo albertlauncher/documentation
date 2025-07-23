@@ -50,7 +50,7 @@ The basic query handling extension are:
 - [`GlobalQueryHandler`](/reference/classalbert_1_1GlobalQueryHandler.html)
 - [`FallbackHandler`](/reference/classalbert_1_1FallbackHandler.html)
 
-If you've read the [basics](http://0.0.0.0:4000/gettingstarted/basics/#queries) their purpose should be clear.
+If you've read the [basics](http://0.0.0.0:4000/gettingstarted/basics/#queries), their purpose should be clear.
 All of them provide instances of the [`Item`](/reference/classalbert_1_1Item.html) interface. 
 The `Item` interface provides several methods related to  the features of the user interface, 
 most notably the [`Action`](/reference/classalbert_1_1Action.html) factory.
