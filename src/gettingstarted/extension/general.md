@@ -73,15 +73,3 @@ Related classes:
   Used by `IndexQueryHandler` to associate an item with a lookup string.
 - [`Matcher`](/reference/classalbert_1_1Matcher.html)
   Utility for configurable string matching.
-
-### Others interfaces
-
-#### Frontend plugins
-
-- [`Frontend`](/reference/classalbert_1_1Frontend.html)
-
-#### Plugin providers
-
-- [`PluginLoader`](/reference/classalbert_1_1PluginLoader.html)
-- [`PluginProvider`](/reference/classalbert_1_1PluginProvider.html)
-
