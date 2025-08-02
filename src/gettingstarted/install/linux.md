@@ -10,6 +10,7 @@ nav_order: 1
 Base packages for **Arch**, **Debian**, **Fedora**, **openSUSE**, **Raspbian** and **Ubuntu** are
 [built](https://build.opensuse.org/package/show/home:manuelschneid3r/albert) and
 [hosted](http://download.opensuse.org/repositories/home:/manuelschneid3r/) at Open Build Service.
+
 Installation instructions for each distribution can be found under *"Add repository and install manually"* in the OBS software center.
 This is the recommended way, because you will _not_ get updates if you *"Grab binary packages directly"* instead.
 
