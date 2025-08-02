@@ -7,7 +7,7 @@ nav_order: 0
 
 # macOS
 
-Albert is available via [homebrew](https://brew.sh/) tap.
+Albert is available via [homebrew](https://brew.sh/) tap. 
 The package is [built](https://github.com/albertlauncher/albert/actions/workflows/ci.yml)
 and [hosted](https://github.com/albertlauncher/albert/releases) on GitHub.
 The [homebrew tap](https://github.com/albertlauncher/homebrew-albert) 
@@ -27,3 +27,4 @@ Read the caveats section of `brew install`.
 For convenience the cask creates an ad-hoc signature and disables Gatekeeper for the app.
 See the postflight section of the cask.
  
+The provided bundle is not self contained and uses dependencies provided by homebrew. This allows using shared memory and reduces the actual private memory consumption to a negliable amount. 
