@@ -17,28 +17,37 @@ nav_order: 3
 - Spread the word on social media.
 - Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/), [slant](https://www.slant.co/topics/3945/~app-launchers-for-unix-like-systems) and such.
 
-## Plugins
+## Code  
 
-The place for official plugin repositories is the [Albert launcher organization](https://github.com/orgs/albertlauncher/repositories). 
+The **place for official plugin repositories** is the [Albert launcher organization](https://github.com/orgs/albertlauncher/repositories). 
 Distributed native plugins are submodules in the [Albert repository plugins directory](https://github.com/albertlauncher/albert/tree/main/plugins).
 Python plugins in the [Python repository plugins directory](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins) respectively.
-The main branch of each plugin repository represents the latest version of a plugin that is or will be distributed with the application.
-Contributions to the main branch _have to pass peer reviewing_.
-As such contributors have to work on a branch or their own fork and send a PR.
-The rationale for this flow:
 
-- Safety. For users and developers. 
+The **main branch** of a plugin repository represents the latest version that is or will be distributed with the application.
+The main branch has to be protected.
+Contributions _have to pass peer reviewing_ via pull request.
+Contributors have to work on a separate branch or their own fork and send a PR.
+The rationale is to ensure 
+
+- Safety. For users and developers.
 - Simplicity. Upstream main branch is reviewed and distributable.
-- Tidiness. No dirty source trees.
-- Code quality. Code is compliant to our standards.
+- Tidiness. `git status` is clean.
 
-Given the above the ownership of the upstream repository has to be transferred to the Albert launcher organization account.
-Note that this does not imply that you transfer the ownership of your code. 
-According to copyright laws, you wrote the code and hold copyright. 
-The code transferred has to be permissive open source licensed (GPL is not permissive).
-Once transferred the initial repo has to pass peer reviewing before becoming a submodule.
+To **work on existing plugins** fork and send a pull request.
+Get in touch with the maintainer of the plugin to discuss your changes.
 
-## Code reviews
+To **add new plugins** from scratch request the creation of a repository in the organization account and fork it.
+If you have a repository, the ownership has to be transferred to the Albert launcher organization account.
+For a plugin repository to be accepted it has to
+
+- be licensed under a permissive open source license (e.g. MIT, Apache, BSD),
+- have an active maintainer,
+- have a lightweight initial commit to have a commit to compare the initial pull request against and
+- contain the `main` branch only.  
+
+If you have questions join the community chats and ask for help.
+
+## Reviews
 
 Lots of PRs have been stuck in the reviewing pipeline for years because nobody reviewed them.
 Your efforts helps plugins being shipped faster. 

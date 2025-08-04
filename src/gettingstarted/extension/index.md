@@ -10,10 +10,11 @@ has_toc: false
 
 Albert can be extended using C++ or Python.
 
-The sections on the C++ and Python interfaces do not serve as general guides, but rather focus on
-their particular interface and its peculiarities. Thus, before you start reading the details, you 
-should understand the [basics](/gettingstarted/basics) and have read the
-[general](/gettingstarted/extension/general) concepts of Albert extension.
+The sections on the C++ and Python interfaces do not serve as general guides, but 
+rather focus on their particular interface and its peculiarities. 
+Thus, before you start reading the details,
+you should understand the [basics](/gettingstarted/basics) and
+have read the [general](/gettingstarted/extension/general) concepts of Albert extension.
 
 - [Native plugins](/gettingstarted/extension/cplusplus):
   - Performance and power of C/C++/ObjC(++).
@@ -29,3 +30,6 @@ should understand the [basics](/gettingstarted/basics) and have read the
   - No asynchronous operation.
   - No streamlined translations.
   - Does not allow effective parallelized multi-threading due to the [GIL](https://wiki.python.org/moin/GlobalInterpreterLock).
+
+If you are interested in getting your plugin distributed with the application,
+please read the [contributing](/gettingstarted/contributing#code) page.
