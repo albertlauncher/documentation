@@ -42,8 +42,11 @@ For a plugin repository to be accepted it has to
 
 - be licensed under a permissive open source license (e.g. MIT, Apache, BSD),
 - have an active maintainer,
-- have a lightweight initial commit to have a commit to compare the initial pull request against and
-- contain the `main` branch only.  
+- contain the `main` branch only,
+- contain only essential content, _especially no bloat_ like images/gifs/videos and 
+- have a lightweight initial commit to have a commit to compare the initial pull request against.
+
+Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
 
 If you have questions join the community chats and ask for help.
 
