@@ -61,9 +61,8 @@ Leave a message with your GitHub username to get an invite.
 
 ## Maintenance
 
-Lots of plugins do not have a maintainer.
 If you are using a plugin a lot and have C++ or Python skills you are probably a good plugin maintainer. 
-Just send a PR adding your GitHub username to the maintainers array of the plugin metadata and you're in.
+Send a PR adding your GitHub username to the maintainers array of the plugin metadata and you're in.
 Revert it to step back. 
 If you are a maintainer you will be assigned on new issues and pull requests.
 
