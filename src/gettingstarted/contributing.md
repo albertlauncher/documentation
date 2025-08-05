@@ -53,8 +53,7 @@ If you have questions join the [community chats](/gettingstarted/help/) and ask 
 
 ## Reviews
 
-Lots of PRs have been stuck in the reviewing pipeline for years because nobody reviewed them.
-Your efforts helps plugins being shipped faster. 
+Your efforts helps plugins being shipped _faster_. 
 You can review [current pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) directly any time.
 You can also join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
 These teams will be assigned on new pull requests and as such you will get a notification.
