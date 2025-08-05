@@ -49,7 +49,7 @@ Thank you! ❤️
         <td>
             Stripe<br>
             <span style="font-size:0.5rem">⚠️ High fees</span><br>
-            <span style="font-size:0.5rem">Credit cards 💳, GPay, SEPA direct debit</span>
+            <span style="font-size:0.5rem">Credit cards, GPay, SEPA direct debit</span>
         </td>
         <td>
             <p><a href="https://donate.stripe.com/28o17v3QF4BVghO289"><button type="button" name="button" class="btn">Donate $</button></a></p>
@@ -67,7 +67,6 @@ Thank you! ❤️
         </td>
         <td colspan="2">
             <p><a href="https://www.paypal.com/donate/?hosted_button_id=W74BQPKPGNSNC"><button type="button" name="button" class="btn">Donate</button></a></p>
-            <p>⚠️ High fees</p>
         </td>
     </tr>
 </table>
