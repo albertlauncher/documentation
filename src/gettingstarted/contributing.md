@@ -87,9 +87,9 @@ Future plan is to have a separate repository for the translations.
 
 ## Documentation
 
-As a non native speaker I am sure there are lots of mistakes on the website and the API reference. 
-Each page on the website contains an 'Edit this page on GitHub' link in the footer that you can use to send improvements.
+Each page on the website contains an _'Edit this page on GitHub'_ link in the footer that you can use to send improvements.
 The API reference is generated from source code, in particular the header files of the public API.
+To improve the API reference, send a pull request with the changes to the header files in the `include` directory in the [Albert repository](https://github.com/albertlauncher/albert/tree/main/include/albert).
 
 ## Appreciation
 
