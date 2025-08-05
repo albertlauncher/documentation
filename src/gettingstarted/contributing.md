@@ -23,32 +23,33 @@ The **place for official plugin repositories** is the [Albert launcher organizat
 Distributed native plugins are submodules in the [Albert repository plugins directory](https://github.com/albertlauncher/albert/tree/main/plugins).
 Python plugins in the [Python repository plugins directory](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins) respectively.
 
-The **main branch** of a plugin repository represents the latest version that is or will be distributed with the application.
-The main branch has to be protected.
+The **main branch** of a plugin repository represents the latest version 
+that is or will be distributed with the application and therefore has to be protected.
 Contributions _have to pass peer reviewing_ via pull request.
-Contributors have to work on a separate branch or their own fork and send a PR.
+As such contributors have to work on their own fork and send a PR.
 The rationale is to ensure 
 
 - Safety. For users and developers.
 - Simplicity. Upstream main branch is reviewed and distributable.
-- Tidiness. `git status` is clean.
+- Tidiness. `git status` is clean or contains approved plugin changes.
 
-To **work on existing plugins** fork and send a pull request.
-Get in touch with the maintainer of the plugin to discuss your changes.
+To **add new plugins** from scratch 
 
-To **add new plugins** from scratch request the creation of a repository in the organization account and fork it.
-If you have a repository, the ownership has to be transferred to the Albert launcher organization account.
+1. Request the creation of a repository (in the [community chat](/gettingstarted/help/))
+2. Fork the repository to your account
+3. Work on on the fork
+4. Send a pull request to the upstream repository
+5. Go through the review process until approved
+
+To **work on existing plugins** start at step 2.
+Discuss your planned changes with the maintainer of the plugin before.
+
 For a plugin repository to be accepted it has to
-
-- be licensed under a permissive open source license (e.g. MIT, Apache, BSD),
-- have an active maintainer,
-- contain the `main` branch only,
-- contain only essential content, _especially no bloat_ like images/gifs/videos and 
-- have a lightweight initial commit to have a commit to compare the initial pull request against.
-
+be licensed under a permissive open source license (e.g. MIT, Apache, BSD), 
+have an active maintainer and 
+contain only content essential to the functionality of the plugin.
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
-
-If you have questions join the community chats and ask for help.
+If you have questions join the [community chats](/gettingstarted/help/) and ask for help.
 
 ## Reviews
 
