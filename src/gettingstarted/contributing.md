@@ -44,12 +44,15 @@ To **add new plugins** from scratch
 To **work on existing plugins** start at step 2.
 Discuss your planned changes with the maintainer of the plugin before.
 
-For a plugin repository to be accepted it has to
-be licensed under a permissive open source license (e.g. MIT, Apache, BSD), 
-have an active maintainer and 
-contain only content essential to the functionality of the plugin.
+For a plugin repository to be accepted it has to satisfy the following **requirements**:
+- The project is **licensed under a permissive open source license** (e.g. MIT, Apache, BSD). 
+- The project has an **active maintainer**. 
+- The repository **content is essential** to the functionality of the plugin. Keep in mind that in future somebody else may want to maintain the plugin and for distribution the size of the repository should be minimal. 
+- Icons are **vector graphics** or **128x128 raster images**.
+
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
-If you have questions join the [community chats](/gettingstarted/help/) and ask for help.
+
+If you have questions join the [community chats](/gettingstarted help/) and ask for help.
 
 ## Reviews
 
