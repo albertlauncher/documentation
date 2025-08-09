@@ -35,11 +35,11 @@ The rationale is to ensure
 
 To **add new plugins** from scratch 
 
-1. Request the creation of a repository (in the [community chat](/gettingstarted/help/))
-2. Fork the repository to your account
-3. Work on on the fork
-4. Send a pull request to the upstream repository
-5. Go through the review process until approved
+1. Request the creation of a repository (in the [community chat](/gettingstarted/help/)). 
+2. Fork the repository to your account. 
+3. Work on on the fork. 
+4. Send a pull request to the upstream repository. 
+5. Go through the review process until approved. 
 
 To **work on existing plugins** start at step 2.
 Discuss your planned changes with the maintainer of the plugin before.
