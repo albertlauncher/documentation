@@ -1,6 +1,6 @@
 ---
 title: macOS
-parent: Install
+parent: Installation
 grand_parent: Getting started
 nav_order: 0
 ---
