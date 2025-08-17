@@ -13,7 +13,7 @@ nav_order: 3
 ## Promotion
 
 - [Star Albert on GitHub](https://github.com/albertlauncher/albert).
-- [Star your favorite plugins](https://github.com/orgs/albertlauncher/repositories).
+- [Star your favorite plugins](https://github.com/orgs/albertlauncher/repositories). Also helps triaging issues. 
 - Spread the word on social media.
 - Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/), [slant](https://www.slant.co/topics/3945/~app-launchers-for-unix-like-systems) and such.
 
