@@ -18,11 +18,12 @@ To get a high level overview of common concepts of the API refer to the [general
 ## The Albert stub file
 
 The Albert Python interface is defined in the [**Albert Python stub file**](https://github.com/albertlauncher/plugins/blob/main/python/albert.pyi).
-This file serves as documentation for the embedded `albert` module, and its module docstring describes the interface that makes a Python module an Albert Python plugin.
+This file serves as documentation for the embedded `albert` module
+and its module docstring describes the interface that makes a Python module an Albert Python plugin.
 
-The stub file is written to your *user Python plugin directory*.
+The stub file is written to your *user Python plugin directory* at runtime.
 This is also where you are supposed to put your personal plugins.
-There the stub file serves as inline documention and coding assistance in your IDE while developing plugins. 
+There the stub file serves as inline documentation and coding assistance in your IDE while developing plugins. 
 
 ## Python plugin directories
 

@@ -59,19 +59,26 @@ If you have questions join the [community chats](/gettingstarted help/) and ask 
 
 ## Reviews
 
-You can review [current pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) directly any time.
-You can also join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
-These teams will be assigned on new pull requests and as such you will get a notification.
+Reviews are extremely important to ensure the quality of the code and the safety of users and developers.
+Reviews have always been a bottleneck in the past, so **we are looking for more reviewers**.
+
+You could review [open pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) any time or
+join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
+Three random members of the reviewer team teams will be assigned on new pull requests of _any_ (new) plugin.
 Leave a message with your GitHub username to get an invite.
+
+If you want to help with just some particular plugins, consider becoming a maintainer instead (see below).
 
 
 ## Maintenance
 
 If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
 As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
-As an active/official maintainer you will be assigned on new issues and pull requests (for reviews).
+As an active/official maintainer you will be assigned on new issues and pull requests.
+A maintainer is implicitly a reviewer of its plugin.
 To opt-in as active maintainer send a pull request adding your GitHub username to the maintainers array of the plugin metadata.
 Revert to opt-out.
+
 
 
 <!--## Changes to the core application
