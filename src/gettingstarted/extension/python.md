@@ -70,6 +70,8 @@ The `color` plugin is a concise example to start with.
   For the sake of minimal boilerplate the mixin behavior is emulated for these methods.
   I.e. if you inherit `PluginInstance` and any `Extension`, you do not have to reimplement these methods.
 
+
+<!--
 ## Contributing Python plugins
 
 * [Fork the Python plugins repository](https://github.com/albertlauncher/python/fork).
@@ -82,3 +84,4 @@ The `color` plugin is a concise example to start with.
 * Write your plugin.
 * Make sure it is polished (No bugs, few to no warnings, efficient, readable, maintainable, …).
 * Commit, push, send a PR.
+-->
