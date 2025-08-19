@@ -44,7 +44,7 @@ To **add new plugins** from scratch
 5. Go through the review process until approved. 
 
 To **work on existing plugins** start at step 2.
-Discuss your planned changes with the maintainer of the plugin before.
+Discuss your planned changes with the maintainer(s) of the plugin before.
 
 For a plugin repository to be accepted it has to satisfy the following **requirements**:
 - The project is **licensed under a permissive open source license** (e.g. MIT, Apache, BSD). 
