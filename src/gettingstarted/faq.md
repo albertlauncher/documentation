@@ -13,12 +13,10 @@ nav_order: 5
 
 ## Wayland
 
-Wayland comes with a _lot_ of [limitations](https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277).
-
-
 ### XWayland
 
-Some of its limitations can be mitigated by using XWayland.
+Wayland comes with a _lot_ of [limitations](https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277).
+Some can be mitigated by using XWayland.
 
 ```bash
 # Do not set QT_QPA_PLATFORM as it will propagate to launched apps
@@ -49,11 +47,11 @@ Another approach is to pipe the command you want to send directly into the alber
 ```bash
 # Before 0.28.0 the string to send was "toggle".
 
-# Using netcat-openbsd
-echo -n '["toggle"]' | nc -U ~/.cache/albert/ipc_socket
-
 # Using socat
 echo -n '["toggle"]' | socat - ~/.cache/albert/ipc_socket
+
+# Using netcat-openbsd
+echo -n '["toggle"]' | nc -U ~/.cache/albert/ipc_socket
 ```
 
 {: .note }
@@ -68,6 +66,7 @@ Some compositors allow configuring the window properties in their settings.
 
 - [KDE](https://docs.kde.org/stable5/en/kwin/kcontrol/windowspecific/index.html)
 - On Gnome your best bet is probably [GNOME Window Rules extension](https://help.gnome.org/users/gnome-help/stable/windows-properties.html.en).
+
 
 ## How to open with a particular text?
 
