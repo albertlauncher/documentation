@@ -102,4 +102,5 @@ To improve the API reference, send a pull request with the changes to the header
 
 ## Appreciation
 
-Support @manuelschneider as a creator by [becoming a sponsor or donating](/donation/).
+Support me/[@manuelschneider](https://github.com/ManuelSchneid3r) as a creator by [becoming a sponsor or donating](/donation/).
+Do not forget the authors of your most beloved plugins. Check their GitHub profiles for donation links.
