@@ -10,14 +10,16 @@ nav_order: 3
 - TOC
 {:toc}
 
+
 ## Promotion
 
 - [Star Albert on GitHub](https://github.com/albertlauncher/albert).
 - [Star your favorite plugins](https://github.com/orgs/albertlauncher/repositories). Also helps triaging issues. 
 - Spread the word on social media.
-- Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/), [slant](https://www.slant.co/topics/3945/~app-launchers-for-unix-like-systems) and such.
+- Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/) and such.
 
-## Code  
+
+## Code
 
 The **place for official plugin repositories** is the [Albert launcher organization](https://github.com/orgs/albertlauncher/repositories). 
 Distributed native plugins are submodules in the [Albert repository plugins directory](https://github.com/albertlauncher/albert/tree/main/plugins).
@@ -54,23 +56,25 @@ Having a _concise_ `README.md` summarizing features, requirements, limitations, 
 
 If you have questions join the [community chats](/gettingstarted help/) and ask for help.
 
+
 ## Reviews
 
-Your efforts helps plugins being shipped _faster_. 
 You can review [current pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) directly any time.
 You can also join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
 These teams will be assigned on new pull requests and as such you will get a notification.
 Leave a message with your GitHub username to get an invite.
 
+
 ## Maintenance
 
-If you are using a plugin a lot and have C++ or Python skills you are probably a good plugin maintainer. 
-Send a PR adding your GitHub username to the maintainers array of the plugin metadata and you're in.
-Revert it to step back. 
-If you are a maintainer you will be assigned on new issues and pull requests.
+If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
+As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
+As an active/official maintainer you will be assigned on new issues and pull requests (for reviews).
+To opt-in as active maintainer send a pull request adding your GitHub username to the maintainers array of the plugin metadata.
+Revert to opt-out.
 
-<!--
-## Changes to the core application
+
+<!--## Changes to the core application
 
 Currently the core app is source available and proprietary.
 Changes have to be well thought out, since they often have unwanted side effects.
@@ -78,7 +82,7 @@ Lots of additions had to be reverted in the past.
 I learned my lessons and will not merge contributions carelessly.
 Probably you will not have fun matching my standards of defensive code.
 If you still want to work on the core, be sure to get in touch with me _before_ starting.
--->
+
 
 ## Translations
 
@@ -86,7 +90,8 @@ Albert and the native plugins are fully internationalized.
 Unfortunately there is no streamlined localization flow yet. 
 Currently the translations go directly into the (sub)projects.
 So you have to commit to each plugin separately.
-Future plan is to have a separate repository for the translations.
+Future plan is to have a separate repository for the translations.-->
+
 
 ## Documentation
 
@@ -94,6 +99,7 @@ Each page on the website contains an _'Edit this page on GitHub'_ link in the fo
 The API reference is generated from source code, in particular the header files of the public API.
 To improve the API reference, send a pull request with the changes to the header files in the `include` directory in the [Albert repository](https://github.com/albertlauncher/albert/tree/main/include/albert).
 
+
 ## Appreciation
 
-Support me as a creator by [becoming a sponsor or donating](/donation/) some bucks.
+Support @manuelschneider as a creator by [becoming a sponsor or donating](/donation/).
