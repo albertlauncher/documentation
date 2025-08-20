@@ -11,12 +11,27 @@ nav_order: 3
 {:toc}
 
 
-## Promotion
+## Reviews
 
-- [Star Albert on GitHub](https://github.com/albertlauncher/albert).
-- [Star your favorite plugins](https://github.com/orgs/albertlauncher/repositories). Also helps triaging issues. 
-- Spread the word on social media.
-- Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/) and such.
+Reviews are extremely important to ensure the quality of the code and the safety of users and developers.
+Reviews have always been a bottleneck in the past, so **we are looking for reviewers**.
+
+You could review [open pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) any time or
+join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
+Three members of the reviewer team will be assigned on new pull requests of _any_ (new) plugin.
+Leave a message with your GitHub username to get an invite.
+
+If you want to help with just some particular plugins, consider becoming a maintainer instead (see below).
+
+
+## Maintenance
+
+If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
+As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
+As an active/official maintainer you will be assigned on new issues and pull requests.
+A maintainer is implicitly a reviewer of its plugin.
+To opt-in as active maintainer send a pull request adding your GitHub username to the maintainers array of the plugin metadata.
+Revert to opt-out.
 
 
 ## Code
@@ -57,30 +72,6 @@ Having a _concise_ `README.md` summarizing features, requirements, limitations, 
 If you have questions join the [community chats](/gettingstarted help/) and ask for help.
 
 
-## Reviews
-
-Reviews are extremely important to ensure the quality of the code and the safety of users and developers.
-Reviews have always been a bottleneck in the past, so **we are looking for more reviewers**.
-
-You could review [open pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) any time or
-join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
-Three random members of the reviewer team teams will be assigned on new pull requests of _any_ (new) plugin.
-Leave a message with your GitHub username to get an invite.
-
-If you want to help with just some particular plugins, consider becoming a maintainer instead (see below).
-
-
-## Maintenance
-
-If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
-As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
-As an active/official maintainer you will be assigned on new issues and pull requests.
-A maintainer is implicitly a reviewer of its plugin.
-To opt-in as active maintainer send a pull request adding your GitHub username to the maintainers array of the plugin metadata.
-Revert to opt-out.
-
-
-
 <!--## Changes to the core application
 
 Currently the core app is source available and proprietary.
@@ -105,6 +96,14 @@ Future plan is to have a separate repository for the translations.-->
 Each page on the website contains an _'Edit this page on GitHub'_ link in the footer that you can use to send improvements.
 The API reference is generated from source code, in particular the header files of the public API.
 To improve the API reference, send a pull request with the changes to the header files in the `include` directory in the [Albert repository](https://github.com/albertlauncher/albert/tree/main/include/albert).
+
+
+## Promotion
+
+- [Star Albert on GitHub](https://github.com/albertlauncher/albert).
+- [Star your favorite plugins](https://github.com/orgs/albertlauncher/repositories). Also helps triaging issues. 
+- Spread the word on social media.
+- Vote on rankings like [alternative.to](https://alternativeto.net/software/albert/about/) and such.
 
 
 ## Appreciation
