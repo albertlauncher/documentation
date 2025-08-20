@@ -5,15 +5,27 @@ clean:
 	rm src/Gemfile.lock || true
 	docker container rm jekyll-build jekyll-serve
 
+#clone:
+	#git clone --recursive --depth 1 --jobs 100 https://github.com/albertlauncher/albert.git
+
 doxygen:
-	rm -rf albert src/reference
-	git clone --depth 1 https://github.com/albertlauncher/albert.git
+	rm -rf src/reference
 	doxygen
 
-build: doxygen
+readmes:
+	rm -rf src/_site/readmes
+	mkdir -p src/_site/readmes
+	for path in albert/plugins/*/README.md
+	do
+	echo ${i:15:-10}; done
+	cp albert/README.md src/_site/readmes/albert.md
+	cp albert/plugins/README.md src/_site/readmes/plugins.md
+	cp albert/plugins/README.md src/_site/readmes/plugins.md
+
+build:
 	docker-compose up --build jekyll-build
 
-serve: doxygen
+serve:
 	docker-compose up --build jekyll-serve
 
 html-proofer: build

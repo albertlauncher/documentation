@@ -75,7 +75,10 @@ mermaid:
 #exclude: [vendor]
 future: true
 
-
+##collections_dir: collections
+#collections:
+#  plugins:
+#    output: true
 
 
 plugins:
