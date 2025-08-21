@@ -25,12 +25,16 @@ nav_order: 2
 ![bluetooth](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/bluetooth_t.png)
 ![jetbrains](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/jetbrains.png)
 ![emoji](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/emoji_g.png)
+![github_g](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/github_g.png)
+![github_t](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/github_t.png)
 ![tr](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/tr.png)
 ![tr to](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/tr_to.png)
+![obsidian_t](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/obsidian_t.png)
 ![vpn](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/vpn.png)
 ![wiki](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/wiki_t.png)
 ![caffeine](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/caffeine_empty.png)
 ![caffeine em](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/caffeine_t.png)
+![spotify_t](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/spotify_t.png)
 ![snip](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/snippets_t.png)
 ![dict](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/dict_t.png)
 ![ssh](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/ssh_t.png)
@@ -41,11 +45,8 @@ nav_order: 2
 ![datetime](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/datetime_t.png)
 ![timezone](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/timezones.png)
 ![contacts](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/contacts.png)
-
-
-
-
-
+![aur](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/aur_t.png)
+![tex_to_unicode_t](https://raw.githubusercontent.com/albertlauncher/documentation/refs/heads/pictures/pictures/tex_to_unicode_t.png)
 
 
 
