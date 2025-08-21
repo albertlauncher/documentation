@@ -11,4 +11,4 @@ nav_order: 4
   {% endfor %}
 </ul>
 
-Be up to date with the <a href=/feed.xml>RSS feed</a>
+Be up to date with the <a href="/feed.xml">RSS feed</a>
