@@ -27,10 +27,12 @@ If you want to help with just some particular plugins, consider becoming a maint
 ## Maintenance
 
 If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
+
 As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
 As an active/official maintainer you will be assigned on new issues and pull requests.
 A maintainer is implicitly a reviewer of its plugin.
-To opt-in as active maintainer send a pull request adding your GitHub username to the maintainers array of the plugin metadata.
+
+To opt-in send a pull request adding your GitHub username to the maintainers list of the plugin metadata.
 Revert to opt-out.
 
 
