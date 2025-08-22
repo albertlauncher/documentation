@@ -27,26 +27,35 @@ The rationale is to ensure
 - Simplicity. Upstream main branch is reviewed and distributable.
 - Tidiness. `git status` is clean or contains approved plugin changes.
 
-To **add new plugins** from scratch 
 
-1. Request the creation of a repository (in the [community chat](/gettingstarted/help/)). 
-2. Fork the repository to your account. 
-3. Work on on the fork. 
-4. Send a pull request to the upstream repository. 
-5. Go through the review process until approved. 
+### Fixes and Features
 
-To **work on existing plugins** start at step 2.
-Discuss your planned changes with the maintainer(s) of the plugin before.
+Before putting a lot of effort into a contribution, open an issue and discuss your planned changes.
+This is important, because there is a chance that your changes may be rejected.
+Contributing to existing plugins is straightforward. 
 
-For a plugin repository to be accepted it has to satisfy the following **requirements**:
+1. Fork the repository to your account.
+1. Work on on the fork.
+1. Send a pull request to the upstream repository.
+1. Go through the review process until approved.
+
+
+### New plugins 
+
+We highly appreciate new plugin additions, however to be shipped there should be a demand for its use case.
+If you want your plugin to be added to the official repositories,
+put it to the list of candidates in the [awesome-albert](https://github.com/albertlauncher/awesome-albert) repository and 
+promote it in the [community chat](/gettingstarted/help/).
+Plugins without users/stars will not be added to the official repositories.
+Once your plugin has some stars, you can request its addition to the official repositories.
+
+For a plugin to be accepted it has to satisfy the following **requirements**:
 - The project is **licensed under a permissive open source license** (e.g. MIT, Apache, BSD). 
 - The project has an **active maintainer**. 
 - The repository **content is essential** to the functionality of the plugin. Keep in mind that in future somebody else may want to maintain the plugin and for distribution the size of the repository should be minimal. 
 - Icons are **vector graphics** or **128x128 raster images**.
 
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
-
-If you have questions join the [community chats](/gettingstarted help/) and ask for help.
 
 
 ## Reviews
