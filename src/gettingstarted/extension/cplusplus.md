@@ -2,7 +2,7 @@
 title: C++
 parent: Extension
 grand_parent: Getting started
-nav_order: 1
+nav_order: 0
 ---
 
 # Extending Albert using C++
@@ -10,23 +10,22 @@ nav_order: 1
 
 {: .note }
 This page focuses on the practical aspects of extending Albert using C++ and its peculiarities.
-To get a high level overview of common concepts of the API refer to the [general](/gettingstarted/extension/general) section.
+To get an overview of the API refer to the general [extension](/gettingstarted/extension/) section.
 
 - TOC
 {:toc}
  
-A native plugin is a [Qt Plugin](https://doc.qt.io/qt-6/plugins-howto.html#the-low-level-api-extending-qt-applications), i.e. a shared library providing an instance of the class `PluginInstance`.
+A native plugin is a [Qt Plugin](https://doc.qt.io/qt-6/plugins-howto.html#the-low-level-api-extending-qt-applications),
+i.e. a shared library providing an instance of the class `PluginInstance`.
+
+
+## Writing native C++ plugins
 
 Albert provides `C` and `CMake` macros that implement conventions to streamline the plugin development 
-process and to reduce the considerable amount of boilerplate code required to a few lines of code.
+process and reduce the boilerplate code required to a few lines of code.
+Read the documentation in the header of the [`Albert` CMake module ](https://raw.githubusercontent.com/albertlauncher/albert/main/cmake/albert-macros.cmake) before you proceed.
 
-## CMake
-
-Having a standardized plugin project structure the `albert_plugin` macro takes care of most of the CMake boilerplate code.
-It is part of the `albert` CMake module and can be included using `find_package(Albert REQUIRED)`.
-Read its documentation in the header of the [CMake module](https://raw.githubusercontent.com/albertlauncher/albert/main/cmake/albert-macros.cmake) before you proceed.
-
-A minimal working CMakeLists.txt (See also the [CMakeLists.txt files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FCMakeLists.txt&type=code)):
+A minimal `CMakeLists.txt`:
 
 ```cmake
 project(my_plugin VERSION 1.0)
@@ -34,51 +33,24 @@ find_package(Albert REQUIRED)
 albert_plugin()
 ```
 
-This is the standard plugin directory structure of a plugin:
-
-```
-─┬─  my_plugin      
- ├──  CMakeLists.txt      
- ├──  metadata.json
- ├─┬─  src    
- │ └──  …
- └─┬─  i18n        
-   └──  …       
-```
-
-A basic metadata file looks like this (See also the [metadata.json files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2Fmetadata.json&type=code)):
+A minimal `metadata.json`:
 
 ```json
 {
     "name": "My Plugin",
     "description": "Do useful stuff",
     "authors": ["@myname"],
-    "license": "MIT",
-    "url": "https://github.com/myusername/my-albert-plugin",
+    "license": "MIT"
 }
 ```
 
-## C++
-
-Albert plugins ultimately have to inherit the `QObject` and [`PluginInstance`](https://albertlauncher.github.io/reference/classalbert_1_1PluginInstance.html) class and 
-contain the `ALBERT_PLUGIN` macro in the declaration body.
-
-A basic plugin looks like this (See also the [plugin header files of the official plugins](https://github.com/search?q=repo%3Aalbertlauncher%2Fplugins+path%3A**%2FPlugin.h&type=code)):
-
-```cpp
-#pragma once
-#include <albert/extensionplugin.h>
-#include <albert/triggerqueryhandler.h>
-
-class Plugin : public QObject, public albert::PluginInstance
-{
-    ALBERT_PLUGIN
-};
-```
-
-Usually you dont want to subclass `PluginInstance` directly but rather [`ExtensionPlugin`](https://albertlauncher.github.io/reference/classalbert_1_1ExtensionPlugin.html)
-which implements the [`Extension`](https://albertlauncher.github.io/reference/classalbert_1_1Extension.html) interface using the metadata of the plugin instance.
-
+A plugin class has to be default-constructible,
+inherit `QObject` and [`PluginInstance`](https://albertlauncher.github.io/reference/classalbert_1_1PluginInstance.html) 
+and contain the [`ALBERT_PLUGIN`](/reference/plugininstance_8h.html#a8787b7c8c0b456d908480300c22d3f5f) macro in its body.
+However, if subclassing an extension interface,
+you'd rather inherit [`util::ExtensionPlugin`](https://albertlauncher.github.io/reference/classalbert_1_1ExtensionPlugin.html) for convenience.
+A minimal trigger query handler plugin:
+  
 ```cpp
 #pragma once
 #include <albert/extensionplugin.h>
@@ -88,18 +60,18 @@ class Plugin : public albert::ExtensionPlugin,
                public albert::TriggerQueryHandler
 {
     ALBERT_PLUGIN
-    void handleTriggerQuery(albert::Query &) override {}
+    void handleTriggerQuery(albert::Query &query) override
+    {
+        // Handle query
+    }
 };
 ```
 
-From here on it depends on the interface you want to implement.
-Read through the [albert namespace reference](https://albertlauncher.github.io/reference/namespacealbert.html).
-See the [official native plugins](https://github.com/albertlauncher/plugins/tree/main/) as a reference.
-Concise examples to start with are: `debug`, `timezones`, `hash` or `urlhandler`.
+Next, skim through the [API reference](https://albertlauncher.github.io/reference/namespacealbert.html).
+For reference see the [official plugins](https://github.com/albertlauncher/albert/tree/main/plugins).
+
 
 ## Plugin directories
-
-The plugin directories depends on the platform and the build type.
 
 - **Linux**:
   - `~/.local/{lib,lib64}/albert`
@@ -107,12 +79,6 @@ The plugin directories depends on the platform and the build type.
   - `/usr/lib/${MULTIARCH_TUPLE}/albert`
   - `/usr/{lib,lib64}/albert`
 - **macOS**:
-  - `$BUNDLE_PATH/Contents/PlugIns`
   - `~/Library/Application Support/Albert/plugins`
-
-The plugin directories are scanned in the order of the above list.
-On start Albert scans the plugin directories for available plugins.
-Since identifiers have to be unique, duplicate plugins with the same identifier (project name) are skipped.
-
-
+  - `$BUNDLE_PATH/Contents/PlugIns`
 

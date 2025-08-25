@@ -2,7 +2,7 @@
 title: Python
 parent: Extension
 grand_parent: Getting started
-nav_order: 2
+nav_order: 1
 ---
 
 # Extending Albert using Python
@@ -10,50 +10,74 @@ nav_order: 2
 
 {: .note }
 This page focuses on the practical aspects of extending Albert using Python and its peculiarities.
-To get a high level overview of common concepts of the API refer to the [general](/gettingstarted/extension/general) section.
+To get an overview of the API refer to the general [extension](/gettingstarted/extension/) section.
 
-- TOC
-{:toc}
-
-## The Albert stub file
-
-The Albert Python interface is defined in the [**Albert Python stub file**](https://github.com/albertlauncher/plugins/blob/main/python/albert.pyi).
-This file serves as documentation for the embedded `albert` module
-and its module docstring describes the interface that makes a Python module an Albert Python plugin.
-
-The stub file is written to your *user Python plugin directory* at runtime.
-This is also where you are supposed to put your personal plugins.
-There the stub file serves as inline documentation and coding assistance in your IDE while developing plugins. 
-
-## Python plugin directories
-
-Python plugin directories are the subdirectories `python/plugins` in the *app data directories*.
-For more information on app data directories, especially their precedence order, see [this table](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
-
-When loaded, the *Python plugins plugin* (the native plugin that provides the Python interface) scans the *Python plugin directories* for available *Python plugins*. 
-Since identifiers have to be unique, duplicate plugins with the same identifier (module name) are skipped.
 
 ## Writing Python plugins
 
-A minimal working example of a Python plugin according to the interface specification looks like this:
+An Albert Python plugin is a Python module having an interface defined in the
+[**Albert stub file**](https://github.com/albertlauncher/albert-plugin-python/blob/main/albert.pyi).
+At runtime the stub file is written to your *user Python plugin directory*, 
+where it serves as inline documentation and coding assistance in your IDE while development.
+
+A minimal trigger query handler plugin:
 
 ```python
-import albert
+from albert import *
 
 md_iid = '3.0'
 md_version = '1.0'
-md_name = 'Fancy Plugin'
-md_description = 'Do fancy things'
+md_name = 'My plugin'
+md_description = 'Does things'
 
-class Plugin(albert.PluginInstance):
-    pass
+class Plugin(PluginInstance, TriggerQueryHandler):
+
+    def __init__(self):
+        PluginInstance.__init__(self)
+        TriggerQueryHandler.__init__(self)
+        
+    def handleTriggerQuery(self, query):
+        # query.add(StandardItem(…))
 ```
 
-From here on it depends on the interface you want to implement.
-Read the [Python stub file](https://github.com/albertlauncher/plugins/blob/main/python/albert.pyi).
+
+Next, skim through the [Python stub file](https://github.com/albertlauncher/plugins/blob/main/python/albert.pyi).
+For reference see the [official plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
 In case of questions see the [C++ API](/reference/namespacealbert.html).
-See the [official Python plugins](https://github.com/albertlauncher/python) for reference.
-The `color` plugin is a concise example to start with.
+
+
+<!--## Tutorial-->
+
+<!--
+## Contributing Python plugins
+
+* [Fork the Python plugins repository](https://github.com/albertlauncher/python/fork).
+* Clone your fork into your Python user plugin location.
+  ```shell
+  git clone https://github.com/<your_username>/python.git "${USER_DATA_DIR}/python/plugins"
+  ```
+  You can find the `${USER_DATA_DIR}` for your platform in [this table](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
+* Open the directory in your favorite IDE (PyCharmCE is a good choice).
+* Write your plugin.
+* Make sure it is polished (No bugs, few to no warnings, efficient, readable, maintainable, …).
+* Commit, push, send a PR.
+-->
+
+
+## Plugin directories
+
+Python plugin directories are the directories at `python/plugins` relative to the
+[app data directories](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
+
+- **xdg**:
+  - `~/.local/share/albert/python/plugins`
+  - `/usr/local/share/albert/python/plugins`
+  - `/usr/share/albert/python/plugins`
+- **macOS**:
+  - `~/Library/Application Support/Albert/python/plugins`
+  - `/Library/Application Support/Albert/python/plugins`
+  - `$BUNDLE_PATH/Contents/PlugIns/python/plugins`
+
 
 ## Technical notes and limitations
 
@@ -71,18 +95,3 @@ The `color` plugin is a concise example to start with.
   For the sake of minimal boilerplate the mixin behavior is emulated for these methods.
   I.e. if you inherit `PluginInstance` and any `Extension`, you do not have to reimplement these methods.
 
-
-<!--
-## Contributing Python plugins
-
-* [Fork the Python plugins repository](https://github.com/albertlauncher/python/fork).
-* Clone your fork into your Python user plugin location.
-  ```shell
-  git clone https://github.com/<your_username>/python.git "${USER_DATA_DIR}/python/plugins"
-  ```
-  You can find the `${USER_DATA_DIR}` for your platform in [this table](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
-* Open the directory in your favorite IDE (PyCharmCE is a good choice).
-* Write your plugin.
-* Make sure it is polished (No bugs, few to no warnings, efficient, readable, maintainable, …).
-* Commit, push, send a PR.
--->
