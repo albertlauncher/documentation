@@ -44,10 +44,9 @@ Contributing to existing plugins is straightforward.
 
 We highly appreciate new plugin additions, however to be shipped there should be a demand for its use case.
 If you want your plugin to be added to the official repositories,
-put it to the list of candidates in the [awesome-albert](https://github.com/albertlauncher/awesome-albert) repository and 
+put it to the list of candidates in the [organization readme](https://github.com/albertlauncher) and 
 promote it in the [community chat](/gettingstarted/help/).
-Plugins without users/stars will not be added to the official repositories.
-Once your plugin has some stars, you can request its addition to the official repositories.
+Once your plugin has some users, you can request its addition to the official repositories.
 
 For a plugin to be accepted it has to satisfy the following **requirements**:
 - The project is **licensed under a permissive open source license** (e.g. MIT, Apache, BSD). 
