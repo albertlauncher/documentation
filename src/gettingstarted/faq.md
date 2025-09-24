@@ -117,7 +117,7 @@ albert --platformtheme gnome
 mkdir -p "~/.local/share/icons/hicolor/scalable/apps/"
 
 # Overwrite the default app icon
-cp <your-icon>.svg "~/.local/share/icons/hicolor/scalable/apps/albert.svg
+cp <your-icon>.svg "~/.local/share/icons/hicolor/scalable/apps/albert.svg"
 
 # Overwrite the default tray icon
 cp <your-icon>.svg "~/.local/share/icons/hicolor/scalable/apps/albert-tray.svg"
