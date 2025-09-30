@@ -54,4 +54,4 @@ Processing is based on *legitimate interest* under *Article 6(1)(f) GDPR*.
 
 ### Retention period
 
-180 days.
+One year.
