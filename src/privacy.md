@@ -4,7 +4,7 @@ nav_exclude: true
 ---
 
 # {{ page.title }}
-Version 1.0-beta, last updated: 24 April, 2025
+Version 1.1-beta, last updated: 30 September, 2025
 
 ### **tl;dr**
 
