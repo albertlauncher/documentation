@@ -47,8 +47,6 @@ If the query does _not_ start with a trigger,
 the query is handled by all enabled **global query handler extensions** in _parallel_
 and eventually the match items are _merged_ and _sorted by match and usage score_.
 
-There is one special 
-
 In any case the enabled **fallback handler extensions** provide a separate set of _fallbacks items_, 
 which are displayed when the matches are empty or when the user explicitly requests them.
 
