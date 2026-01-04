@@ -7,7 +7,7 @@ nav_order: 6
  
 If you found here, you are probably thinking about supporting the development of your favorite keyboard launcher.
 Thank you! ❤️
-<br>    
+
 
 <table style="text-align: center;">
     <tr>
@@ -70,3 +70,42 @@ Thank you! ❤️
         </td>
     </tr>
 </table>
+
+## Why would I want to donate?
+
+First, if you can’t afford $1 per month, you should _not_ donate.
+One of the main goals is to make Albert available to everyone, that’s why it’s free.
+If you _can_ afford $1 per month, I’d like to ask you to step in for those who can’t.
+
+To answer this question, you need to understand the burden of maintaining a project like this.
+I spend an insane amount of time on Albert, and the effort goes far beyond my personal needs.
+There are periods when tasks feel like work rather than enjoyment.
+Note that this project is not backed by any foundation or organization.
+A donation shows that you acknowledge this effort and are willing, out of gratitude, to help offset the cost I bear.
+
+## What is this cost?
+
+Time. Loads of time.
+
+Beyond designing, developing, testing, and maintaining the core application and many plugins, actively or passively, 
+I also handle packaging for almost all supported platforms. 
+This alone is a complex task, given the combinations of distributions, architectures,
+and the inconsistent feature support in compilers and standard libraries.
+Ensuring that Albert builds everywhere is a major time sink.
+
+I place strong emphasis on providing plugin authors with an excellent developer experience.
+I design and continuously refine an API that is easy to understand, yet powerful and hard to break.
+Writing clear, structured, and unambiguous documentation is just as important, and just as time-consuming.
+
+A significant portion of the work happens in largely invisible areas:
+For example, achieving outstanding performance while minimizing battery usage,
+testing the latest language/toolkit features that eventually may end up unused, 
+keeping the website up to date,
+and dealing with the flaws of the ever-changing environment Albert interfaces.
+As a result, I actively contribute to other projects by doing whatever is necessary to keep Albert running everywhere.
+
+Beyond the technical work, I also try to build and organize a vibrant community of users and contributors,
+and to provide user and developer support through community channels and GitHub whenever possible.
+
+That's what I’ve been doing for over a decade to reduce your cognitive load and save your time.
+
