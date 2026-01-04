@@ -11,21 +11,27 @@ GENERATE_DOCSET         = YES
 DOT_IMAGE_FORMAT        = svg
 DOXYFILE_ENCODING       = UTF-8
 EXTRACT_ALL             = YES
+ENUM_VALUES_PER_LINE    = 0  # Suppress the enum values from appearing in the overview section.
 GENERATE_LATEX          = NO
 INPUT                   = albert/include
 #INPUT                  = ../include
 STRIP_FROM_INC_PATH     = albert/include            # relative include paths
 FULL_PATH_NAMES         = YES                       # Relative paths in include graph
 STRIP_FROM_PATH         = ..
-
+INCLUDE_GRAPH           = NO
+INCLUDED_BY_GRAPH       = NO
+SHOW_INCLUDE_FILES      = NO
+#SHOW_NAMESPACES        = NO
 HAVE_DOT                = YES
+PAGE_OUTLINE_PANEL      = YES
 
 # hide undoc stuff
 HIDE_UNDOC_MEMBERS      = YES
 HIDE_UNDOC_CLASSES      = YES
 HIDE_FRIEND_COMPOUNDS   = YES
 HIDE_IN_BODY_DOCS       = YES
-EXCLUDE_SYMBOLS        = albert::ResultItem albert::util::Dependency
+EXCLUDE_SYMBOLS         = QStringList QCoro albert::detail
+
 
 JAVADOC_AUTOBRIEF       = YES
 LAYOUT_FILE             = DoxygenLayout.xml
@@ -74,3 +80,4 @@ COLLABORATION_GRAPH     = NO
 #CALLER_GRAPH           = YES
 
 
+GROUP_GRAPHS            = NO
