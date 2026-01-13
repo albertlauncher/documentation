@@ -4,7 +4,7 @@ nav_exclude: true
 ---
 
 # {{ page.title }}
-Version 1.1-beta, last updated: 30 September, 2025
+Version 1.2-beta, last updated: 13 January, 2026
 
 ### **tl;dr**
 
@@ -24,10 +24,7 @@ When the app sends a report, the following data is processed:
 
 - Hashed device ID (Pseudonym)
 - Local time (To properly map a report to a "human date")
-
-Depending on the users choice to send telemetry data, the following data is processed:
-
-- Country code (derived from the IP address, the IP address itself is not stored)
+- Country code
 - App and Qt version
 - Operation system type and version
 - Platform type (macOS, Wayland, etc.)
@@ -36,12 +33,7 @@ Depending on the users choice to send telemetry data, the following data is proc
 
 ### Why is this data used?
 
-Basic data is used exclusively for:
-
 - Computing aggregated users counts.
-
-Optional data is used exclusively for:
-
 - Understanding the distribution of releases.
 - Triaging issues.
 - Prioritizing plugin development efforts.
