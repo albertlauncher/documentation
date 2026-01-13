@@ -20,8 +20,6 @@ For inquiries, post an issue on [Github](https://github.com/albertlauncher/alber
 
 ### What data is processed?
 
-When the app sends a report, the following data is processed:
-
 - Hashed device ID (Pseudonym)
 - Local time (To properly map a report to a "human date")
 - Country code
