@@ -34,10 +34,10 @@ Before putting a lot of effort into a contribution, open an issue and discuss yo
 This is important, because there is a chance that your changes may be rejected.
 Contributing to existing plugins is straightforward. 
 
-1. Fork the repository to your account.
-1. Work on on the fork.
-1. Send a pull request to the upstream repository.
-1. Go through the review process until approved.
+1. Fork the repository.
+1. Work on the fork.
+1. Send a pull request.
+1. Go through the review process.
 
 
 ### New plugins 
@@ -57,29 +57,22 @@ For a plugin to be accepted it has to satisfy the following **requirements**:
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
 
 
-## Reviews
-
-Reviews are extremely important to ensure the quality of the code and the safety of users and developers.
-Reviews have always been a bottleneck in the past, so **we are looking for reviewers**.
-
-You could review [open pull requests](https://github.com/issues/assigned?q=is%3Apr%20state%3Aopen%20org%3Aalbertlauncher) any time or
-join the [reviewer teams](https://github.com/orgs/albertlauncher/teams).
-Three members of the reviewer team will be assigned on new pull requests of _any_ (new) plugin.
-Leave a message with your GitHub username to get an invite.
-
-If you want to help with just some particular plugins, consider becoming a maintainer instead (see below).
-
-
 ## Maintenance
 
-If you are using a plugin a lot and have basic programming skills you are probably a good plugin maintainer.
+You can always send features and fixes as outside collaborator.
+However, a plugin requires someone to actively maintain it.
+A plugin maintainer will be assigned to issues and requested to review pull requests.
+To opt in, send a pull request that adds your GitHub username to the plugin metadata’s maintainers list.
+Revert the change to opt out.
 
-As passive maintainer you can help by using the plugin, reporting issues and sending pull requests containing fixes and features.
-As an active/official maintainer you will be assigned on new issues and pull requests.
-A maintainer is implicitly a reviewer of its plugin.
 
-To opt-in send a pull request adding your GitHub username to the maintainers list of the plugin metadata.
-Revert to opt-out.
+## Reviews
+
+[Reviewer teams](https://github.com/orgs/albertlauncher/teams) 
+review new plugin additions and support plugin maintainers in reviewing PRs.
+For each PR, a random subset of team members will be requested to review.
+If you want to join, ask for it in the community chats.
+If you only care about a specific plugin, consider becoming a maintainer instead.
 
 
 <!--## Changes to the core application
