@@ -38,7 +38,7 @@ permalink: pretty  # no html extension
 
 nav_external_links:
   - title: API reference
-    url: /reference/namespacealbert.html
+    url: /reference/topics.html
   - title: GitHub
     url: https://github.com/albertlauncher/albert
 
