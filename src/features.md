@@ -12,7 +12,7 @@ nav_exclude: true
 ## 🚀 Performance
 {: .fw-300 .text-center }
 
-Your muscle memory achieves 1000+ KPM? Albert can keep up with that.<br>
+Your muscle memory achieves 200+ KPM? Albert can keep up with that.<br>
 Being one of the primary design goals, Albert is **_designed to be fast_**.
 {: .fw-300 .text-center }
 
