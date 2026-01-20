@@ -41,7 +41,7 @@ class Plugin(PluginInstance, TriggerQueryHandler):
 ```
 
 
-Next, skim through the [Python stub file](https://github.com/albertlauncher/plugins/blob/main/python/albert.pyi).
+Next, skim through the [Python stub file](https://github.com/albertlauncher/albert-plugin-python/blob/main/albert.pyi).
 For reference see the [official plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
 In case of questions see the [C++ API](/reference/namespacealbert.html).
 
