@@ -19,31 +19,8 @@ An Albert Python plugin is a Python module having an interface defined in the
 [**Albert stub file**](https://github.com/albertlauncher/albert-plugin-python/blob/main/albert.pyi).
 At runtime the stub file is written to your *user Python plugin directory*, 
 where it serves as inline documentation and coding assistance in your IDE while development.
-
-A minimal trigger query handler plugin:
-
-```python
-from albert import *
-
-md_iid = '5.0'
-md_version = '1.0'
-md_name = 'My plugin'
-md_description = 'Does things'
-
-class Plugin(PluginInstance, TriggerQueryHandler):
-
-    def __init__(self):
-        PluginInstance.__init__(self)
-        TriggerQueryHandler.__init__(self)
-        
-    def handleTriggerQuery(self, query):
-        # query.add(StandardItem(…))
-```
-
-
-Next, skim through the [Python stub file](https://github.com/albertlauncher/albert-plugin-python/blob/main/albert.pyi).
 For reference see the [official plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
-In case of questions see the [C++ API](/reference/namespacealbert.html).
+Also see the [C++ API reference](reference/topics.html) for details.
 
 
 <!--## Tutorial-->
