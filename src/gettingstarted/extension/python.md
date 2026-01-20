@@ -20,7 +20,7 @@ An Albert Python plugin is a Python module having an interface defined in the
 At runtime the stub file is written to your *user Python plugin directory*, 
 where it serves as inline documentation and coding assistance in your IDE while development.
 For reference see the [official plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
-Also see the [C++ API reference](reference/topics.html) for details.
+Also see the [C++ API reference](/reference/topics.html) for details.
 
 
 <!--## Tutorial-->
