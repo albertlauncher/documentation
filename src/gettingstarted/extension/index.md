@@ -30,11 +30,6 @@ The built-in extension interfaces related to query handling are:
 
 and their convenience subclasses: 
 
-- [`AsyncGeneratorQueryHandler`](/reference/classalbert_1_1AsyncGeneratorQueryHandler.html)
-- [`GeneratorQueryHandler`](/reference/classalbert_1_1GeneratorQueryHandler.html)
-- [`RankedQueryHandler`](/reference/classalbert_1_1RankedQueryHandler.html)
-- [`IndexQueryHandler`](/reference/classalbert_1_1IndexQueryHandler.html)
-
 All query handlers provide instances of the [`Item`](/reference/classalbert_1_1Item.html) interface,
 which contains several methods related to the user interface, 
 most notably the [`Action`](/reference/classalbert_1_1Action.html) factory.
@@ -44,7 +39,11 @@ utilities facilitate plugin development and help developers to provide users wit
 
 - [`StandardItem`](/reference/classalbert_1_1StandardItem.html) Value-based `Item` implementation.
 - [`Matcher`](/reference/classalbert_1_1Matcher.html) Utility for configurable string matching.
+- [`AsyncGeneratorQueryHandler`](/reference/classalbert_1_1AsyncGeneratorQueryHandler.html) Coroutine-based asynchronous generator query handler.
+- [`GeneratorQueryHandler`](/reference/classalbert_1_1GeneratorQueryHandler.html) Coroutine-based synchronous generator query handler.
+- [`RankedQueryHandler`](/reference/classalbert_1_1RankedQueryHandler.html) Usage-ranked query handler.
 - [`IndexQueryHandler`](/reference/classalbert_1_1IndexQueryHandler.html) Index-based `GlobalQueryHandler` implementation.
+
 
 Next, read the section of your prefered API,
 build something cool and [share it](/gettingstarted/contributing#code).
