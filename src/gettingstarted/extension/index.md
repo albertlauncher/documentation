@@ -28,6 +28,13 @@ The built-in extension interfaces related to query handling are:
 - [`GlobalQueryHandler`](/reference/classalbert_1_1GlobalQueryHandler.html)
 - [`FallbackHandler`](/reference/classalbert_1_1FallbackHandler.html)
 
+and their convenience subclasses: 
+
+- [`AsyncGeneratorQueryHandler`](/reference/classalbert_1_1AsyncGeneratorQueryHandler.html)
+- [`GeneratorQueryHandler`](/reference/classalbert_1_1GeneratorQueryHandler.html)
+- [`RankedQueryHandler`](/reference/classalbert_1_1RankedQueryHandler.html)
+- [`IndexQueryHandler`](/reference/classalbert_1_1IndexQueryHandler.html)
+
 All query handlers provide instances of the [`Item`](/reference/classalbert_1_1Item.html) interface,
 which contains several methods related to the user interface, 
 most notably the [`Action`](/reference/classalbert_1_1Action.html) factory.
