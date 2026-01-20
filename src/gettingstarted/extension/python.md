@@ -25,7 +25,7 @@ A minimal trigger query handler plugin:
 ```python
 from albert import *
 
-md_iid = '3.0'
+md_iid = '5.0'
 md_version = '1.0'
 md_name = 'My plugin'
 md_description = 'Does things'
