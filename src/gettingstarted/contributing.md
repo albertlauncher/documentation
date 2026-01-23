@@ -53,9 +53,8 @@ For a plugin to be accepted it has to satisfy the following **requirements**:
 - The project has an **active maintainer**. 
 - The repository **content is essential** to the functionality of the plugin. Keep in mind that in future somebody else may want to maintain the plugin and for distribution the size of the repository should be minimal. 
 - Icons are **vector graphics** or **128x128 raster images**.
-- Git history is linear
-- Git commits are [Conventional Commit Spec](https://www.conventionalcommits.org/) compliant (automated versioning and changelogs)
-- Git history is free of large blobs such as media. 
+- Repository has a **linear git history free of binary blobs**.
+- Commits are **compliant with the [Conventional Commit specification](https://www.conventionalcommits.org/)**.
 
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
 
