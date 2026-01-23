@@ -55,6 +55,7 @@ For a plugin to be accepted it has to satisfy the following **requirements**:
 - Icons are **vector graphics** or **128x128 raster images**.
 - Git history is linear
 - Git commits are [Conventional Commit Spec](https://www.conventionalcommits.org/) compliant (automated versioning and changelogs)
+- Git history is free of large blobs such as media. 
 
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
 
