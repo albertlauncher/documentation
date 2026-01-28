@@ -1,6 +1,5 @@
 ---
 title: FAQ
-parent: Getting started
 nav_order: 5
 ---
 

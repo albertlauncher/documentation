@@ -1,6 +1,5 @@
 ---
 title: Extension
-parent: Getting started
 nav_order: 2
 has_children: true
 has_toc: false
@@ -22,13 +21,12 @@ Albert can be extended using C++ or Python.
 
 Every plugin has to implement the abstract [`PluginInstance`](/reference/classalbert_1_1PluginInstance.html) ,
 which provides a list of [`Extension`](/reference/classalbert_1_1Extension.html) instances.
+
 The built-in extension interfaces related to query handling are:
 
-- [`QueryHandler`](/reference/classalbert_1_1QueryHandler.html)
-- [`GlobalQueryHandler`](/reference/classalbert_1_1GlobalQueryHandler.html)
-- [`FallbackHandler`](/reference/classalbert_1_1FallbackHandler.html)
-
-and their convenience subclasses: 
+- [`QueryHandler`](/reference/classalbert_1_1QueryHandler.html) Base query handler interface for triggered queries.
+- [`GlobalQueryHandler`](/reference/classalbert_1_1GlobalQueryHandler.html) Query handler participating in the global search.
+- [`FallbackHandler`](/reference/classalbert_1_1FallbackHandler.html) Query handler providing fallback items.
 
 All query handlers provide instances of the [`Item`](/reference/classalbert_1_1Item.html) interface,
 which contains several methods related to the user interface, 

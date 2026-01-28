@@ -1,6 +1,5 @@
 ---
 title: Help
-parent: Getting started
 nav_order: 4
 ---
 

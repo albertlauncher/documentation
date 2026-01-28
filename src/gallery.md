@@ -1,7 +1,7 @@
 ---
 title: Gallery
 permalink: /gallery
-nav_order: 2
+nav_order: 6
 ---
 
 # {{ page.title }}

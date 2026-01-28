@@ -1,6 +1,5 @@
 ---
 title: Basics
-parent: Getting started
 nav_order: 1
 ---
 

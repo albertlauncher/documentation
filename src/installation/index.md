@@ -1,6 +1,5 @@
 ---
 title: Installation
-parent: Getting started
 nav_order: 0
 has_children: true
 ---

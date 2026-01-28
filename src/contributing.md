@@ -1,6 +1,5 @@
 ---
 title: Contributing
-parent: Getting started
 nav_order: 3
 ---
 

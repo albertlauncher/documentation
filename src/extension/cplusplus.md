@@ -1,7 +1,6 @@
 ---
 title: C++
 parent: Extension
-grand_parent: Getting started
 nav_order: 0
 ---
 
@@ -68,7 +67,7 @@ class Plugin : public albert::ExtensionPlugin
 For real use cases you want to derive actually useful extension interfaces. 
 
 Next, skim through the [API reference](https://albertlauncher.github.io/reference/namespacealbert.html).
-For reference see the [official plugins](https://github.com/albertlauncher/albert/tree/main/plugins).
+For reference see the [official C++ plugins](https://github.com/albertlauncher/albert/tree/main/plugins).
 
 
 ## Plugin directories

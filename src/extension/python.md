@@ -1,7 +1,6 @@
 ---
 title: Python
 parent: Extension
-grand_parent: Getting started
 nav_order: 1
 ---
 
@@ -19,7 +18,7 @@ An Albert Python plugin is a Python module having an interface defined in the
 [**Albert stub file**](https://github.com/albertlauncher/albert-plugin-python/blob/main/albert.pyi).
 At runtime the stub file is written to your *user Python plugin directory*, 
 where it serves as inline documentation and coding assistance in your IDE while development.
-For reference see the [official plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
+For reference see the [official Python plugins](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins).
 Also see the [C++ API reference](/reference/topics.html) for details.
 
 
