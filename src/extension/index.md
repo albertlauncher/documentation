@@ -8,13 +8,13 @@ has_toc: false
 # Writing extensions
 
 {: .note }
-Before you start reading the details of extending Albert, make sure you have read the [basics](/gettingstarted/basics).
+Before you start reading the details of extending Albert, make sure you have read the [basics](/basics).
 
 Albert can be extended using C++ or Python. 
  
-- Native [C++ plugins](/gettingstarted/extension/cplusplus) benefit the performance and power of (Obj)C(++)
+- Native [C++ plugins](/extension/cplusplus) benefit the performance and power of (Obj)C(++)
   and the native access to Qt (Eventloop, translations, the framework itself …).
-- [Python plugins](/gettingstarted/extension/python) on the other hand are easier to write and distribute and PyPi has a library for almost everything you can think of.
+- [Python plugins](/extension/python) on the other hand are easier to write and distribute and PyPi has a library for almost everything you can think of.
   However the Albert Python API is a limited subset of the native API and the [GIL](https://wiki.python.org/moin/GlobalInterpreterLock) prevents true parallelism.
 
 ## API overview
@@ -44,5 +44,5 @@ utilities facilitate plugin development and help developers to provide users wit
 
 
 Next, read the section of your prefered API,
-build something cool and [share it](/gettingstarted/contributing#code).
+build something cool and [share it](/contributing#code).
 
