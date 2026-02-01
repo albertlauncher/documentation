@@ -22,38 +22,43 @@ Albert is a lightning-fast, plugin-based keyboard launcher.
 ## 🚀 Performance
 {: .text-center }
 
+<p class="feature-text">
 Your muscle memory achieves 200+ KPM? Albert can keep up with that.
-Being one of the primary design goals, Albert is **_designed to be fast_**.
-{: .text-center }
+Being one of the primary design goals, Albert is <b><i>designed&nbsp;to&nbsp;be&nbsp;fast</i></b>.
+</p>
 
 
 ## 🌱 Efficiency
 {: .text-center }
 
-Technology, design, tooling, distribution, contribution standards.<br>
-Decisions made with **_efficiency in mind_**.
-{: .text-center }
+<p class="feature-text">
+Technology, design, tooling, distribution, contribution standards.
+Decisions made with <b><i>efficiency&nbsp;in&nbsp;mind</i></b>.
+</p>
 
 
 ## 🧩 Flexibility
 {: .text-center }
 
-Albert is based on a **_plugin system_** that allows you to customize its functionality.<br>
+<p class="feature-text">
+Albert is based on a <b><i>plugin&nbsp;system</i></b> that allows you to customize its functionality.
 It could be your go-to app launcher or a full-blown system command palette.
-{: .text-center }
+</p>
 
 
 ## 🔧 Extensibility
 {: .text-center }
 
-Albert offers APIs designed to be **_simple_** and **_easy to learn_**.<br> 
-To accomplish common tasks with minimal code it provides a set **_powerful utilities_**.
-{: .text-center }
+<p class="feature-text">
+Albert offers APIs designed to be <b><i>simple</i></b> and <b><i>easy&nbsp;to&nbsp;learn</i></b>.
+To accomplish common tasks with minimal code it provides a set <b><i>powerful&nbsp;utilities</i></b>.
+</p>
 
 
 ## 🔋 Batteries included
 {: .text-center }
 
-Albert comes with a **_curated collection of peer-reviewed, actively maintained plugins_**.<br> 
+<p class="feature-text">
+Albert comes with a <b><i>curated collection</i></b> of <b><i>peer-reviewed</i></b>, <b><i>actively maintained plugins</i></b>. 
 No searching, no duplicates, no broken code, no risks. It just works out of the box.
-{: .text-center }
+</p>

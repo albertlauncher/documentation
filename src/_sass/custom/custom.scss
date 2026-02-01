@@ -26,3 +26,9 @@ kbd {
   color: gray;
   white-space: nowrap;
 }
+
+.feature-text {
+  max-width: 50ch;
+  margin: 0 auto;
+  text-align: center !important;
+}
