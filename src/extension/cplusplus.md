@@ -9,7 +9,7 @@ nav_order: 0
 
 {: .note }
 This page focuses on the practical aspects of extending Albert using C++ and its peculiarities.
-To get an overview of the API refer to the general [extension](/gettingstarted/extension/) section.
+To get an overview of the API refer to the general [extension](/extension/) section.
 
 - TOC
 {:toc}

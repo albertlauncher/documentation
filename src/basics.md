@@ -31,7 +31,7 @@ The **first plugin found for an identifier is used**.
 
 An **extension** is a logical unit extending the app with a particular functionality.
 Each plugin can provide multiple *extension implementations* and expose its own *extension interfaces*.
-More on this topic can be found in the [Extension](/gettingstarted/extension/) section
+More on this topic can be found in the [Extension](/extension/) section
 
 
 ## Queries

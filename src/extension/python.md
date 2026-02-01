@@ -9,7 +9,7 @@ nav_order: 1
 
 {: .note }
 This page focuses on the practical aspects of extending Albert using Python and its peculiarities.
-To get an overview of the API refer to the general [extension](/gettingstarted/extension/) section.
+To get an overview of the API refer to the general [extension](/extension/) section.
 
 
 ## Writing Python plugins
@@ -32,7 +32,7 @@ Also see the [C++ API reference](/reference/topics.html) for details.
   ```shell
   git clone https://github.com/<your_username>/python.git "${USER_DATA_DIR}/python/plugins"
   ```
-  You can find the `${USER_DATA_DIR}` for your platform in [this table](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
+  You can find the `${USER_DATA_DIR}` for your platform in [this table](https://albertlauncher.github.io/faq/#where-are-cache-config-and-data-files-stored).
 * Open the directory in your favorite IDE (PyCharmCE is a good choice).
 * Write your plugin.
 * Make sure it is polished (No bugs, few to no warnings, efficient, readable, maintainable, …).
@@ -43,7 +43,7 @@ Also see the [C++ API reference](/reference/topics.html) for details.
 ## Plugin directories
 
 Python plugin directories are the directories at `python/plugins` relative to the
-[app data directories](https://albertlauncher.github.io/gettingstarted/faq/#where-are-cache-config-and-data-files-stored).
+[app data directories](/faq/#where-are-cache-config-and-data-files-stored).
 
 - **xdg**:
   - `~/.local/share/albert/python/plugins`
