@@ -12,31 +12,16 @@ nav_order: 3
 
 ## Code
 
-The **place for official plugin repositories** is the [Albert launcher organization](https://github.com/orgs/albertlauncher/repositories). 
-Distributed native plugins are submodules in the [Albert repository plugins directory](https://github.com/albertlauncher/albert/tree/main/plugins).
-Python plugins in the [Python repository plugins directory](https://github.com/albertlauncher/albert-plugin-python/tree/main/plugins) respectively.
-
-The **main branch** of a plugin repository represents the latest version 
+The place for official plugin repositories is the [Albert launcher organization](https://github.com/orgs/albertlauncher/repositories). 
+The main branch of a plugin repository represents the latest version 
 that is or will be distributed with the application and therefore has to be protected.
-Contributions _have to pass peer reviewing_ via pull request.
+Contributions have to pass peer reviewing via pull request.
 As such contributors have to work on their own fork and send a PR.
 The rationale is to ensure 
 
 - Safety. For users and developers.
 - Simplicity. Upstream main branch is reviewed and distributable.
 - Tidiness. `git status` is clean or contains approved plugin changes.
-
-
-### Fixes and Features
-
-Before putting a lot of effort into a contribution, open an issue and discuss your planned changes.
-This is important, because there is a chance that your changes may be rejected.
-Contributing to existing plugins is straightforward. 
-
-1. Fork the repository.
-1. Work on the fork.
-1. Send a pull request.
-1. Go through the review process.
 
 
 ### New plugins 
@@ -56,6 +41,18 @@ For a plugin to be accepted it has to satisfy the following **requirements**:
 - Commits are **compliant with the [Conventional Commit specification](https://www.conventionalcommits.org/)**.
 
 Having a _concise_ `README.md` summarizing features, requirements, limitations, supported platforms and implementation details is recommended.
+
+
+### Fixes and Features
+
+Before putting a lot of effort into a contribution, open an issue and discuss your planned changes.
+This is important, because there is a chance that your changes may be rejected.
+Contributing to existing plugins is straightforward. 
+
+1. Fork the repository.
+1. Work on the fork.
+1. Send a pull request.
+1. Go through the review process.
 
 
 ## Maintenance
