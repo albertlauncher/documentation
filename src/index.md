@@ -51,7 +51,7 @@ It could be your go-to app launcher or a full-blown system command palette.
 
 <p class="feature-text">
 Albert offers APIs designed to be <b><i>simple</i></b> and <b><i>easy&nbsp;to&nbsp;learn</i></b>.
-To accomplish common tasks with minimal code it provides a set <b><i>powerful&nbsp;utilities</i></b>.
+To accomplish common tasks with minimal code it provides a set of <b><i>powerful&nbsp;utilities</i></b>.
 </p>
 
 
