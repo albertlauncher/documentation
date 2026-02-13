@@ -2,7 +2,7 @@ name: Deploy website
 
 on:
   push:
-    branches: "master"
+    branches: "main"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -38,7 +38,7 @@ jobs:
     - run: cd src && JEKYLL_ENV=production bundle exec jekyll build
 
     - run: find .
-    
+
 #    - uses: ruby/setup-ruby@v1
 #      with:
 #        ruby-version: '3.3'
@@ -57,7 +57,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PAT }}
         external_repository: albertlauncher/albertlauncher.github.io
-        publish_branch: master
+        publish_branch: main
         publish_dir: ./src/_site
 
    # - name: Deploy
@@ -70,6 +70,6 @@ jobs:
    #     git add .
    #     git commit -m "Auto-commit from GitHub Action"
    #     git remote add origin "https://${{ secrets.PAT }}@github.com/albertlauncher/albertlauncher.github.io"
-   #     git branch -M master
-   #     git push --force origin master
+   #     git branch -M main
+   #     git push --force origin main
 
