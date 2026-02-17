@@ -37,7 +37,7 @@ albert toggle
 ```
 
 - [Gnome help](https://help.gnome.org/users/gnome-help/stable/keyboard-shortcuts-set.html.en)
-- [KDE documentation](https://docs.kde.org/stable5/en/khelpcenter/fundamentals/shortcuts.html)
+- [KDE documentation](https://docs.kde.org/trunk_kf6/en/khelpcenter/fundamentals/shortcuts.html)
 - You are welcome to improve this list. 
 
 The above runs a new app instance, which is relatively heavy.
@@ -63,7 +63,7 @@ Wayland does not allow to set window properties like on any other platforms.
 There some of the window settings have no effect.
 Some compositors allow configuring the window properties in their settings.
 
-- [KDE](https://docs.kde.org/stable5/en/kwin/kcontrol/windowspecific/index.html)
+- [KDE](https://docs.kde.org/trunk_kf6/en/kwin/kcontrol/windowspecific/index.html)
 - On Gnome your best bet is probably [GNOME Window Rules extension](https://help.gnome.org/users/gnome-help/stable/windows-properties.html.en).
 
 
