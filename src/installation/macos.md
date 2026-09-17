@@ -26,4 +26,4 @@ Read the caveats section of `brew install`.
 For convenience the cask creates an ad-hoc signature and disables Gatekeeper for the app.
 See the postflight section of the cask.
  
-The provided bundle is _not self-contained_ and uses dependencies provided by homebrew. This allows using shared memory and reduces the actual private memory consumption to a negliable amount. 
+The provided bundle is _not self-contained_ and uses dependencies provided by homebrew. This allows using shared memory and reduces the actual private memory consumption to a negligible amount. 

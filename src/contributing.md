@@ -17,8 +17,7 @@ The main branch of a plugin repository represents the latest version
 that is or will be distributed with the application and therefore has to be protected.
 Contributions have to pass peer reviewing via pull request.
 As such contributors have to work on their own fork and send a PR.
-The rationale is to ensure 
-
+The rationale is to ensure:
 - Safety. For users and developers.
 - Simplicity. Upstream main branch is reviewed and distributable.
 - Tidiness. `git status` is clean or contains approved plugin changes.

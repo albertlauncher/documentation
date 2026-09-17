@@ -31,7 +31,7 @@ The **first plugin found for an identifier is used**.
 
 An **extension** is a logical unit extending the app with a particular functionality.
 Each plugin can provide multiple *extension implementations* and expose its own *extension interfaces*.
-More on this topic can be found in the [Extension](/extension/) section
+More on this topic can be found in the [Extension](/extension/) section.
 
 
 ## Queries
@@ -40,13 +40,13 @@ There are three built-in extension interfaces that handle user input:
 
 If the query starts with a trigger of a **trigger query handler extension**,
 the query is handled _exclusively_ by the corresponding handler.
-This allows the handler to _set an inline input hint_, _asynchronously add match items_ and as such _define their order_.
+This allows the handler to _set an inline input hint_, _asynchronously add match items_ and thereby define their order.
 
 If the query does _not_ start with a trigger,
 the query is handled by all enabled **global query handler extensions** in _parallel_
 and eventually the match items are _merged_ and _sorted by match and usage score_.
 
-In any case the enabled **fallback handler extensions** provide a separate set of _fallbacks items_, 
+In any case the enabled **fallback handler extensions** provide a separate set of _fallback items_, 
 which are displayed when the matches are empty or when the user explicitly requests them.
 
 
@@ -71,8 +71,8 @@ If the input starts with a **trigger** of a trigger query handler, it is highlig
 If available the **input action text** of the currently selected item will be displayed right beside your input.
 Hit <kbd>Tab</kbd> to replace the current input with it.
 If space permits, the **input hint** of the query handler will be displayed right-aligned in the input box.
-The **settings button** is appears on the right side of the input line if you hover over it 
-or if a query a query is being processed.
+The **settings button** appears on the right side of the input line if you hover over it 
+or if a query is being processed.
 Left-clicking opens the **settings window**, while right-clicking shows a context menu.
 
 The manually entered text of the input line is stored in the **input history** when the window is hidden. 
@@ -87,7 +87,7 @@ The results list displays **result items** of a query.
 Hold and release <kbd>Super⌃</kbd> to switch between **match items** and **fallback items**.
 
 Result items can have multiple associated *actions*.
-The **default action**   of an item is activated by pressing <kbd>Return</kbd> or <kbd>Enter</kbd>.
+The **default action** of an item is activated by pressing <kbd>Return</kbd> or <kbd>Enter</kbd>.
 To display the list of **alternative actions** of an item <kbd>Ctrl⌘</kbd>+<kbd>Return</kbd> or hold <kbd>Alt⌥</kbd> .
 
 As a reference the following table lists the keys you can use to control Albert:
@@ -105,7 +105,7 @@ As a reference the following table lists the keys you can use to control Albert:
 | <kbd>Ctrl⌘</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd><br><kbd>Ctrl⌘</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> | Activate item but do not hide.                                            |
 | <kbd>Ctrl⌘</kbd>+<kbd>,</kbd>                                                                        | Open settings window.                                                     |
 | <kbd>⬆</kbd>,<kbd>⬇</kbd>,<br><kbd>PgUp</kbd>,<kbd>PgDn</kbd>                                       | Navigation in item lists.                                                 |
-| <kbd>Alt⌥</kbd>+<kbd>F4</kbd>,<kbd>⌘</kbd>+<kbd>Q</kbd>                                              | Quit Albert (Depends on settings).                                        |
+| <kbd>Alt⌥</kbd>+<kbd>F4</kbd>,<kbd>⌘</kbd>+<kbd>Q</kbd>                                              | Quit Albert (Depends on the settings).                                        |
 | <kbd>Ctrl⌘</kbd>+<kbd>H</kbd>/<kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd>                                 | Vim bindings. Synthesize to arrows.                                       |
 | <kbd>Ctrl⌘</kbd>+<kbd>N</kbd>/<kbd>P</kbd>                                                           | Emacs bindings. Synthesize to arrows.                                     |
 
