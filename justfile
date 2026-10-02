@@ -1,3 +1,6 @@
+choose:
+    @just --command-color blue --highlight --choose
+
 info:
     less Makefile
 
